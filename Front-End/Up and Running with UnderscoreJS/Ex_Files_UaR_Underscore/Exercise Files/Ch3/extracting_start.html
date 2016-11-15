@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracting Array Data with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getStudentInfo(elem, indx, list) {
+        var container = document.getElementById("container");
+        var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+        container.innerHTML = container.innerHTML + student;
+    }
+
+    window.addEventListener("load", function(e) {
+    });
+    </script>
+</head>
+<body>
+<h1>Extracting Array Data with Underscore</h1>
+<h3 id="numstudents">Using first(), last(), initial(), rest(): </h3>
+<div id="container">
+</div>
+</body>
+</html>

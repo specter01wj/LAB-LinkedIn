@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Resizable Interactions</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            // basic resizing feature
+            //$("#theDiv").resizable();
+            
+            // preserve the aspect ratio
+            //$("#theDiv").resizable({ aspectRatio: true });
+            
+            // minimum mouse move distance
+            //$("#theDiv").resizable({ distance: 15 });
+
+            // snap to a resize grid
+            //$("#theDiv").resizable({ grid: [ 20, 10 ] });
+            
+            // constrain the maximum and minimum size
+            $("#theDiv").resizable({
+                minHeight: 150,
+                minWidth: 150,
+                maxHeight: 500,
+                maxWidth: 800,
+                
+                start: function(evt, ui) {
+                    ui.element.css("background-color", "yellow");
+                },
+                stop: function(evt, ui) {
+                    ui.element.css("background-color", "");
+                    $("#theDiv h2").text("Resize Me");
+                },
+                resize: function(evt, ui) {
+                    $("#theDiv h2").text(
+                        Math.round(ui.element.width())
+                        + ", " + 
+                        Math.round(ui.element.height()));
+                }
+            });
+        });
+    </script>
+    <style>
+        #theDiv {
+            width: 200px;
+            height: 200px;
+            background-color: #b3c8d0;
+            padding: 5pt 5pt 5pt 5pt;
+            overflow: hidden
+        }
+        #theDiv h2 {
+            background-color: #9ba9af;
+            font-size: 14pt;
+            text-align: center;
+            margin-top: 2pt
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the Resizable interaction</h1>
+    <p>The Resizable interaction behavior provides a way to enable page elements to be resized by the user.</p>
+    <p>The resizing behavior can be configured multiple ways. You can constrain the size of the element, snap to a grid, preserve the aspect ratio, start the resizing behavior only after the mouse has been moved a certain distance, and more.</p>
+    <div id="theDiv">
+        <h2>Resize Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ullamcorper nisi. Integer vel tincidunt tortor. Phasellus quis tempor est, ut ultrices tellus. </p>
+    </div>
+</body>
+</html>

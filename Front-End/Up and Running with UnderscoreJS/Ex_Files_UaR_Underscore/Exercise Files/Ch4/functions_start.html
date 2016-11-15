@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Underscore Function-related Features</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function log(value) {
+        var container = document.getElementById("container");
+        var data = "<p>" + value + "</p>";
+        container.innerHTML = container.innerHTML + data;
+    }
+
+    window.addEventListener("load", function(e) {
+    });
+    </script>
+</head>
+<body>
+<h1>Underscore Function-related Features</h1>
+<div id="container">
+</div>
+<h3>Testing throttle(): </h3>
+<textarea id="text1" cols="30" rows="10"></textarea>
+<p id="charcount"></p>
+</body>
+</html>

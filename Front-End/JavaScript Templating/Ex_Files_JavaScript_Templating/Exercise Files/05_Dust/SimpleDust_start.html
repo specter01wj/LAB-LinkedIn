@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Dust Template Example</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script type="text/javascript" src="../dust-full.js"></script>
+        <script type="text/javascript">
+         function renderTemplates(e) {
+            // this gives us a compiled template registered with Dust as "myTmpl"
+            var templContent = document.getElementById('itemTemplate').innerHTML;
+
+            // load the template into the Dust cache
+
+            var dataObj = {
+               "name" : "Henry Handsome",
+               "phone" : "+1-212-555-1234",
+               "email" : "pensive@example.com",
+               "title" : "Senior VP of Basketweaving",
+               "fulltime" : true
+            };
+
+         }
+
+         window.addEventListener("load", renderTemplates);
+        </script>
+    </head>
+    <body>
+        <script type="text/x-template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+              <div>{name}</div>
+              <div>{title}</div>
+              <div>{email}</div>
+              <div>{phone}</div>
+            </div>
+        </script>
+        <h1>Simple Template with Dust.js</h1>
+        <h3>This example embeds the template directly in the source HTML</h3>
+
+        <!-- This is the container where the templates will be instantiated -->
+        <div id="container"></div>
+    </body>
+</html>

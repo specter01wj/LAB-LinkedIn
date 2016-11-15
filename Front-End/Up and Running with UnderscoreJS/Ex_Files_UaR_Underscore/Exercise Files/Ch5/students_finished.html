@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Explorer Example</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript" src="templates.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("load", function(evt) {
+      // initialize the event handlers for the navigation controls
+      document.querySelector("#schoolSelect").addEventListener("change", updateDisplay);
+      document.querySelector("#sortBy").addEventListener("change", updateDisplay);
+      document.querySelector("#templateSelect").addEventListener("change", updateDisplay);
+      document.querySelector("#gr9").addEventListener("click", updateDisplay);
+      document.querySelector("#gr10").addEventListener("click", updateDisplay);
+      document.querySelector("#gr11").addEventListener("click", updateDisplay);
+      document.querySelector("#gr12").addEventListener("click", updateDisplay);
+
+      // start by extending the data to average the midterm and final scores
+      _.each(students, function(elem, indx) {
+        _.extend(elem, {overall_score : (elem.midterm_score + elem.final_score) / 2});
+      });
+
+      // lay out the initial display
+      updateDisplay();
+    });
+
+    function updateDisplay() {
+      var dataset = updateDataSet();
+
+      var whichTemplate;
+      switch (document.querySelector("#templateSelect").selectedIndex) {
+        case 0:
+          whichTemplate = studentInfoTable;
+          break;
+        case 1:
+          whichTemplate = studentInfoCards;
+          break;
+      }
+      updateLayout(whichTemplate, dataset);
+    }
+
+    function updateDataSet() {
+      var dataset = students;
+
+      // filter for the school selection
+      var ctrl = document.querySelector("#schoolSelect");
+      if (ctrl.selectedIndex > 0) {
+        dataset = _.filter(dataset, function(elem) {
+          return (elem.school == this.options[this.selectedIndex].value);
+        }, ctrl);
+      }
+
+
+      // sort the data according to the sort parameter
+      ctrl = document.querySelector("#sortBy");
+      dataset = _.sortBy(dataset, ctrl.options[ctrl.selectedIndex].value);
+
+      // filter out the various grade levels. This code uses the reject() function
+      // to remove certain groups instead of the filter() function to include groups
+      if (document.querySelector("#gr9").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 9});
+      }
+      if (document.querySelector("#gr10").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 10});
+      }
+      if (document.querySelector("#gr11").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 11});
+      }
+      if (document.querySelector("#gr12").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 12});
+      }
+  
+      return dataset;
+    }
+
+    // whenever the user changes the controls, updateLayout re-calculates the display
+    function updateLayout(useTemplate, newData) {
+      var result = _.template(useTemplate, {dataset: newData});
+      document.getElementById("contents").innerHTML = result;
+    }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <h1>Student Records Explorer Example</h1>
+      </header>
+      <nav>
+        <!-- controls to select the School and Grade levels -->
+        <div id="row1">
+          <label for="schoolSelect">Select School</label>
+          <select id="schoolSelect">
+            <option value="all" selected>All</option>
+            <option value="Thoreau">Thoreau</option>
+            <option value="Franklin">Franklin</option>
+          </select>
+          <label for="gradeSelect">Select Grade Levels: </label>
+          <input type="checkbox" name="9" id="gr9" checked="true"> <label for="9">Grade 9</label>
+          <input type="checkbox" name="10" id="gr10" checked="true"> <label for="10">Grade 10</label>
+          <input type="checkbox" name="11" id="gr11" checked="true"> <label for="11">Grade 11</label>
+          <input type="checkbox" name="12" id="gr12" checked="true"> <label for="12">Grade 12</label>
+        </div>
+        <div id="row2">
+          <label for="templateSelect">Display Data As: </label>
+          <select id="templateSelect">
+            <option value="studentInfoTable" selected>Table</option>
+            <option value="studentInfoCards">Cards</option>
+          </select>
+          <label for="sortBy">Sort Students By: </label>
+          <select id="sortBy">
+            <option value="midterm_score" selected>Midterm Score</option>
+            <option value="final_score">Final Score</option>
+            <option value="overall_score">Overall Score</option>
+          </select>
+        </div>
+      </nav>
+      <div id="contents">
+      </div>
+    </div>
+  </body>
+</html>

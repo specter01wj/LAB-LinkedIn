@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using Underscore Templates</title>
+    <style type="text/css">
+    .studentRec {
+      border: 1px solid #777;
+      margin: 4pt;
+      padding: 4pt;
+      font-size: 14pt;
+      background-color: #ccc;
+    }
+    .passingStudent {
+      background-color: lightGreen;
+    }
+    .failingStudent {
+      background-color: pink;
+    }
+    </style>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function appendTemplateData(dataString) {
+        var container = document.getElementById("container");
+        container.innerHTML = container.innerHTML + dataString;
+    }
+    
+    var templateString = "<div><span>Name: <%= lastname %></span></div>";
+    var templateString2 = "<div><span>Name: <% print(lastname.toUpperCase()) %></span></div>";
+
+    var studentInfo1 = "<% _.each(students, function(item) { %>" + 
+                      "<div class='studentRec " +
+                      "<% (item.midterm_score + item.final_score) / 2 > 65 ? print('passingStudent') : print('failingStudent') %>'>" +
+                      "<span style='font-weight:bold'>Name:</span> <span><%= item.lastname %>, <%= item.firstname %> </span>" +
+                      "<span style='font-weight:bold'>School:</span> <span><%= item.school %></span></div>" +
+                      "<% }); %>";
+
+    var studentInfo2 = "<% var grouped = _.groupBy(students, function(item) {return item.school;}); " +
+                      "for (i in grouped) { _.each(grouped[i], function(item) { %>" + 
+                      "<div class='studentRec " +
+                      "<% (item.midterm_score + item.final_score) / 2 > 65 ? print('passingStudent') : print('failingStudent') %>'>" +
+                      "<span style='font-weight:bold'>Name:</span> <span><%= item.lastname %>, <%= item.firstname %> </span>" +
+                      "<span style='font-weight:bold'>School:</span> <span><%= item.school %></span></div>" +
+                      "<% })}; %>";
+    
+    window.addEventListener("load", function(e) {
+      // // compile the template string
+      // var compiledTemplate = _.template(templateString);
+      // var compiledTemplate = _.template(templateString2);
+      
+      // // now we can call the template with different data
+      // var result = compiledTemplate({
+      //   lastname: "Hossenfeffer"
+      // });
+      
+      // to perform a one-off template operation, just pass in the data object 
+      // as the second parameter to the template
+      var result = _.template(studentInfo1, students);
+      appendTemplateData(result);
+    });
+    </script>
+</head>
+<body>
+<h1>Using Underscore Templates</h1>
+<h2>Student Information:</h2>
+<div id="container">
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Autocomplete Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $("#dialog1").dialog({
+                autoOpen: false
+            });
+            $("#openDlg1").click(function() {
+                $("#dialog1").dialog("open");
+            });
+
+            $("#dialog2").dialog({
+                autoOpen: false,
+                buttons: [
+                    {
+                        text: "Cancel",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    },
+                    {
+                        text: "OK",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+            $("#openDlg2").click(function() {
+                $("#dialog2").dialog("open");
+            });
+
+            $("#dialog3").dialog({
+                autoOpen: false,
+                closeOnEscape: false,
+                draggable: false,
+                modal: true,
+                buttons: [
+                    {
+                        text: "OK",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+            $("#openDlg3").click(function() {
+                $("#dialog3").dialog("open");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Using the Dialog Widget</h1>
+    <p>Although the HTML standard now includes a specification for a &lt;dialog&gt; element, not all browsers uniformly implement it. jQUeryUI provides a dialog widget that works well across browsers regardless of what their level of support is.</p>
+    
+    <h3>Basic Dialog</h3>
+    <p>The basic dialog template includes a title bar, close box, and space for content.</p>
+    <button id="openDlg1">Open Dialog</button>
+
+    <h3>Dialog with Controls</h3>
+    <p>To create buttons for the dialog, use the "buttons" property.</p>
+    <button id="openDlg2">Open Dialog</button>
+
+    <h3>Dialog with Customizations</h3>
+    <p>Dialogs can be further customized via options - draggable, resizable, modal, etc.</p>
+    <button id="openDlg3">Open Dialog</button>
+
+    <div id="dialog1" title="Dialog Title">
+        <p>This is the dialog content</p>
+    </div>
+    <div id="dialog2" title="Dialog with buttons">
+        <p>This dialog has button controls</p>
+    </div>
+    <div id="dialog3" title="Dialog with options">
+        <p>This dialog has some different options set</p>
+    </div>
+</body>
+</html>

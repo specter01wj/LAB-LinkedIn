@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iterating Collections with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getStudentInfo(elem, indx, list) {
+    	var container = document.getElementById("container");
+    	var student = "<p>" + (indx+1) + ": " + elem.firstname + " " + 
+    	               elem.lastname + ", Grade: " + elem.grade + "</p>";
+    	container.innerHTML = container.innerHTML + student;
+    }
+    
+    window.addEventListener("load", function(e) {
+    	/* use the "size" property to get number of elements */
+      numStudentElem = document.getElementById("numstudents");
+      numStudentElem.innerHTML = numStudentElem.innerHTML + _.size(students);
+
+		  /* use the each() function to iterate over every element */
+			_.each(students, getStudentInfo);
+    });
+    </script>
+</head>
+<body>
+<h1>Iterating Collections with Underscore</h1>
+<h2>Student Information:</h2>
+<h3 id="numstudents">Number of Students: </h3>
+<div id="container">
+</div>
+</body>
+</html>

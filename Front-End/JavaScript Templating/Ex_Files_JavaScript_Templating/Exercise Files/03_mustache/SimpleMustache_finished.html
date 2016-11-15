@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple jQuery Template Example</title>
+        <script type="text/javascript" src="../jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../mustache.js"></script>
+        <script type="text/javascript">
+         $("document").ready(function() {
+            var template = $("#itemTemplate").html();
+            var result = Mustache.render(template, {
+                "item" : "Whisper 4000 in-home heater and dog walker",
+                "description" : "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+                "price" : 895.99,
+                "inStock" : true,
+                "quantity" : 100
+            } );
+            $("#container").html(result);
+         });
+        </script>
+    </head>
+    <body>
+        <script type="text/template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+                <div><span>Item: </span><span>{{item}}</span></div>
+                <div><span>Description: </span><span>{{description}}</span></div>
+                <div><span>Price: </span><span>{{price}}</span></div>
+            </div>
+        </script>
+        <h1>Simple Templates with Mustache JS</h1>
+        <h3>This example embeds the template directly in the source HTML</h3>
+
+        <!-- This is the container where the templates will be instantiated -->
+        <div id="container"></div>
+    </body>
+</html>

@@ -1,0 +1,477 @@
+/* ExampleSnippets.txt
+**
+** Example code snippets for Up and Running with Underscore.js
+*/
+
+----------------------------------------------------------
+
+CHAPTER 2: COLLECTIONS
+
+--- Iterating data sets
+
+    function getStudentInfo(elem, indx, list) {
+    	var container = document.getElementById("container");
+    	var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+    	container.innerHTML = container.innerHTML + student;
+    }
+
+    	/* use the "size" property to get number of elements */
+      numStudentElem = document.getElementById("numstudents");
+    	numStudentElem.innerHTML = numStudentElem.innerHTML + _.size(students);
+
+		  /* use the each() function to iterate over every element */
+    	_.each(students, getStudentInfo);
+
+--- Filtering data
+
+    function getPassingStudents(elem) {
+    	return ((elem.midterm_score + elem.final_score) / 2 > 65);
+    }
+
+    // check to see if a student did better on their final than on their midterm
+    function checkImprovement(item) {
+        return item.final_score > item.midterm_score;
+    }
+
+    	/* use the filter() function to narrow down the list */
+    	var result = _.filter(students, getPassingStudents);
+
+  		/* use the where() function to select items */
+  		//var result = _.where(students, {"school" : "Thoreau", "grade" : 10});
+  
+  		/* the reject() function is the opposite of filter() */
+      /* this invocation will return the failing students */
+    	//var result = _.reject(students, getPassingStudents);
+			
+      // use the every() function to ensure that all of a set of criteria have been met
+      alert(_.every(students, checkImprovement));
+      // use the some() function to see if any elements pass the criteria
+      alert(_.some(students, checkImprovement));
+
+    	/* now use each() to populate the list */
+    	_.each(result, function(elem, indx, list) {
+				var container = document.getElementById("container");
+				var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+				container.innerHTML = container.innerHTML + student;
+    	});    	
+
+--- Searching
+
+    function searchStudents(item) {
+      // return true if the student goes to Franklin
+      if (item.school === "Franklin")
+        return true;
+    }
+
+      /* Test the find() function */
+      // find the first student that goes to Franklin
+      var elem = _.find(students, searchStudents);
+
+      var container = document.getElementById("container");
+      var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+      container.innerHTML = container.innerHTML + student;
+
+      /* Test the findWhere() function */
+      // return the first Thoreau student who is a junior
+      elem = _.findWhere(students, {school : "Thoreau", grade: 11});
+      var container = document.getElementById("container");
+      var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+      container.innerHTML = container.innerHTML + student;
+      
+      // contains() searches a list of values for a value
+      // pluck() retrieves the values for a given property name
+      var grades = _.pluck(students,"final_score");
+      // did anyone get a perfect final?
+      if (_.contains(grades, 100))
+        alert("Found a perfect final score!");
+
+--- Sorting and Grouping
+
+    function sortStudentsByGrade(item) {
+        return item.grade;
+    }
+    
+    function groupStudentsBySchool(item) {
+        return item.school;
+    }
+
+    function countStudentsByGrade(item) {
+        if (item.grade == 9)
+            return "freshmen";
+        else if (item.grade == 10)
+            return "sophomores";
+        else if (item.grade == 11)
+            return "juniors";
+        else return "seniors";
+    }
+
+
+        /* Sorting by grade */
+        var sorted = _.sortBy(students, sortStudentsByGrade);
+        _.each(sorted, getStudentInfo);
+
+        /* grouping students by school */
+        var grouped = _.groupBy(students, groupStudentsBySchool);
+        for (i in grouped) {
+            var container = document.getElementById("container");
+            var school = "<p style='font-weight:bold'>Students that go to: " + i + "</p>";
+            container.innerHTML = container.innerHTML + school;
+            _.each(grouped[i], getStudentInfo);
+        }
+
+        /* Counting the number of students in each grade */
+        var counts = _.countBy(students, countStudentsByGrade);
+        for (i in counts) {
+            var container = document.getElementById("container");
+            var groups = "<p style='font-weight:bold'>" + i + ": " + counts[i] + "</p>";
+            container.innerHTML = container.innerHTML + groups;
+        }
+
+
+--- Manipulating
+    function listGrades(finalGrades) {
+    	_.each(finalGrades, function(elem,indx,list) {
+	    	var container = document.getElementById("container");
+	    	container.innerHTML = container.innerHTML + elem;
+    	});
+    }
+    function assignGrades(item) {
+        var grade = (item.midterm_score + item.final_score) / 2;
+        var letterGrade;
+
+        if (grade <=64)
+            letterGrade = "F";
+        else if (grade > 64 && grade <=69)
+            letterGrade = "D";
+        else if (grade >= 70 && grade <= 79)
+            letterGrade = "C";
+        else if (grade >= 80 && grade <= 89)
+            letterGrade = "B";
+        else if (grade >= 90)
+            letterGrade = "A";
+
+        return "<p>" + item.firstname + " " + item.lastname + ": " + letterGrade + "</p>";
+    }
+
+        // The shuffle() function randomizes the contents of the list
+        // using an algorithm called the Fisher-Yates shuffle
+        students = _.shuffle(students);
+        _.each(students, getStudentInfo);
+
+        // the map() function creates a new array based upon each item in the list
+        // Let's assign letter grades to each one of the students:
+        var finalGrades = _.map(students, assignGrades);
+        listGrades(finalGrades);
+
+
+CHAPTER 3: ARRAYS AND OBJECTS
+
+--- Array Data
+
+        // begin by plucking the midterm scores data from the students list
+        var midScores = _.pluck(students, "midterm_score");
+        midScores.sort(); // sort the array
+
+        // use the first() and last() functions to extract array data
+        var container = document.getElementById("container");
+        var data = "<p>First score is " + _.first(midScores) + "</p>";
+        data += "<p>Last score is " + _.last(midScores) + "</p>";
+        container.innerHTML = container.innerHTML + data;
+        
+        // initial() and rest() can also be used to get data
+        data = "<p>Initial scores, minus the last 3: " + _.initial(midScores,3) + "</p>";
+        data += "<p>Rest of the scores, minus the first 3: " + _.rest(midScores,3) + "</p>";
+        container.innerHTML = container.innerHTML + data;
+
+
+--- Array Operations
+
+        // Use without() to remove unwanted values from the array
+        var result = "<p>without(): " + _.without(array1,0,2,3) + "</p>";
+        container.innerHTML = container.innerHTML + result;
+        result = "<p>" + _.without(array2,"A","E","I","O","U") + "</p>";
+        container.innerHTML = container.innerHTML + result;
+        
+        // Use the union() function to join two arrays together
+        result = "<p>union(): " + _.union(array1, array2) + "</p>";
+        container.innerHTML = container.innerHTML + result;
+        
+        // Use the intersection() function to see what's common to both
+        result = "<p>intersection(): " + _.intersection(array1, array3) + "</p>";
+        container.innerHTML = container.innerHTML + result;
+        
+        // The difference() function shows values not present in other array
+        result = "<p>difference(): " + _.difference(array1, array3) + "</p>";
+        container.innerHTML = container.innerHTML + result;
+
+
+--- Object Information
+
+      // given a student object, retrieve the object's keys
+      var keys = _.keys(students[0]);
+      container.innerHTML += "<p>The student object contains the keys: " + keys;
+      
+      // now get the object's values
+      var values = _.values(students[0]);
+      container.innerHTML += "<p>The student object contains the values: " + values;
+      
+      // use the pick() function to get just specific properties
+      var subsetStudent = _.pick(students[0], "lastname", "grade");
+      container.innerHTML += "<p>pick() on lastname, grade: " + subsetStudent.lastname + ", " + subsetStudent.grade;
+      
+      // use the omit() function to filter out properties
+      var filteredStudent = _.omit(students[0], "midterm_score", "final_score");
+      container.innerHTML += "<p>omit() on midterm_score, final_score: ";
+      container.innerHTML += "<blockquote>" + _.keys(filteredStudent) + "</blockquote>";
+      container.innerHTML += "<blockquote>" + _.values(filteredStudent) + "</blockquote>"; 
+
+--- Object Operations
+
+      // extend each student object with a new property, their average score
+      container.innerHTML += "<h2>Extending student objects with average_score</h2>";
+      _.each(students, function(elem, indx, list) {
+        avg = (elem.midterm_score + elem.final_score) / 2;
+        _.extend(elem, {"average_score" : avg});
+      });
+      _.each(students,getStudentInfo);
+
+      // use the defaults() method to assign default values to an object
+      container.innerHTML += "<h2>Assigning default values to a new object</h2>";
+      var defaultValues = {final_score: 0, midterm_score: 0, grade: 9};
+      var newStudent = {firstname: "John", lastname: "Doe"};
+      _.defaults(newStudent, defaultValues);
+      container.innerHTML += "<p>" + newStudent.firstname + " " + newStudent.lastname + 
+            ", Midterm: " + newStudent.midterm_score + ", Final: " + newStudent.final_score + "</p>";
+      
+      // clone() makes a shallow-copy of the object (in other words, properties that
+      // are arrays or objects will be copied by reference, and not duplicated themselves)
+      container.innerHTML += "<h2>Cloning an existing object</h2>";
+      var copyStudent = _.clone(students[0]);
+      container.innerHTML += "<p>" + copyStudent.firstname + " " + copyStudent.lastname + 
+            ", Midterm: " + copyStudent.midterm_score + ", Final: " + copyStudent.final_score + "</p>";
+
+
+
+CHAPTER 4: MISCELLANEOUS
+
+
+
+
+
+
+--- Miscellaneous
+
+      // create a unique ID, with and without a prefix
+      log("Using uniqueId() to generate an ID for use in the DOM");
+      var sID = _.uniqueId();
+      log("ID with no prefix: " + sID);
+      var sID = _.uniqueId("prefix_");
+      log("ID with prefix: " + sID);
+
+      // generate a random number
+      var rand1 = _.random(25); // one argument means between 0 and value
+      log("random number up to 25: " + rand1);
+
+      var rand2 = _.random(100, 200); // generates value within range 
+      log("random number within 100 and 200: " + rand2);
+
+      // use the times() function to execute a counter loop
+      log("using _.times():");
+      _.times(5, function(n) {log("time " + n)});
+
+      // extend Underscore itself using the mixin() function
+      log("extending Underscore with a capitalize() function:");
+      _.mixin({
+            capitalize: function(string) {
+                return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+            }
+      });
+      log(_("capitalize").capitalize());
+      log(_("CAPITALIZE").capitalize());
+
+
+--- Functions
+
+    function doInitialize() {
+      log("Initialize function! Don't call me more than once!");
+    }
+
+
+      // create a function that can't be called more than one time
+      log("Initialize the app multiple times:")
+      var initfunc = _.once(doInitialize);
+      initfunc();
+      initfunc();
+      initfunc();
+
+      // the throttle() function can be used to limit the number of 
+      // times that a function is executed when called repeatedly
+      function updateCharCount() {
+        var elem = document.querySelector("#text1");
+        document.querySelector("#charcount").textContent = (elem.value).length
+      }
+      updater = _.throttle(updateCharCount,1000);
+      document.querySelector("#text1").addEventListener("keydown", updater);
+
+      // the bind() function binds a function to a given object, which becomes the
+      // value of the "this" keyword inside the function.
+      var myObj = {
+        firstname: "Joe",
+        lastname: "Marini"
+      }
+      function dumpData1() { 
+        log(this.firstname + " " + this.lastname)
+      }
+      function dumpData2() { 
+        log(this.lastname + ", " + this.firstname)
+      }
+
+      var func = _.bind(dumpData1, myObj);
+      func();
+      func = _.bind(dumpData2, myObj);
+      func();
+
+
+--- Templates
+
+    var templateString = "<div><span>Name: <%= lastname %></span></div>";
+    var templateString2 = "<div><span>Name: <% print(lastname.toUpperCase()) %></span></div>";
+
+    var studentInfo1 = "<% _.each(students, function(item) { %>" + 
+                      "<div class='studentRec " +
+                      "<% (item.midterm_score + item.final_score) / 2 > 65 ? print('passingStudent') : print('failingStudent') %>'>" +
+                      "<span style='font-weight:bold'>Name:</span> <span><%= item.lastname %>, <%= item.firstname %> </span>" +
+                      "<span style='font-weight:bold'>School:</span> <span><%= item.school %></span></div>" +
+                      "<% }); %>";
+
+    var studentInfo2 = "<% var grouped = _.groupBy(students, function(item) {return item.school;}); " +
+                      "for (i in grouped) { _.each(grouped[i], function(item) { %>" + 
+                      "<div class='studentRec " +
+                      "<% (item.midterm_score + item.final_score) / 2 > 65 ? print('passingStudent') : print('failingStudent') %>'>" +
+                      "<span style='font-weight:bold'>Name:</span> <span><%= item.lastname %>, <%= item.firstname %> </span>" +
+                      "<span style='font-weight:bold'>School:</span> <span><%= item.school %></span></div>" +
+                      "<% })}; %>";
+
+
+      // compile the template string
+      var compiledTemplate = _.template(templateString);
+      var compiledTemplate = _.template(templateString2);
+      
+      // now we can call the template with different data
+      var result = compiledTemplate({
+        lastname: "Hossenfeffer"
+      });
+      
+      // to perform a one-off template operation, just pass in the data object 
+      // as the second parameter to the template
+      var result = _.template(studentInfo1, students);
+      appendTemplateData(result);
+
+
+
+CHAPTER 5: PRACTICAL EXAMPLE
+
+
+    window.addEventListener("load", function(evt) {
+      // initialize the event handlers for the navigation controls
+      document.querySelector("#schoolSelect").addEventListener("change", updateDisplay);
+      document.querySelector("#sortBy").addEventListener("change", updateDisplay);
+      document.querySelector("#templateSelect").addEventListener("change", updateDisplay);
+      document.querySelector("#gr9").addEventListener("click", updateDisplay);
+      document.querySelector("#gr10").addEventListener("click", updateDisplay);
+      document.querySelector("#gr11").addEventListener("click", updateDisplay);
+      document.querySelector("#gr12").addEventListener("click", updateDisplay);
+
+      // start by extending the data to average the midterm and final scores
+      _.each(students, function(elem, indx) {
+        _.extend(elem, {overall_score : (elem.midterm_score + elem.final_score) / 2});
+      });
+
+      // lay out the initial display
+      updateDisplay();
+    });
+
+    function updateDisplay() {
+      var dataset = updateDataSet();
+
+      var whichTemplate;
+      switch (document.querySelector("#templateSelect").selectedIndex) {
+        case 0:
+          whichTemplate = studentInfoTable;
+          break;
+        case 1:
+          whichTemplate = studentInfoCards;
+          break;
+      }
+      updateLayout(whichTemplate, dataset);
+    }
+
+    function updateDataSet() {
+      var dataset = students;
+
+      // filter for the school selection
+      var ctrl = document.querySelector("#schoolSelect");
+      if (ctrl.selectedIndex > 0) {
+        dataset = _.filter(dataset, function(elem) {
+          return (elem.school == this.options[this.selectedIndex].value);
+        }, ctrl);
+      }
+
+
+      // sort the data according to the sort parameter
+      ctrl = document.querySelector("#sortBy");
+      dataset = _.sortBy(dataset, ctrl.options[ctrl.selectedIndex].value);
+
+      // filter out the various grade levels. This code uses the reject() function
+      // to remove certain groups instead of the filter() function to include groups
+      if (document.querySelector("#gr9").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 9});
+      }
+      if (document.querySelector("#gr10").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 10});
+      }
+      if (document.querySelector("#gr11").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 11});
+      }
+      if (document.querySelector("#gr12").checked == false) {
+        dataset = _.reject(dataset, function (item) {return item.grade == 12});
+      }
+  
+      return dataset;
+    }
+
+    // whenever the user changes the controls, updateLayout re-calculates the display
+    function updateLayout(useTemplate, newData) {
+      var result = _.template(useTemplate, {dataset: newData});
+      document.getElementById("contents").innerHTML = result;
+    }
+
+
+
+        <!-- controls to select the School and Grade levels -->
+        <div id="row1">
+          <label for="schoolSelect">Select School</label>
+          <select id="schoolSelect">
+            <option value="all" selected>All</option>
+            <option value="Thoreau">Thoreau</option>
+            <option value="Franklin">Franklin</option>
+          </select>
+          <label for="gradeSelect">Select Grade Levels: </label>
+          <input type="checkbox" name="9" id="gr9" checked="true"> <label for="9">Grade 9</label>
+          <input type="checkbox" name="10" id="gr10" checked="true"> <label for="10">Grade 10</label>
+          <input type="checkbox" name="11" id="gr11" checked="true"> <label for="11">Grade 11</label>
+          <input type="checkbox" name="12" id="gr12" checked="true"> <label for="12">Grade 12</label>
+        </div>
+        <div id="row2">
+          <label for="templateSelect">Display Data As: </label>
+          <select id="templateSelect">
+            <option value="studentInfoTable" selected>Table</option>
+            <option value="studentInfoCards">Cards</option>
+          </select>
+          <label for="sortBy">Sort Students By: </label>
+          <select id="sortBy">
+            <option value="midterm_score" selected>Midterm Score</option>
+            <option value="final_score">Final Score</option>
+            <option value="overall_score">Overall Score</option>
+          </select>
+        </div>

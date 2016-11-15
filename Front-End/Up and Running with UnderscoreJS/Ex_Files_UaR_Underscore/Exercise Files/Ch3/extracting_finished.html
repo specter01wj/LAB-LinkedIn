@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracting Array Data with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getStudentInfo(elem, indx, list) {
+        var container = document.getElementById("container");
+        var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+        container.innerHTML = container.innerHTML + student;
+    }
+
+    window.addEventListener("load", function(e) {
+        // begin by plucking the midterm scores data from the students list
+        var midScores = _.pluck(students, "midterm_score");
+        midScores.sort(); // sort the array
+
+        // use the first() and last() functions to extract array data
+        var container = document.getElementById("container");
+        var data = "<p>First score is " + _.first(midScores) + "</p>";
+        data += "<p>Last score is " + _.last(midScores) + "</p>";
+        container.innerHTML = container.innerHTML + data;
+        
+        // initial() and rest() can also be used to get data
+        data = "<p>Initial scores, minus the last 3: " + _.initial(midScores,3) + "</p>";
+        data += "<p>Rest of the scores, minus the first 3: " + _.rest(midScores,3) + "</p>";
+        container.innerHTML = container.innerHTML + data;
+    });
+    </script>
+</head>
+<body>
+<h1>Extracting Array Data with Underscore</h1>
+<h3 id="numstudents">Using first(), last(), initial(), rest(): </h3>
+<div id="container">
+</div>
+</body>
+</html>

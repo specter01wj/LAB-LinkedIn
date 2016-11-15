@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Handlebars Template Example</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script type="text/javascript" src="../jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../handlebars-v1.3.0.js"></script>
+        <script type="text/javascript">
+         $("document").ready(function() {
+            var template = $("#itemTemplate").html();
+            // Handlebars compiles the template into a callable function
+            
+            // call the compiled function with the template data
+            
+            $("#container").html(result);
+         });
+        </script>
+    </head>
+    <body>
+        <script type="text/x-handlebars-template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+                <div><span>Item: </span><span>{{item}}</span></div>
+                <div><span>Description: </span><span>{{description}}</span></div>
+                <div><span>Price: </span><span>{{price}}</span></div>
+            </div>
+        </script>
+        <h1>Simple Templates with Handlebars JS</h1>
+        <h3>This example embeds the template directly in the source HTML</h3>
+
+        <!-- This is the container where the templates will be instantiated -->
+        <div id="container"></div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Color Animation</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $("#anim1").click(function(evt) {
+                $("#theDiv").animate({
+                    backgroundColor: "red",
+                    color: "white",
+                    borderColor: "blue"
+                }, 800);
+            });
+            $("#anim2").click(function(evt) {
+                $("#theDiv").animate({
+                    backgroundColor: "#b3c8d0",
+                    color: "#000",
+                    borderColor: "#a9a9a9"
+                }, 800);
+            });
+        });
+    </script>
+    <style>
+        #theDiv {
+            width: 400px;
+            height: 300px;
+            padding: 5pt 5pt 5pt 5pt;
+            margin: 10pt;
+            overflow: hidden
+        }
+        div {
+            background-color: #b3c8d0;
+            color: black;
+            border: 5px solid #a9a9a9;
+        }
+        button {
+            margin: 5pt
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the Color Animation Effect</h1>
+    <p>jQueryUI contains the jQuery Color plugin in its default download. This plugin extends jQueryUI with the ability to animate colors.</p>
+    <p>The properties that can have their colors animated are: <code>backgroundColor</code>, <code>borderBottomColor</code>, <code>borderLeftColor</code>, <code>borderRightColor</code>, <code>borderTopColor</code>, <code>color</code>, <code>columnRuleColor</code>, <code>outlineColor</code>, <code>textDecorationColor</code>, <code>textEmphasisColor</code></p>
+    <div id="theDiv">
+        <h2>Color Animations!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ullamcorper nisi. Integer vel tincidunt tortor. Phasellus quis tempor est, ut ultrices tellus. </p>
+    </div>
+    <button id="anim1">Animation 1</button>
+    <button id="anim2">Animation 2</button>
+</body>
+</html>

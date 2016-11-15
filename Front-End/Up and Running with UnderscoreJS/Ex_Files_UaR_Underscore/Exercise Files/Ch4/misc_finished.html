@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Underscore Miscellaneous Functions</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function log(value) {
+        var container = document.getElementById("container");
+        var data = "<p>" + value + "</p>";
+        container.innerHTML = container.innerHTML + data;
+    }
+
+    window.addEventListener("load", function(e) {
+      // create a unique ID, with and without a prefix
+      log("Using uniqueId() to generate an ID for use in the DOM");
+      var sID = _.uniqueId();
+      log("ID with no prefix: " + sID);
+      var sID = _.uniqueId("prefix_");
+      log("ID with prefix: " + sID);
+
+      // generate a random number
+      var rand1 = _.random(25); // one argument means between 0 and value
+      log("random number up to 25: " + rand1);
+
+      var rand2 = _.random(100, 200); // generates value within range 
+      log("random number within 100 and 200: " + rand2);
+
+      // use the times() function to execute a counter loop
+      log("using _.times():");
+      _.times(5, function(n) {log("time " + n)});
+
+      // extend Underscore itself using the mixin() function
+      log("extending Underscore with a capitalize() function:");
+      _.mixin({
+            capitalize: function(string) {
+                return string.charAt(0).toUpperCase() + string.substring(1).toLowerCase();
+            }
+      });
+      log(_("capitalize").capitalize());
+      log(_("CAPITALIZE").capitalize());
+      log(_.capitalize("CapITaLIze"));
+    });
+    </script>
+</head>
+<body>
+<h1>Underscore Miscellaneous Functions</h1>
+<div id="container">
+</div>
+</body>
+</html>

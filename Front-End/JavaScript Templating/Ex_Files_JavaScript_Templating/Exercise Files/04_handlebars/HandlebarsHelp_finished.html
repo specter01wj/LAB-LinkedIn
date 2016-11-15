@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handlebars Helpers Example</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script type="text/javascript" src="../jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../handlebars-v1.3.0.js"></script>
+        <script type="text/javascript">
+         $("document").ready(function() {
+            Handlebars.registerHelper("prodQuantity", function (prodData) {
+                if (prodData.quantity >= 100)
+                  return "We currently have a large amount in stock.";
+                else
+                  return "Hurry! We don't have many left in stock";    
+            });
+            
+            var template = $("#itemTemplate").html();
+            // Handlebars compiles the template into a callable function
+            var renderer = Handlebars.compile(template);
+            // call the compiled function with the template data
+            var result = renderer({
+               "item" : "Whisper 4000 in-home heater and dog walker",
+               "description" : "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+               "data" : {
+                   "price" : 895.99,
+                   "inStock" : true,
+                   "quantity" : 10
+               }
+            });
+
+            $("#container").html(result);
+         });
+        </script>
+    </head>
+    <body>
+        <script type="text/x-handlebars-template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+                <div><span>Item: </span><span>{{item}}</span></div>
+                <div><span>Description: </span><span>{{description}}</span></div>
+                {{#with data}}
+                    <div><span>Price: </span><span>{{price}}</span></div>
+                    {{#unless inStock}}
+                        <div><span>We are currently out of this item.</span></div>
+                    {{/unless}}
+                {{/with}}
+                <div>{{prodQuantity data}}</div>
+            </div>
+        </script>
+        <h1>Conditionals and Loops in Templates with Handlebars JS</h1>
+        <h3>Handlebars has support for basic logic built in.</h3>
+
+        <!-- This is the container where the templates will be instantiated -->
+        <div id="container"></div>
+    </body>
+</html>

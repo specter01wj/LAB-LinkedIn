@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getting Object Data with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("load", function(e) {
+      var container = document.getElementById("container");
+      
+      // given a student object, retrieve the object's keys
+      var keys = _.keys(students[0]);
+      container.innerHTML += "<p>The student object contains the keys: " + keys;
+      
+      // now get the object's values
+      var values = _.values(students[0]);
+      container.innerHTML += "<p>The student object contains the values: " + values;
+      
+      // use the pick() function to get just specific properties
+      var subsetStudent = _.pick(students[0], "lastname", "grade");
+      container.innerHTML += "<p>pick() on lastname, grade: " + subsetStudent.lastname + ", " + subsetStudent.grade;
+      
+      // use the omit() function to filter out properties
+      var filteredStudent = _.omit(students[0], "midterm_score", "final_score");
+      container.innerHTML += "<p>omit() on midterm_score, final_score: ";
+      container.innerHTML += "<blockquote>" + _.keys(filteredStudent) + "</blockquote>";
+      container.innerHTML += "<blockquote>" + _.values(filteredStudent) + "</blockquote>"; 
+    });
+    </script>
+</head>
+<body>
+<h1>Getting Object Data with Underscore</h1>
+<h3>Using Object Functions keys(), values()</h3>
+<div id="container">
+</div>
+</body>
+</html>

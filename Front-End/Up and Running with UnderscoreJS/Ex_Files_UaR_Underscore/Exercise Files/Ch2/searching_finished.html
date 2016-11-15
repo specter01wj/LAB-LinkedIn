@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Searching Collections with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function searchStudents(item) {
+      // return true if the student goes to Franklin
+      if (item.school === "Franklin")
+        return true;
+    }
+    
+    window.addEventListener("load", function(e) {
+      /* Test the find() function */
+      // find the first student that goes to Franklin
+      var elem = _.find(students, searchStudents);
+
+      var container = document.getElementById("container");
+      var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+      container.innerHTML = container.innerHTML + student;
+
+      /* Test the findWhere() function */
+      // return the first Thoreau student who is a junior
+      elem = _.findWhere(students, {school : "Thoreau", grade: 11});
+      
+      var container = document.getElementById("container");
+      var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+      container.innerHTML = container.innerHTML + student;
+      
+      // contains() searches a list of values for a value
+      // pluck() retrieves the values for a given property name
+      var grades = _.pluck(students,"final_score");
+      // did anyone get a perfect final?
+      if (_.contains(grades, 100))
+        alert("Found a perfect final score!");
+    });
+    </script>
+</head>
+<body>
+<h1>Searching Collections with Underscore</h1>
+<h2>Student Information:</h2>
+<h3 id="numstudents">Number of Students: </h3>
+<div id="container">
+</div>
+</body>
+</html>

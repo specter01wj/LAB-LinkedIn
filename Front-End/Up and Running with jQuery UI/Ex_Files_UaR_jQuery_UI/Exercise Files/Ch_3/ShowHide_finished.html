@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Show/Hide Effects</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $("#show1").click(function(evt) {
+                $("#theDiv").show("blind", 500);
+            });
+            $("#hide1").click(function(evt) {
+                $("#theDiv").hide("blind", 500);
+            });
+            $("#show2").click(function(evt) {
+                $("#theDiv").show("bounce", 500);
+            });
+            $("#hide2").click(function(evt) {
+                $("#theDiv").hide("bounce", 500);
+            });
+            $("#show3").click(function(evt) {
+                $("#theDiv").show("explode", 500);
+            });
+            $("#hide3").click(function(evt) {
+                $("#theDiv").hide("explode", 500);
+            });
+            $("#show4").click(function(evt) {
+                $("#theDiv").show("highlight", 500);
+            });
+            $("#hide4").click(function(evt) {
+                $("#theDiv").hide("highlight", 500);
+            });
+            $("#show5").click(function(evt) {
+                $("#theDiv").show("puff", 500);
+            });
+            $("#hide5").click(function(evt) {
+                $("#theDiv").hide("puff", 500);
+            });
+        });
+    </script>
+    <style>
+        #theDiv {
+            width: 400px;
+            height: 300px;
+            padding: 5pt 5pt 5pt 5pt;
+            margin: 10pt;
+            overflow: hidden
+        }
+        .divAppearance {
+            background-color: #b3c8d0;
+            color: black;
+            border: 5px solid #a9a9a9;
+        }
+        button {
+            width:150px;
+            margin: 10pt
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the Show/Hide Effects</h1>
+    <p>jQueryUI extends the base jQuery set of Show and Hide behaviors.</p>
+    <p>There are 13 different ways of making elements appear and disappear: blind, bounce, clip, drop, explode, fold, highlight, puff, pulsate, scale, shake, size, and slide.</p>
+    <div id="theDiv" class="divAppearance">
+        <h2>Show/Hide Effects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ullamcorper nisi. Integer vel tincidunt tortor. Phasellus quis tempor est, ut ultrices tellus. </p>
+    </div>
+    <div>
+        <button id="show1">Show Blinds</button>
+        <button id="hide1">Hide Blinds</button>
+    </div>
+    <div>
+        <button id="show2">Show Bounce</button>
+        <button id="hide2">Hide Bounce</button>
+    </div>
+    <div>
+        <button id="show3">Show Explode</button>
+        <button id="hide3">Hide Explode</button>
+    </div>
+    <div>
+        <button id="show4">Show Highlight</button>
+        <button id="hide4">Hide Highlight</button>
+    </div>
+    <div>
+        <button id="show5">Show Puff</button>
+        <button id="hide5">Hide Puff</button>
+    </div>
+</body>
+</html>

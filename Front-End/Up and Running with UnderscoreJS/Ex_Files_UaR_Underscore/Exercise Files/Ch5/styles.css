@@ -1,0 +1,71 @@
+nav {
+  display: block;
+  border: 1px solid #888;
+  padding: 15px;
+}
+label {
+  margin-left: 5px;
+  font-weight: bold;
+}
+table {
+  border: 1px solid gray;
+  margin-top: 10pt;
+}
+table td {
+  padding: 3pt;
+}
+table th {
+  text-align: left;
+  color: white;
+  background-color: #333;
+  font-size: 14pt;
+  padding: 3pt;
+}
+table td.lastname {
+  width: 200px;
+}
+table td.firstname {
+  width: 150px;
+}
+table td.school {
+  width: 150px;
+}
+table td.grade {
+  width: 75px;
+}
+table td.score {
+  width: 150px;
+}
+
+.studentRec {
+  border: 1px solid #777;
+  margin: 4pt;
+  padding: 4pt;
+  font-size: 14pt;
+  background-color: #ccc;
+}
+.passingStudent {
+  background-color: lightGreen;
+}
+.failingStudent {
+  background-color: pink;
+}
+
+.studentCard {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 2px solid #999;
+}
+.particulars {
+  font-size: 18pt;
+  padding: 10px;
+}
+.cardGrade {
+  float: right;
+}
+.cardScores {
+  margin-top: 20px;
+}

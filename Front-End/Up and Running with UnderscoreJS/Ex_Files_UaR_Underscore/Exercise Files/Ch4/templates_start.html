@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using Underscore Templates</title>
+    <style type="text/css">
+    .studentRec {
+      border: 1px solid #777;
+      margin: 4pt;
+      padding: 4pt;
+      font-size: 14pt;
+      background-color: #ccc;
+    }
+    .passingStudent {
+      background-color: lightGreen;
+    }
+    .failingStudent {
+      background-color: pink;
+    }
+    </style>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function appendTemplateData(dataString) {
+        var container = document.getElementById("container");
+        container.innerHTML = container.innerHTML + dataString;
+    }
+        
+    window.addEventListener("load", function(e) {
+    });
+    </script>
+</head>
+<body>
+<h1>Using Underscore Templates</h1>
+<h2>Student Information:</h2>
+<div id="container">
+</div>
+</body>
+</html>

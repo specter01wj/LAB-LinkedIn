@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Selectmenu Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+        });
+    </script>
+    <style>
+        .fixedHeight {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the Selectmenu Control</h1>
+    <p>The Selectmenu control provides a highly styleable replacement for the standard HTML &lt;select&gt; control. You specify it in your markup as you usually would a regular select menu, but then call the jQueryUI <code>selectmenu()</code> function on it. The menu continues to work as you would expect in the background, managing its state for form submission and such.</p>
+    <form>
+    <h3>Regular Selectmenu</h3>
+    <div>
+        <label>Select a fruit:</label>
+        <select id="selmenu1">
+            <option>Apple</option>
+            <option selected>Orange</option>
+            <option>Banana</option>
+            <option>Kiwi</option>
+            <option>Starfruit</option>
+            <option>Dragonfruit</option>
+            <option>Papaya</option>
+        </select>
+    </div>
+    <h3>Selectmenu with groups</h3>
+    <div>
+        <label>Select a country:</label>
+        <select id="selmenu2">
+            <optgroup label="North America">
+                <option>Canada</option>
+                <option>Mexico</option>
+                <option>United States</option>
+            </optgroup>
+            <optgroup label="South America">
+                <option>Brazil</option>
+                <option>Argentina</option>
+                <option>Chile</option>
+            </optgroup>
+        </select>
+    </div>
+    <h3>Selectmenu with fixed height and srolling</h3>
+    <p>You can control the height of the menu by getting the menuWidget and setting a fixed height</p>
+    <div>
+        <label>Take a number:</label>
+        <select id="selmenu3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>

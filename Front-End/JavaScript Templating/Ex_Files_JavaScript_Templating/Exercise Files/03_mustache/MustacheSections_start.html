@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mustache Sections Example</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script type="text/javascript" src="../jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../mustache.js"></script>
+        <script type="text/javascript">
+         $("document").ready(function() {
+            var template = $("#itemTemplate").html();
+
+            $("#container").html(result);
+         });
+        </script>
+    </head>
+    <body>
+
+        <h1>Repeating data sections with Mustache</h1>
+        <h3>This example shows how to use Mustache sections</h3>
+
+        <!-- This is the container where the templates will be instantiated -->
+        <div id="container"></div>
+    </body>
+</html>

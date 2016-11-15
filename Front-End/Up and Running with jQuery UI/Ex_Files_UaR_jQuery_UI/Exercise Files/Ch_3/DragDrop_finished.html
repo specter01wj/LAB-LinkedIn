@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Drag and Drop Interactions</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $("#theDiv").draggable();
+
+//            $("#theDiv").draggable({
+//                axis: "x",
+//                handle: "h2",
+//                revert: true,
+//            });
+
+            $("#theDrop").droppable({
+                accept: "#theDiv",
+                hoverClass: "highlight",
+                tolerance: "fit",
+                
+                activate: function (evt, ui) {
+                    $(this).find("h2").css("background-color", "cornsilk");
+                },
+                deactivate: function (evt, ui) {
+                    $(this).find("h2").css("background-color", "");
+                },
+                drop: function(evt, ui) {
+                    $(this).find("h2").text("Dropped");
+                    ui.draggable.find("h2").text("Dropped");
+                }
+            });
+        });
+    </script>
+    <style>
+        #theDiv {
+            width: 200px;
+            height: 200px;
+            background-color: #b3c8d0;
+            padding: 5pt 5pt 5pt 5pt;
+            margin: 10pt;
+            overflow: hidden
+        }
+        div h2 {
+            background-color: #9ba9af;
+            font-size: 14pt;
+            text-align: center;
+            margin-top: 2pt
+        }
+        #theDrop {
+            width: 400px;
+            height: 300px;
+            padding: 5pt 5pt 5pt 5pt;
+            margin: 10pt;
+            overflow: hidden
+        }
+        .target {
+            background-color: #cbdde3;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the Drag and Drop interactions</h1>
+    <p>jQueryUI provides two separate interaction behaviors to implement drag and drop functionality. These are the "draggable" and "droppable" behaviors.</p>
+    <p>To make an item draggable, simply call the <code>draggable()</code> function on it. Similarly, an item can be made a drop target by calling the <code>droppable()</code> function on the element.</p>
+    <p>Each behavior provides a set of options to further customize how the behavior works.</p>
+    <div id="theDiv">
+        <h2>Drag Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ullamcorper nisi. Integer vel tincidunt tortor. Phasellus quis tempor est, ut ultrices tellus. </p>
+    </div>
+    <div id="theDrop" class="target">
+        <h2>Drop Target</h2>
+    </div>
+</body>
+</html>

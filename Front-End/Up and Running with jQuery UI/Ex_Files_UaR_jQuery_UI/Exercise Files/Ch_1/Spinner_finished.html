@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Spinner Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            // instantiate a basic spinner control
+            $("#spinCtrl1").spinner();
+            $("#spinCtrl1").spinner("value", 1);
+
+            // spinner control with settings for min, max, step, and formatting
+            $("#spinCtrl2").spinner({
+                min: 0,
+                max: 500,
+                step: 10,
+                page: 10,
+                spin: function(evt, elem) {
+                    if (evt.metaKey)
+                        return false;
+                }
+            });
+            $("#spinCtrl2").spinner("value", 50);
+        });
+    </script>
+</head>
+<body>
+    <form>
+    <h1>Using the Spinner Control</h1>
+    <p>Spinner controls provide an easy way to select numerical values.</p>
+    <p><strong>Note:</strong> the spinner control is not compatible with the standard HTML5 "number" input tag, due to the conflict that would result with the browser's built-in spinner controls.</p>
+    <h3>Basic Spinner control</h3>
+    <input type="text" id="spinCtrl1" />
+    <h3>Spinner with step and formatting</h3>
+    <input type="text" id="spinCtrl2" readonly/>
+    </form>
+</body>
+</html>

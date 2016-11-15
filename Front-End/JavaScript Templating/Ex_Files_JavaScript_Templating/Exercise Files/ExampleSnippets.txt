@@ -1,0 +1,382 @@
+/*****************************************************************************
+ * ExampleSnippets.txt
+ * 
+ * Example code snippets for Up and Running with JavaScript Templating
+ */
+
+--------------------------
+Chapter 2: jQuery Template
+--------------------------
+
+Simple Templates
+
+        <script type="text/html" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+            <div data-content="name"></div>
+            <div data-content="title"></div>
+            <div data-content="email"></div>
+            <div data-content="phone"></div>
+            </div>
+        </script>
+
+         function renderTemplates(e) {
+            $("#container").loadTemplate($("#itemTemplate"), [{
+               "name" : "Henry Handsome",
+               "phone" : "+1-212-555-1234",
+               "email" : "pensive@example.com",
+               "title" : "Senior VP of Basketweaving",
+               "fulltime" : true
+            }, {
+               "name" : "Penelope Persistent",
+               "phone" : "+1-212-555-8000",
+               "email" : "truthful@example.com",
+               "title" : "Principal Understudy",
+               "fulltime" : false
+            }, {
+               "name" : "Sam Serendipity",
+               "phone" : "+1-212-555-9876",
+               "email" : "helpful@example.com",
+               "title" : "Chief Cook and Bottle Washer",
+               "fulltime" : true
+            }, {
+               "name" : "Tom Terriffic",
+               "phone" : "+1-212-555-0011",
+               "email" : "grumpy@example.com",
+               "title" : "Janitor",
+               "fulltime" : false
+            }]);
+         }
+
+External Templates
+
+            $("#container").loadTemplate("template.html", [{
+               "name" : "Henry Handsome",
+               "phone" : "+1-212-555-1234",
+               "email" : "pensive@example.com",
+               "title" : "Senior VP of Basketweaving",
+               "fulltime" : true
+            }, {
+               "name" : "Penelope Persistent",
+               "phone" : "+1-212-555-8000",
+               "email" : "truthful@example.com",
+               "title" : "Principal Understudy",
+               "fulltime" : false
+            }, {
+               "name" : "Sam Serendipity",
+               "phone" : "+1-212-555-9876",
+               "email" : "helpful@example.com",
+               "title" : "Chief Cook and Bottle Washer",
+               "fulltime" : true
+            }, {
+               "name" : "Tom Terriffic",
+               "phone" : "+1-212-555-0011",
+               "email" : "grumpy@example.com",
+               "title" : "Janitor",
+               "fulltime" : false
+            }], {
+               isFile : true
+            });
+
+Formatters
+
+            $.addTemplateFormatter("UpperCaseFormatter", function(value, options) {
+               return value.toUpperCase();
+            });
+
+Paging 
+
+            $("#container").loadTemplate($("#itemTemplate"), data["employees"], 
+                    {paged: true, pageNo: pageNo, elemPerPage: 1});
+
+
+Binding Attributes
+
+            $("#container").loadTemplate($("#itemTemplate"), {
+                "name" : "John Doe",
+                "hometown" : "Anywhere, US"
+              }, 
+              {append: true, beforeInsert: onBefore, afterInsert: onAfter, complete: onComplete});
+            $("#container").loadTemplate($("#itemTemplate"), {
+                "name" : "Jane Doe",
+                "hometown" : "Anytown, US"
+              }, 
+              {append: true, beforeInsert: onBefore, afterInsert: onAfter, complete: onComplete});
+            $("#container").loadTemplate($("#itemTemplate"), {
+                "name" : "John Q Public",
+                "hometown" : "Pleasantville, US"
+              }, 
+              {append: true, beforeInsert: onBefore, afterInsert: onAfter, complete: onComplete});
+
+         function onBefore(data) {
+          console.log("Content about to be inserted: " + data);
+         }
+         function onAfter(data) {
+          console.log("Content has been inserted: " + data);
+         }
+         function onComplete() {
+          console.log("Operation complete");
+         }
+         
+
+--------------------------
+Chapter 3: Mustache
+--------------------------
+
+Simple
+
+            var result = Mustache.render(template, {
+                "item" : "Whisper 4000 in-home heater and dog walker",
+                "description" : "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+                "price" : 895.99,
+                "inStock" : true,
+                "quantity" : 100
+            } );
+            $("#container").html(result);
+
+
+        <script type="text/template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+                <div><span>Item: </span><span>{{item}}</span></div>
+                <div><span>Description: </span><span>{{description}}</span></div>
+                <div><span>Price: </span><span>{{price}}</span></div>
+            </div>
+        </script>
+
+
+Sections
+
+            var result = Mustache.render(template, {
+               "employees" : [{
+                  "name" : "Henry Handsome",
+                  "phone" : "+1-212-555-1234",
+                  "email" : "pensive@example.com",
+                  "title" : "Senior VP of Basketweaving",
+                  "fulltime" : true
+               }, {
+                  "name" : "Penelope Persistent",
+                  "phone" : "+1-212-555-8000",
+                  "email" : "truthful@example.com",
+                  "title" : "Principal Understudy",
+                  "fulltime" : false
+               }, {
+                  "name" : "Sam Serendipity",
+                  "phone" : "+1-212-555-9876",
+                  "email" : "helpful@example.com",
+                  "title" : "Chief Cook and Bottle Washer",
+                  "fulltime" : true
+               }, {
+                  "name" : "Tom Terriffic",
+                  "phone" : "+1-212-555-0011",
+                  "email" : "grumpy@example.com",
+                  "title" : "Janitor",
+                  "fulltime" : false
+               }]
+            });
+
+
+        <script type="text/template" id="itemTemplate">
+            {{#employees}}
+            <div class="itemTemplateWrapper">
+                {{! This is a mustache comment and it is totally ignored }}
+                <div>{{name}}</div>
+                <div>{{title}}</div>
+                <div>{{email}}</div>
+                <div>{{phone}}</div>
+            </div>
+            {{/employees}}
+        </script>
+
+Conditionals
+
+        <script type="text/template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+                <div><span>Item: </span><span>{{item}}</span></div>
+                <div><span>Description: </span><span>{{description}}</span></div>
+                <div><span>Price: </span><span>{{price}}</span></div>
+
+            </div>
+        </script>
+
+                {{#inStock}}
+                    <div><span>Quantity in stock: </span><span>{{quantity}}</span></div>
+                {{/inStock}}
+                {{^inStock}}
+                    <div><span>It appears we are out of stock on this item :-(</span></div>
+                {{/inStock}}
+
+Functions
+
+            prodData.total = function() {
+                return Math.round((this.price * 1.08) * 100) / 100;
+            };
+
+
+                <div><span>Price: </span><span>{{total}}</span></div>
+
+            prodData.decorate = function () {
+	            return function(text, render) {
+	            		return "<u>" + render(text) + "</u>";
+	            };
+            };
+
+--------------------------
+Chapter 4: Handlebars
+--------------------------
+
+Simple
+
+            var renderer = Handlebars.compile(template);
+
+
+            var result = renderer({
+                "item" : "Whisper 4000 in-home heater and dog walker",
+                "description" : "Walk your dog and heat your house at the same time? Now you can, with the Whisper 4000 Home Heating system / Dog Treadmill!",
+                "price" : 895.99,
+                "inStock" : true,
+                "quantity" : 100
+            });
+
+
+Conditionals and Loops
+
+        <script type="text/x-handlebars-template" id="itemTemplate">
+            {{#each employees}}
+            <div class="itemTemplateWrapper">
+                {{! This is a handlebars comment and it is totally ignored }}
+                <div>{{name}}</div>
+                <div>{{title}}</div>
+                <div>{{email}}</div>
+                <div>{{phone}}</div>
+            </div>
+            {{/each}}
+        </script>
+
+
+                {{#if fulltime}}
+                    <div>Full-time employee</div>
+                {{else}}
+                    <div>Part-time employee</div>
+                {{/if}}
+
+Helpers
+
+        <script type="text/x-handlebars-template" id="itemTemplate">
+            <div class="itemTemplateWrapper">
+                <div><span>Item: </span><span>{{item}}</span></div>
+                <div><span>Description: </span><span>{{description}}</span></div>
+            </div>
+        </script>
+
+                {{#with data}}
+                    <div><span>Price: </span><span>{{price}}</span></div>
+                {{/with}}
+
+                    {{#unless inStock}}
+                        <div><span>We are currently out of this item.</span></div>
+                    {{/unless}}
+
+            Handlebars.registerHelper("prodQuantity", function (prodData) {
+                if (prodData.quantity >= 100)
+                  return "We currently have a large amount in stock.";
+                else
+                  return "Hurry! We don't have many left in stock";    
+            });
+
+
+                <div>{{prodQuantity data}}</div>
+
+
+Precompiled
+
+        <script type="text/javascript" src="precomp.js"></script>
+
+            var renderer = Handlebars.templates["precomp"];
+
+
+--------------------------
+Chapter 5: Dust
+--------------------------
+
+Simple
+
+            var dataTemplate = dust.compile(templContent, "myTmpl");
+
+            dust.loadSource(dataTemplate);
+
+            dust.render("myTmpl", dataObj, function (err, res) {
+              document.getElementById('container').innerHTML = res;
+            });
+
+
+Sections
+
+        <script type="text/x-template" id="itemTemplate">
+          <div>{company} Employees:</div>
+          {#employees}
+            <div class="itemTemplateWrapper">
+              <div>{name}</div>
+              <div>{title}</div>
+              <div>{email}</div>
+              <div>{phone}</div>
+            </div>
+          {/employees}
+        </script>
+
+
+          {:else}
+            <div>There are no employees</div>
+
+
+        prefix="Name"
+				{prefix}: 
+
+Sections with Paths and Context
+
+        <script type="text/x-template" id="itemTemplate">
+          {#employee}
+            <div class="itemTemplateWrapper">
+              <div>{name}</div>
+
+              <div>{title}</div>
+              <div>{email}</div>
+              <div>{phone}</div>
+            </div>
+          {/employee}
+        </script>
+
+
+              {#employee.department}
+                <div>{name}</div>
+                <div>{cost_center}</div>
+              {/employee.department}
+
+
+Helpers
+
+        <script type="text/x-template" id="itemTemplate">
+          {#employees}
+            <div class="itemTemplateWrapper">
+              <div>{name}</div>
+              <div>{title}</div>
+              <div>{email}</div>
+              <div>{phone}</div>
+            </div>
+          {/employees}
+        </script>
+
+              {@select key="{fulltime}"}
+                {@eq value="true"}
+                  <div>Full-time employee</div>
+                {:else}
+                  <div>Part-time employee</div>
+                {/eq}
+              {/select}
+
+              <div> 
+              {#skills}
+              <span>{.}{@sep}, {/sep}</span>
+              {/skills}
+              </div>
+
+              <div>{@math key="{$idx}" method="add" operand="1"/} of {$len}: {name}</div>
+

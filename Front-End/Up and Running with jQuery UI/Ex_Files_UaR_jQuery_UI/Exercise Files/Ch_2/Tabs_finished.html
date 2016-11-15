@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Tabs Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            //$("#tabsCtrl").tabs();
+            
+            $("#tabsCtrl").tabs({
+                heightStyle : "auto",
+                collapsible : true
+            });
+            
+            $("#addTab").click(function(evt) {
+                newTab = $("<li><a href='#tab5'>Tab 5</li>");
+                $("#tabsCtrl").find(".ui-tabs-nav").append(newTab);
+                $("#tabsCtrl").append("<div id='tab5'><p>This is the newly added tab</p></div>");
+                $("#tabsCtrl").tabs("refresh");
+                evt.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+    <h1>Using the Tabs Control</h1>
+    <p>Tab controls are somewhat similar to the Accordion control in that they display content in a grouped fashion. They are more commonly used to separate entirely different sets of content, however - entire documents or logical content groupings, for example.</p>
+    
+    <button id="addTab">Add New Tab</button>
+        
+    <div id="tabsCtrl">
+        <ul>
+            <li><a href="#tab1">Tab 1</a></li>
+            <li><a href="#tab2">Tab 2</a></li>
+<!--
+            <li><a href="tabs/tab3.html">Tab 3</a></li>
+            <li><a href="tabs/tab4.html">Tab 4</a></li>
+-->
+            <li><a href="#tab3">Tab 3</a></li>
+            <li><a href="#tab4">Tab 4</a></li>
+        </ul>
+        <div id="tab1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ullamcorper nisi. Integer vel tincidunt tortor. Phasellus quis tempor est, ut ultrices tellus. Vestibulum malesuada lacus nec felis rutrum, eget sagittis sem dapibus. Curabitur consectetur pulvinar tincidunt. Aliquam nec scelerisque velit. Aliquam at neque urna. Sed sed vulputate mauris, in vulputate orci. Sed egestas augue rutrum augue ullamcorper, convallis facilisis arcu convallis. In lorem risus, posuere ut interdum auctor, ultricies ut mi.</p>
+        </div>
+        <div  id="tab2">
+            <p>Curabitur magna magna, ultrices feugiat elit non, posuere sagittis orci. Cras finibus enim eu rutrum elementum. Aliquam sapien leo, hendrerit sit amet est molestie, semper rutrum nulla. Aenean lacinia lacus quis tortor posuere eleifend. Phasellus egestas ultricies lorem sit amet porta. Sed vestibulum dolor eget risus viverra, ut laoreet elit tempus. Sed sit amet turpis at risus euismod hendrerit a id ante. Etiam eget scelerisque diam, vitae viverra enim. Nam varius, quam viverra malesuada sagittis, arcu odio sodales metus, id imperdiet massa urna id mauris. Phasellus posuere vestibulum sapien, ut pellentesque lorem fringilla id. Ut a lorem laoreet, tristique arcu porta, vulputate tortor. Vivamus vehicula dapibus varius. Vestibulum at ultrices felis, a ultricies lectus. Nam ac suscipit diam. Pellentesque vel mauris ullamcorper, ullamcorper ex sit amet, egestas justo. Phasellus risus dui, suscipit pellentesque arcu consectetur, auctor blandit arcu.</p>
+        </div>
+        <div  id="tab3">
+            <p>Aenean consequat sollicitudin odio, a vestibulum sapien tempus et. Aliquam velit magna, imperdiet et gravida ac, rhoncus eget ex. Vivamus egestas sapien maximus aliquet malesuada. Fusce sed mattis orci. Praesent tincidunt dui sed eros mattis rutrum. Donec ac sagittis metus, vel feugiat risus. Cras maximus nec massa quis faucibus. Nullam purus nisl, malesuada vitae eleifend volutpat, dapibus in sem. Vivamus sagittis varius lorem ut gravida. Phasellus sed nulla vel ipsum iaculis dignissim. Quisque sit amet auctor nulla. Sed tempus mauris id magna porttitor egestas. In nisl risus, interdum vitae ligula non, sodales faucibus metus.
+            </p>
+        </div>
+        <div  id="tab4">
+            <p>Sed tincidunt ut dui at consectetur. Ut dapibus metus dolor, et pulvinar tellus sodales ac. Duis vitae posuere tortor. Cras sapien diam, vestibulum at velit in, sagittis molestie arcu. Cras aliquam rutrum purus, in consectetur augue tincidunt et. Phasellus dictum risus quis massa maximus, sit amet finibus lacus aliquam. In turpis tortor, luctus id volutpat ac, ultricies quis sem. Suspendisse dignissim egestas ullamcorper. Integer aliquet, tortor sit amet vestibulum suscipit, augue enim rutrum diam, tincidunt pellentesque nisi augue sed dui. Cras vitae dui in tellus cursus interdum.
+            </p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Underscore Function-related Features</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function log(value) {
+        var container = document.getElementById("container");
+        var data = "<p>" + value + "</p>";
+        container.innerHTML = container.innerHTML + data;
+    }
+
+    function doInitialize() {
+      log("Initialize function! Don't call me more than once!");
+    }
+
+    window.addEventListener("load", function(e) {
+      // create a function that can't be called more than one time
+      log("Initialize the app multiple times:")
+      var initfunc = _.once(doInitialize);
+      initfunc();
+      initfunc();
+      initfunc();
+
+      // the throttle() function can be used to limit the number of 
+      // times that a function is executed when called repeatedly
+      function updateCharCount() {
+        var elem = document.querySelector("#text1");
+        document.querySelector("#charcount").textContent = (elem.value).length
+      }
+      updater = _.throttle(updateCharCount,1000);
+      document.querySelector("#text1").addEventListener("keydown", updater);
+
+      // the bind() function binds a function to a given object, which becomes the
+      // value of the "this" keyword inside the function.
+      var myObj = {
+        firstname: "Joe",
+        lastname: "Marini"
+      }
+      function dumpData1() { 
+        log(this.firstname + " " + this.lastname);
+      }
+      function dumpData2() { 
+        log(this.lastname + ", " + this.firstname);
+      }
+
+      var func = _.bind(dumpData1, myObj);
+      func();
+      func = _.bind(dumpData2, myObj);
+      func();
+    });
+    </script>
+</head>
+<body>
+<h1>Underscore Function-related Features</h1>
+<div id="container">
+</div>
+<h3>Testing throttle(): </h3>
+<textarea id="text1" cols="30" rows="10"></textarea>
+<p id="charcount"></p>
+</body>
+</html>

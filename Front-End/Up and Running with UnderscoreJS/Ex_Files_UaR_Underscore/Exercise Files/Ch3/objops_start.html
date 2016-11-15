@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Operations with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getStudentInfo(elem, indx, list) {
+      var container = document.getElementById("container");
+      var student = "<p>" + elem.firstname + " " + elem.lastname + ", Avg. Score: " + elem.average_score + "</p>";
+      container.innerHTML = container.innerHTML + student;
+    }
+    
+    window.addEventListener("load", function(e) {
+      var container = document.getElementById("container");
+
+    });
+    </script>
+</head>
+<body>
+<h1>Object Operations with Underscore</h1>
+<h3>Using extend(), defaults(), and clone()</h3>
+<div id="container">
+</div>
+</body>
+</html>

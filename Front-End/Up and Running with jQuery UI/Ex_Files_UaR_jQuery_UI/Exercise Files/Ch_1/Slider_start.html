@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Slider Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+        });
+    </script>
+    <style>
+        .heavytext {
+            font-weight: bold;
+            color: red;
+        }
+        .sliderClass {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the Slider Control</h1>
+    <p>The slider control is typically used to select values along a scale. jQuery UI sliders have a variety of options: they can be free-form, snapped to certain values, bound to specific ranges, and displayed horizontally or vertically.</p>
+    <h3>Basic Slider Control</h3>
+    <p>Slider value: <span id="sl1Val"></span></p>
+    <div id="sliderCtrl1" class="sliderClass"></div>
+    <h3>Slider Control with Snapping Behavior</h3>
+    <p>This slider control snaps to specific value increments. It also attaches event handlers to detect value changes to update a text field, and to change the style of the field when the sliding starts and stops.</p>
+    <p>Please enter your donation: $<span id="amt"></span></p>
+    <div id="sliderCtrl2" class="sliderClass"></div>
+    <h3>Range Slider - select and upper and lower value</h3>
+    <p>Sliders controls can be used to select ranges of values.</p>
+    <p>Select a rent range: $<span id="sl3Val1"></span> to $<span id="sl3Val2"></span></p>
+    <div id="sliderCtrl3" class="sliderClass"></div>
+</body>
+</html>

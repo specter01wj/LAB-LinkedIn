@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attribute selectors</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body {
+	font-family: Georgia;
+	font-size: 90%;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 1em 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/*add styles here*/
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="http://www.lynda.com" title="visit lynda.com">This is an external link</a></li>
+  <li><a href="about.htm" title="visit about us">This is an local link</a></li>
+  <li><a href="_docs/plan.pdf" title="download our annual report">This is a link to a resource</a></li>
+</ul>
+<p class="red blue green">This paragraph has the classes red, blue, and green. </p>
+<p class="red green">This paragraph has the classes red, and green.</p>
+<p class="red blue">This paragraph has the classes red, and blue.</p>
+<p class="red">This paragraph ony has the class red.</p>
+</body>
+</html>

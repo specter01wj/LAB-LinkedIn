@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filtering Collections with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getPassingStudents(elem) {
+    	return ((elem.midterm_score + elem.final_score) / 2 > 65);
+    }
+
+    // check to see if a student did better on their final than on their midterm
+    function checkImprovement(item) {
+        return item.final_score > item.midterm_score;
+    }
+
+    window.addEventListener("load", function(e) {
+    	/* use the filter() function to narrow down the list */
+    	var result = _.filter(students, getPassingStudents);
+
+  		/* use the where() function to select items */
+  		//var result = _.where(students, {"school" : "Thoreau", "grade" : 10});
+  
+  		/* the reject() function is the opposite of filter() */
+      /* this invocation will return the failing students */
+    	//var result = _.reject(students, getPassingStudents);
+			
+      // use the every() function to ensure that all of a set of criteria have been met
+      alert(_.every(students, checkImprovement));
+      // use the some() function to see if any elements pass the criteria
+      alert(_.some(students, checkImprovement));
+
+    	/* now use each() to populate the list */
+    	_.each(result, function(elem, indx, list) {
+				var container = document.getElementById("container");
+				var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+				container.innerHTML = container.innerHTML + student;
+    	});    	
+    });
+    </script>
+</head>
+<body>
+<h1>Filtering Collections with Underscore</h1>
+<h2>Students with passing grades:</h2>
+<div id="container">
+</div>
+</body>
+</html>

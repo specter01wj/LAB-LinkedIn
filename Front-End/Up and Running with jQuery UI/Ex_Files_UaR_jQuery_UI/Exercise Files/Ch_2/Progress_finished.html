@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI ProgressBar Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(function() {
+            // instantiate a basic spinner control
+            $("#progress1").progressbar({
+                value: 40
+            });
+
+            $("#progress2").progressbar({
+                value: 70,
+                complete: function(evt, elem) {
+                    alert("Download complete!");
+                }
+            });
+            $("#btnIncr").click(function() {
+                var elem =  $("#progress2");
+                var val = elem.progressbar( "value" ) || 0;
+                elem.progressbar( "value", val + 10 );
+                return false;
+            });
+
+            $("#progress3").progressbar({
+                value: false
+            });
+        });
+    </script>
+    <style>
+        .prog2Label {
+            position: absolute;
+            left: 45%;
+            top:5px
+        }
+
+        #progress3 .ui-progressbar-value {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h1>Using the Progress Bar Control</h1>
+    <p>Progress bars give the user an idea of how far along a particular process is, and can help give them a sense of how much time is left to perform a particular task. They can also have an "indeterminate" state, which tells the user that there isn't any way to calculate how much time the task will take.</p>
+    <h3>Basic Progress Bar control</h3>
+    <p>Progress bars default to a maximum value of 100, but that can be customized.</p>
+    <div id="progress1" class="progressbar"></div>
+
+    <h3>Progress Bar with Label</h3>
+    <p>By placing a positioned element within the progress bar, we can create a label.</p>
+    <div id="progress2" class="progressbar"><div id="prog2Label" class="prog2Label">Downloading...</div></div>
+    <div><button id="btnIncr">Increment</button></div>
+
+    <h3>Indeterminate Progress Bar</h3>
+    <p>To create an indeterminate progress bar, set the value property to "false". Progress bars are also styled using CSS, so you can override their appearance by using the right jQueryUI CSS class names.</p>
+    <div id="progress3" class="progressbar"></div>
+</form>
+</body>
+</html>

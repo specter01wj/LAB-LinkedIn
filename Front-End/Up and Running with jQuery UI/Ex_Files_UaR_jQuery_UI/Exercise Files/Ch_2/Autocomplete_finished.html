@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Autocomplete Control</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+    
+    <script type="text/javascript" src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        var programLangs = [
+            "ActionScript",
+            "AppleScript",
+            "ASP.NET",
+            "BASIC",
+            "C",
+            "C++",
+            "C#",
+            "COBOL",
+            "Dart",
+            "Erlang",
+            "Fortran",
+            "Go",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby"
+        ];
+
+        $("document").ready(function() {
+            $("#auto1").autocomplete({
+                source: getData,
+                autoFocus: true
+            });
+        });
+                
+        function getData(req, callback) {
+            var result = [];
+            for (var i=0; i < programLangs.length; i++) {
+                if (programLangs[i].substring(0,1) == req.term.toUpperCase())
+                    result.push(programLangs[i]);
+            }
+            callback(result);
+        }
+    </script>
+    <style>
+      .ui-autocomplete {
+        max-height: 100px;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    </style>
+</head>
+<body>
+    <form>
+    <h1>Using the Autocomplete Control</h1>
+    <p>The autocomplete control provides suggestions to the user as they enter data into a field. This can be used to speed up data entry, guide the user toward entering a set of known default values, etc.</p>
+    <p>The list of suggestions can come from an array, a URL, or a function that you supply that can retrieve the data from wherever your application desires.</p>
+    <h3>Basic Autocomplete control</h3>
+    <label>Type the name of a programming language: </label><input id="auto1" type="text"/>
+</form>
+</body>
+</html>

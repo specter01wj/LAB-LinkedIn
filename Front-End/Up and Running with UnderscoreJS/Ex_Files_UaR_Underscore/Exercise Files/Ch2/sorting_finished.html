@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting, Grouping, Counting Collections with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getStudentInfo(elem, indx, list) {
+        var container = document.getElementById("container");
+        var student = "<p>" + elem.firstname + " " + elem.lastname + ", Grade: " + elem.grade + "</p>";
+        container.innerHTML = container.innerHTML + student;
+    }
+
+    function sortStudentsByGrade(item) {
+        return item.grade;
+    }
+    
+    function groupStudentsBySchool(item) {
+        return item.school;
+    }
+
+    function countStudentsByGrade(item) {
+        if (item.grade == 9)
+            return "freshmen";
+        else if (item.grade == 10)
+            return "sophomores";
+        else if (item.grade == 11)
+            return "juniors";
+        else return "seniors";
+    }
+
+    window.addEventListener("load", function(e) {
+        /* Sorting by grade */
+        var sorted = _.sortBy(students, sortStudentsByGrade);
+        _.each(sorted, getStudentInfo);
+
+        /* grouping students by school */
+        var grouped = _.groupBy(students, groupStudentsBySchool);
+        for (i in grouped) {
+            var container = document.getElementById("container");
+            var school = "<p style='font-weight:bold'>Students that go to: " + i + "</p>";
+            container.innerHTML = container.innerHTML + school;
+            _.each(grouped[i], getStudentInfo);
+        }
+
+        /* Counting the number of students in each grade */
+        var counts = _.countBy(students, countStudentsByGrade);
+        for (i in counts) {
+            var container = document.getElementById("container");
+            var groups = "<p style='font-weight:bold'>" + i + ": " + counts[i] + "</p>";
+            container.innerHTML = container.innerHTML + groups;
+        }
+    });
+    </script>
+</head>
+<body>
+<h1>Sorting, Grouping, and Counting Collection Data with Underscore</h1>
+<h2>Student Information:</h2>
+<h3 id="numstudents">Number of Students: </h3>
+<div id="container">
+</div>
+</body>
+</html>

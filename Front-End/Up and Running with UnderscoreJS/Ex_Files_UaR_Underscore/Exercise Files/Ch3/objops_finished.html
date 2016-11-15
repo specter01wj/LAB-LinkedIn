@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Operations with Underscore</title>
+    <script type="text/javascript" src="../underscore.js"></script>
+    <script type="text/javascript" src="../SampleData.js"></script>
+    <script type="text/javascript">
+    function getStudentInfo(elem, indx, list) {
+      var container = document.getElementById("container");
+      var student = "<p>" + elem.firstname + " " + elem.lastname + ", Avg. Score: " + elem.average_score + "</p>";
+      container.innerHTML = container.innerHTML + student;
+    }
+    
+    window.addEventListener("load", function(e) {
+      var container = document.getElementById("container");
+
+      // extend each student object with a new property, their average score
+      container.innerHTML += "<h2>Extending student objects with average_score</h2>";
+      _.each(students, function(elem, indx, list) {
+        avg = (elem.midterm_score + elem.final_score) / 2;
+        _.extend(elem, {"average_score" : avg});
+      });
+      _.each(students,getStudentInfo);
+
+      // use the defaults() method to assign default values to an object
+      container.innerHTML += "<h2>Assigning default values to a new object</h2>";
+      var defaultValues = {final_score: 0, midterm_score: 0, grade: 9};
+      var newStudent = {firstname: "John", lastname: "Doe"};
+      _.defaults(newStudent, defaultValues);
+      container.innerHTML += "<p>" + newStudent.firstname + " " + newStudent.lastname + 
+            ", Midterm: " + newStudent.midterm_score + ", Final: " + newStudent.final_score + "</p>";
+      
+      // clone() makes a shallow-copy of the object (in other words, properties that
+      // are arrays or objects will be copied by reference, and not duplicated themselves)
+      container.innerHTML += "<h2>Cloning an existing object</h2>";
+      var copyStudent = _.clone(students[0]);
+      container.innerHTML += "<p>" + copyStudent.firstname + " " + copyStudent.lastname + 
+            ", Midterm: " + copyStudent.midterm_score + ", Final: " + copyStudent.final_score + "</p>";
+    });
+    </script>
+</head>
+<body>
+<h1>Object Operations with Underscore</h1>
+<h3>Using extend(), defaults(), and clone()</h3>
+<div id="container">
+</div>
+</body>
+</html>
