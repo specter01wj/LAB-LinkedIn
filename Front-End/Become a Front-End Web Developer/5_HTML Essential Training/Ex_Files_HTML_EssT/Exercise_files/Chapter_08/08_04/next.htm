@@ -111,9 +111,14 @@
 <script type="text/javascript">
 //tabbed panels
 
+var tabLinks;
+var tabPanels;
+
 window.onload=function() {
 	//set initial panel state
 	//listen for clicks on tabs
+  tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+  tabPanels = document.getElementById("containers").getElementsByTagName("div");
 }
 
 function displayPanel() {
