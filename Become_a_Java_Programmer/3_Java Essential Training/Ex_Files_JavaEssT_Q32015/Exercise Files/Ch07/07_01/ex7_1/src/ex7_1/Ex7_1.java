@@ -16,6 +16,19 @@ public class Ex7_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int monthNum = 13;
+        
+        if ( monthNum >= 1 && monthNum <= 3 ){
+            System.out.println("you're in Quar 1 !");
+        } else if ( monthNum >= 4 && monthNum <= 6 ){
+            System.out.println("you're in Quar 2 !");
+        } else if ( monthNum >= 7 && monthNum <= 9 ){
+            System.out.println("you're in Quar 3 !");
+        } else if ( monthNum >= 10 && monthNum <= 12 ){
+            System.out.println("you're in Quar 4 !");
+        } else {
+            System.out.println("Unknown!");
+        }
     }
     
 }
