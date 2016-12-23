@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a84283-2483-4d73-ae64-75b6a463a85c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL_finished" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL_finished" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl_finished" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl_finished" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-03 WorkingWithAccessControl" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-03 WorkingWithAccessControl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL_finished" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch01/01-08 RunningAREPL_finished" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl_finished" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-02 WorkingWithAccessControl_finished" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-03 WorkingWithAccessControl" afterPath="$PROJECT_DIR$/Become_an_iOS_App_Developer/4_Swift 2.0 Essential Training/Ex_Files_swift_2_esst/Exercise Files/Ch12/12-03 WorkingWithAccessControl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_03/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_03/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_04/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_04/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_05/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_05/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Become_a_Programmer/Programming Fundamentals in the Real World/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Become_a_Programmer/Programming Fundamentals in the Real World/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm" />
     </list>
     <ignored path="Lynda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +35,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AJAX_intro.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AJAX_intro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/AJAX_intro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44558522">
-              <caret line="28" column="113" selection-start-line="28" selection-start-column="113" selection-end-line="28" selection-end-column="113" />
+            <state vertical-scroll-proportion="-9.916667">
+              <caret line="28" column="157" selection-start-line="28" selection-start-column="157" selection-end-line="28" selection-end-column="157" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectFilter_intro.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8151951">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap12/Strict Mode/script.js" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap13/RegExp/regExp.js" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap13/Ajax/AjaxExample.htm" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap13/ObjectsPrototypes/prototype.htm" />
@@ -101,6 +113,7 @@
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/10_Bootstrap 3 Essential Training/Ex_Files_Bs3EssT/Exercise Files/Ch02/02_07/bootstrap/index.html" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/10_Bootstrap 3 Essential Training/Ex_Files_Bs3EssT/Exercise Files/Ch02/02_07/bootstrap/css/styles.css" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/10_Bootstrap 3 Essential Training/Ex_Files_Bs3EssT/Exercise Files/Ch02/02_08/bootstrap/index.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm" />
       </list>
     </option>
   </component>
@@ -110,8 +123,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1978" />
-    <option name="y" value="156" />
+    <option name="x" value="2190" />
+    <option name="y" value="153" />
     <option name="width" value="1080" />
     <option name="height" value="655" />
   </component>
@@ -141,12 +154,23 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Lynda" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -267,33 +291,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lynda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lynda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lynda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lynda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Become_a_Java_Programmer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +374,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1978" y="156" width="1080" height="655" extended-state="0" />
+    <frame x="2190" y="153" width="1080" height="655" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28234184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -415,13 +414,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_01/styles.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.125">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_02/finished_files/inline.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -706,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.523614">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.523614">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,14 +754,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83572894">
           <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/AJAX_intro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44558522">
-          <caret line="28" column="113" selection-start-line="28" selection-start-column="113" selection-end-line="28" selection-end-column="113" />
+        <state vertical-scroll-proportion="-9.916667">
+          <caret line="28" column="157" selection-start-line="28" selection-start-column="157" selection-end-line="28" selection-end-column="157" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8151951">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
