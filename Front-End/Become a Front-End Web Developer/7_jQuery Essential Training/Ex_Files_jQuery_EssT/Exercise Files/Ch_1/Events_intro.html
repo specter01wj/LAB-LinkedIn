@@ -12,6 +12,7 @@
         });
         
         function onMouseOver(evt) {
+
             $("#example").text(evt.type + ": " + evt.pageX + ", " + evt.pageY
                                + "\n" + "Button: " + evt.which + 
                                " Key: " + evt.metaKey);
@@ -22,6 +23,7 @@
         }
         function onMouseLeave(evt) {
             $("#example").text("mouseleave");
+            $("#example").on("mousemove", onMouseOver);
         }
     </script>
 </head>
