@@ -12,8 +12,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_05/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_05/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/CreateChange_intro.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/CreateChange_intro.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Events_intro.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Events_intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/AttrFilters_start.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/AttrFilters_start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicFilters_start.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicFilters_start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicSelectors_start.htm" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicSelectors_start.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/ChildVisCont_start.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/ChildVisCont_start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/HierCombo_start.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/HierCombo_start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/traversing_start.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/traversing_start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start/restaurant-to-room-service.html" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start/restaurant-to-room-service.html" />
     </list>
     <ignored path="Lynda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,81 +40,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AJAX_intro.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/AJAX_intro.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35318276">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="samplehtml.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/samplehtml.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sampletextcontent.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/sampletextcontent.txt">
+      <file leaf-file-name="ExampleSnippets.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/ExampleSnippets.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectFilter_intro.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm">
+      <file leaf-file-name="restaurant-to-room-service.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Finished/restaurant-to-room-service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.791666">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateChange_intro.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/CreateChange_intro.html">
+      <file leaf-file-name="restaurant-to-room-service.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start/restaurant-to-room-service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Events_intro.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Events_intro.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Animations_intro.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Animations_intro.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.916667">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22988506">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -122,15 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap13/ObjectsPrototypes/prototype.htm" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap13/ObjectsPrototypes/script_finished.js" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap14/Resize/script.js" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/6_JavaScript Essential Training/Ex_Files_JS_EssT_2011/Exercise Files/Chap14/Accordion/resources.htm" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/10_Bootstrap 3 Essential Training/Ex_Files_Bs3EssT/Exercise Files/Ch02/02_01/bootstrap/css/styles.css" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/10_Bootstrap 3 Essential Training/Ex_Files_Bs3EssT/Exercise Files/Ch02/02_01/bootstrap/index.html" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/10_Bootstrap 3 Essential Training/Ex_Files_Bs3EssT/Exercise Files/Ch02/02_02/bootstrap/index.html" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/4_CSS_ Core Concepts/Ex_Files_CssCore/Exercise Files/Chapter_01/01_05/properties.htm" />
-        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/FirstjQueryPage_start.html" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_03/03_02/headings.htm" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_03/03_03/paragraphs.htm" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_03/03_04/breaks.htm" />
@@ -173,6 +120,15 @@
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/CreateChange_intro.html" />
         <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Events_intro.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicSelectors_start.htm" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicFilters_start.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/HierCombo_finished.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/HierCombo_start.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/AttrFilters_start.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/ChildVisCont_start.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/traversing_finished.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/traversing_start.html" />
+        <option value="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start/restaurant-to-room-service.html" />
       </list>
     </option>
   </component>
@@ -182,10 +138,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1623" />
-    <option name="y" value="187" />
-    <option name="width" value="1080" />
-    <option name="height" value="655" />
+    <option name="x" value="1527" />
+    <option name="y" value="146" />
+    <option name="width" value="1178" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -212,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -346,12 +301,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Ch_1" />
+              <option name="myItemId" value="landonhotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Start" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Become a Front-End Web Developer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7_jQuery Essential Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ex_Files_jQuery_EssT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercise Files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landonhotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Finished" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Become a Front-End Web Developer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7_jQuery Essential Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ex_Files_jQuery_EssT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercise Files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ch_2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,10 +465,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1623" y="187" width="1080" height="655" extended-state="0" />
+    <frame x="1527" y="146" width="1178" height="690" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28234184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29991356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -473,125 +505,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_06/finished_files/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_06/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_06/finished_files/page2.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_06/page2.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="406" selection-start-line="10" selection-start-column="406" selection-end-line="10" selection-end-column="406" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_06/external.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_05/finished_files/color.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_04/finished_files/type.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/finished_files/intro.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/lab_instructions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/links.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/finished_files/next.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/next.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/reference.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/structure.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/syntax.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/intro.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/_css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4329897">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_07/finished_files/_css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68041235">
@@ -774,50 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm">
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/AJAX_intro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.791666">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/CreateChange_intro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Events_intro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Animations_intro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.916667">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/sampletextcontent.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.375">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -830,10 +703,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/AJAX_intro.html">
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/sampletextcontent.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35318276">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/CreateChange_intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40041068">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Events_intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40041068">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/Animations_intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92402464">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_1/SelectFilter_intro.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8151951">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicSelectors_finished.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicSelectors_start.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94827586">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicFilters_start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7988506">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/BasicFilters_finished.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40229884">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="15" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/HierCombo_finished.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/HierCombo_start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9425287">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/AttrFilters_start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7758621">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/AttrFilters_finished.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22988506">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="11" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/ChildVisCont_finished.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/ChildVisCont_start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.916667">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/traversing_finished.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/Ch_2/traversing_start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="32" column="255" selection-start-line="32" selection-start-column="255" selection-end-line="32" selection-end-column="255" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Finished/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/ExampleSnippets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Finished/restaurant-to-room-service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start/restaurant-to-room-service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22988506">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="56" />
           <folding />
         </state>
       </provider>

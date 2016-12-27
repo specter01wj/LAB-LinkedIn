@@ -6,6 +6,10 @@
 <script type="text/javascript" src="../jquery-1.11.1.js"></script>
 <script type="text/javascript">
     $("document").ready(function() {
+        //$("div > p").css("border", "3px solid red");
+        //$("div p.a").css("border", "3px solid red");
+        $("ul + div").css("border", "3px solid red");
+        //$("#para1 ~ p").css("border", "3px solid red");
     });
 </script>
 </head>
@@ -25,6 +29,13 @@
         <p class="b">This is paragraph 3</p>
         <p id="para4" lang="en-us">This is paragraph 4</p>
         <p id="para5" lang="en-gb">This is paragraph 5</p>
+    </div>
+    <div id="example1">
+        <p class="a">This is paragraph 1</p>
+        <p id="para11">This is paragraph 2</p>
+        <p class="b">This is paragraph 3</p>
+        <p id="para41" lang="en-us">This is paragraph 4</p>
+        <p id="para51" lang="en-gb">This is paragraph 5</p>
     </div>
 </body>
 </html>
