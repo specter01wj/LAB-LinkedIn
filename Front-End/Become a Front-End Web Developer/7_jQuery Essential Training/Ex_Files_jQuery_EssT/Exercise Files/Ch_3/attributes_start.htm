@@ -6,6 +6,17 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            // Add a title attribute to all of the images
+            //$("a").attr("title", "Photo by some photographer");
+
+            // Make each image open in a new window
+            $("a").attr("target", "_blank");
+
+            // Remove the href from the <a> tags, making images unclickable
+            //$("a").removeAttr("href");
+
+            // Modify multiple attributes at once
+            $("img").attr({ src: "images/Spring.jpg", title: "Spring all the things!" });
         });
     </script>
     <style type="text/css">

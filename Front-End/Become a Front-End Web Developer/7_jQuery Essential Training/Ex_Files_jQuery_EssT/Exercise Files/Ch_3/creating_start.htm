@@ -6,6 +6,7 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            //alert($("#example").html());
             document.getElementById("create").addEventListener("click", function (evt) {
                 createContent();
             });
@@ -15,6 +16,21 @@
             document.getElementById("changeAll").addEventListener("click", function (evt) {
                 changeAllTheContent();
             });
+            function createContent() {
+                // use the html() function to change the content of the div
+                //$("#example").html("<p>Hi there!</p>");
+
+                // create a new <p> and set the content of para1 to it
+                var newItem = $("<p>This is a new paragraph</p>");
+                $("#para1").html(newItem);
+            }
+            function changeContent() {
+                // set the text content of the last paragraph
+                $("p:last").text("I've changed the last paragraph");
+            }
+            function changeAllTheContent() {
+                $("#example p").text("I've changed all the paragraphs!");
+            }
        });
     </script>
 </head>

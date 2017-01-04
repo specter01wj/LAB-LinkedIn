@@ -6,6 +6,17 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            // Insertion functions for inserting inside of content
+            //$("#example p").append("<div> with some content appended</div>");
+            //$("#example p").prepend("Hello! ");
+            //$("#example p:last").appendTo("#example p:first");
+            //$("#example p:last").prependTo("#example p:first");
+
+            // Insertion functions for inserting outside of content
+            //$("#example p").after("<div>**</div>");
+            //$("#example p").before("**");
+            //$("<p>New Para</p>").insertAfter("#example p:first");
+            $("<p>New Para</p>").insertBefore("#example p:last");
         });
     </script>
 </head>

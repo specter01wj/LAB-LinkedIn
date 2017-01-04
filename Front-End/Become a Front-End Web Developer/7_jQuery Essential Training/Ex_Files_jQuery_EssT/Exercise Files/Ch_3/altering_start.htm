@@ -6,6 +6,19 @@
 <script type="text/javascript" src="../jquery-1.11.1.js"></script>
 <script type="text/javascript">
     $("document").ready(function() {
+        //$("#example p").wrap("<div style='color:red'/>");
+        //$("#example p").wrapAll("<div style='border:3px solid red'/>");
+        //$("#example").empty();
+        //$("#example p.a, #example p.b").remove();
+        //$("#example p.a, #example p.b").detach();
+        //$("<div>replaced</div>").replaceAll("#example p[id]");
+        //$("#example p[id]").replaceWith("<div>replaced</div>");
+        $("#example p").replaceWith(replacementFn);
+        function replacementFn() {
+            if ($(this).text().indexOf("1") != -1) {
+                return "<p>This is paragraph uno</p>";
+            }
+        }
     });
 </script>
 </head>

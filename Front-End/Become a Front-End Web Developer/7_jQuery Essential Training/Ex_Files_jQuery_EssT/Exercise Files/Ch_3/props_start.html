@@ -6,9 +6,37 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
+            $("#setProp").click(function(evt) {
+                $("#example p").css("text-decoration", "overline")
+                        .css("font-size", "+=1pt");
+            });
+
+            $("#setProps").click(function(evt) {
+                $("#example p").css({
+                    "font-weight" : "bold",
+                    "color" : "red",
+                    "text-decoration" : "underline"
+                });
+            });
+
+            $("#addCl").click(function(evt) {
+                $("#example p").addClass("pClass");
+            });
+
+            $("#rmCl").click(function(evt) {
+                $("#example p").removeClass("pClass");
+            });
+
+            $("#toggleCl").click(function(evt) {
+                $("#example p").toggleClass("pClass");
+            });
         });
     </script>
-    <style>        
+    <style>
+        .pClass {
+            color: green;
+            text-transform: uppercase
+        }
         button {
             margin: 5pt 5pt 0 0;
         }

@@ -6,6 +6,31 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $(function() {
+            $(function() {
+                showValues();
+
+                $("#example").click(changeValues);
+            });
+
+            function changeValues() {
+                $("#example").height(100);
+                $("#example").width(200);
+
+                showValues();
+            }
+
+            function showValues() {
+                $("#height").html($("#example").height());
+                $("#width").html($("#example").width());
+                $("#innerH").html($("#example").innerHeight());
+                $("#innerW").html($("#example").innerWidth());
+                $("#outerH").html($("#example").outerHeight());
+                $("#outerW").html($("#example").outerWidth());
+                $("#offset").html($("#example").offset().top + ", " +
+                        $("#example").offset().left);
+                $("#position").html($("#example").position().top + ", " +
+                        $("#example").position().left);
+            }
         });
     </script>
 </head>

@@ -7,10 +7,14 @@
     <script>
         $("document").ready(function() {
             $("#show").click(function (evt) {
+                alert(JSON.stringify($("#example").data(), null, "  "));
             });
             $("#store").click(function (evt) {
+                $("#example").data("key1", 1234);
+                $("#example").data("key2", "Joe Marini");
             });
             $("#remove").click(function (evt) {
+                $("#example").removeData('key2');
             });
         });
     </script>
