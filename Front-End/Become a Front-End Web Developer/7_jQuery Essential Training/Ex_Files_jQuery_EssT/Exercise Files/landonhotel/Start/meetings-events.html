@@ -4,6 +4,26 @@
 <title>Meetings &#038; Events | The Landon Hotel</title>
 <link rel="stylesheet" href="style/style.css">
 <script src="../../jquery-1.11.1.js"></script>
+    <script>
+        $(function() {
+            $("div.event").hover(highlight);
+        });
+
+        function highlight() {
+            $(this).toggleClass("highlightEvent");
+        }
+    </script>
+    <style>
+        .highlightEvent {
+            background-color: cornsilk;
+        }
+
+        .highlightEvent .eventDate {
+            font-weight: bold;
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
 </head>
 <body>
 	<div class="container">

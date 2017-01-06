@@ -6,6 +6,25 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $(function() {
+            $("#evtTarget").hover(highlight, highlight);
+
+            $("#evtTarget").click(fnClick1);
+            $("#evtTarget").dblclick(fnClick2);
+
+            $(window).resize(fnResize);
+
+            function highlight(evt) {
+                $("#evtTarget").toggleClass("highlighted");
+            }
+            function fnClick1() {
+                $("#evtTarget").html("Click");
+            }
+            function fnClick2() {
+                $("#evtTarget").html("Double Click");
+            }
+            function fnResize() {
+                $("#evtTarget").html("Browser window resized");
+            }
         });
     </script>
     <style type='text/css'>
