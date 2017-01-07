@@ -6,6 +6,20 @@
     <script type="text/javascript" src="../jquery-1.11.1.js"></script>
     <script type="text/javascript">
         $(function() {
+            $("#slideup").click(function() {
+                $("#theDiv").slideUp(1000);
+            });
+            $("#slidedown").click(function() {
+                $("#theDiv").slideDown("fast", "swing");
+            });
+            $("#toggle").click(function() {
+                $("#theDiv").slideToggle("slow", onToggleFinished);
+            });
+
+            function onToggleFinished() {
+                // the value of this is set to the DOM element being animated
+                console.log ("slideToggle complete on: " + this.id);
+            }
         });
     </script>
     <style type="text/css">
