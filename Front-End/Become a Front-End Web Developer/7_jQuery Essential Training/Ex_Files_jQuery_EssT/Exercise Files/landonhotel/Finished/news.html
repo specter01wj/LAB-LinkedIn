@@ -7,9 +7,9 @@
 <script>
     $("document").ready(function() {
         // fetch the AJAX content
-        $("#newsContent").load("news.txt");
+        //$("#newsContent").load("news.txt");
         
-        //$.getJSON("news.json", successFn);
+        $.getJSON("news.json", successFn);
     });
     
     function successFn(result) {
