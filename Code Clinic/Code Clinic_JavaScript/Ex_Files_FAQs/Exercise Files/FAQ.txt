@@ -1,0 +1,3 @@
+Q: I am unable to access the Lake Pend Oreille data from outside the U.S.
+A: A static copy of this data is provided at https://github.com/lyndadotcom/LPO_weatherdata for lynda.com members outside of the U.S
+
