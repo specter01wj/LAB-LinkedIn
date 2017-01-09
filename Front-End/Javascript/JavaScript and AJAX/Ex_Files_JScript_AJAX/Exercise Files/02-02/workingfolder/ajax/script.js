@@ -7,8 +7,11 @@ if (window.XMLHttpRequest) {
 request.open('GET', 'data.txt');
 request.onreadystatechange = function() {
 	if ((request.readyState===4) && (request.status===200)) {
-		var modify = document.getElementById('update');
-		modify.innerHTML = request.responseText;
+		var modify = document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+		//modify[2].innerHTML = request.responseText;
+		for ( var i = 0; i < modify.length; i++ ) {
+			modify[i].innerHTML = request.responseText;
+		}
 	}
 }
 request.send();
