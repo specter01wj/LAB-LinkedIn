@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>About Us | KinetEco, Inc.</title>
+<link rel="stylesheet" type="text/css" media="all" href="styles/style.css">
+</head>
+<body class="page page-id-2 page-template-default custom-background single-author singular two-column right-sidebar">
+<div id="page" class="hfeed">
+  <header id="branding" role="banner">
+    <hgroup>
+      <h1 id="site-title"><span><a href="http://blog.kineteco.net/" title="KinetEco, Inc." rel="home">KinetEco, Inc.</a></span></h1>
+      <h2 id="site-description">Technologies for a cleaner world.</h2>
+    </hgroup>
+    <a href="http://blog.kineteco.net/"> <img src="images/header2.jpg" alt="" width="1000" height="288"> </a>
+    <form method="get" id="searchform" action="http://blog.kineteco.net/">
+      <label for="s" class="assistive-text">Search</label>
+      <input class="field" name="s" id="s" placeholder="Search" type="text">
+      <input class="submit" name="submit" id="searchsubmit" value="Search" type="submit">
+    </form>
+    <nav id="access" role="navigation">
+      <h3 class="assistive-text">Main menu</h3>
+      <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+      <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="http://blog.kineteco.net/" title="Home">Home</a></li>
+          <li class="page_item page-item-2 current_page_item"><a href="http://blog.kineteco.net/about-us/">About Us</a></li>
+          <li class="page_item page-item-8"><a href="http://blog.kineteco.net/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- #access --> 
+  </header>
+  <!-- #branding -->
+  
+  <div id="main">
+    <div id="primary">
+      <div id="content" role="main">
+        <article id="post-2" class="post-2 page type-page status-publish hentry">
+          <header class="entry-header">
+            <h1 class="entry-title">About Us</h1>
+          </header>
+          <!-- .entry-header -->
+          
+          <div class="entry-content">
+            <p>KinetEco is all about making people’s lives better and richer, 
+              while working hard to leave the smallest footprint on the planet. We 
+              love technology as much as the rest of the world, and we want it to be 
+              accessible to everyone. We believe that by powering our world with 
+              alternative energy, including solar and wind power, we can get 
+              technology to more people.</p>
+            <p>Take a look at the video below to see what all the excitement is about.</p>
+            <div id="videoContainer">
+              <video width="480" height="272" controls poster="images/videoPoster.png">
+                <source src="assets/main.mp4" type="video/mp4" />
+                <source src="assets/main.webm" type="video/webm" />
+                <source src="assets/main.ogv" type="video/ogg" />
+              </video>
+            </div>
+          </div>
+          <!-- .entry-content -->
+          <footer class="entry-meta"> </footer>
+          <!-- .entry-meta --> 
+        </article>
+        <!-- #post-2 --> 
+        
+      </div>
+      <!-- #content --> 
+    </div>
+    <!-- #primary --> 
+    
+  </div>
+  <!-- #main -->
+  
+  <footer id="colophon" role="contentinfo"> </footer>
+  <!-- #colophon --> 
+</div>
+<!-- #page --> 
+<script>
+	var videos, sources, i, l, orig, current, modified;
+	sources = document.getElementsByTagName('source');
+	for(i=0, l=sources.length; i<l; i++) {
+		orig = sources[i].getAttribute('src');
+		sources[i].setAttribute('data-orig', orig);
+		sources[i].setAttribute('src', orig.replace(/(\w+)\.(\w+)/, 'bumper-in.$2'));
+	}
+	videos = document.getElementsByTagName('video');
+	for(i=0, l=videos.length; i<l; i++) {
+		videos[i].load();
+		modified = false;
+		videos[i].addEventListener('ended', function(){
+			sources = this.getElementsByTagName('source');
+			for(i=0, l=sources.length; i<l; i++) {
+				orig = sources[i].getAttribute('data-orig');
+				if (orig) {
+					sources[i].setAttribute('src', orig);
+					modified = true;
+				}else{
+					current = sources[i].getAttribute('src');
+					if (current.indexOf('bumper-out')==-1) {
+						sources[i].setAttribute('src', current.replace(/([\w]+)\.(\w+)/, 'bumper-out.$2'));
+						modified = true;
+					}else{
+						this.pause();
+						modified = false;
+					}
+				}
+				sources[i].setAttribute('data-orig', '');
+			}
+			if (modified) {
+				this.load();
+				this.play();
+			}
+		});
+	}
+</script>
+</body>
+</html>

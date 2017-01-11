@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>TPA: Trans Planet Airlines</title>
+	<script src="scripts/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="scripts/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript" src="scripts/jcanvas.min.js"></script>
+	<script src="scripts/html5slider.js"></script>
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/transitions.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+	$(document).ready(function () {
+		// Check for local storage;
+		// if exists, set variables and hide form
+		var storedAge = localStorage.getItem('age');
+		var storedGender = localStorage.getItem('gender');
+		if (storedAge != null) {
+			$('#specialOffer').removeClass('unsubmitted');
+			$('.detail').css('display','none');
+		}
+		// If form unsubmitted, do card flip
+		if ($('#specialOffer').hasClass('unsubmitted')) {
+			$('.cardGroup.flip').hover(
+				function () {
+					$(this).find('.card').addClass('theFlip');
+				},
+				function () {
+					$(this).find('.card').removeClass('theFlip');			
+				}
+			);
+		}
+		// Draw initial canvas
+		if (storedAge == null) {
+			$("#myCanvas").drawText({
+			  layer: true,
+			  fillStyle: "#36c",
+			  font: "bold 32pt Trebuchet MS",
+			  text: "Get Special Offer Here!",
+			  x: 100, y: 100,
+			  name: "startLayer",
+			  maxWidth: 200
+			});
+		} else { //Create special offer canvas, based on local storage values
+			var theText;
+			var theImage;
+			if (storedGender == 'male') {
+				theImage = 'images/mars.jpg';
+			} else {
+				theImage = 'images/venus.jpg';
+			}
+			storedAge = parseInt(storedAge);
+			if (storedAge <= 60) {
+				theText = 'HIKE!\n25% off!';
+			} else {
+				theText = 'TOUR!\n25% off!'
+			}
+			$("#myCanvas").addLayer({
+			  type: 'image',
+			  source: theImage,
+			  x: 100, y: 100,
+			  load: function() {
+				$(this).drawLayer(1);
+				$(this).drawLayer(2);
+			  }
+			});
+			$("#myCanvas").addLayer({
+			  type: 'text',
+			  fillStyle: "#fff",
+			  font: "bold 32pt Trebuchet MS",
+			  text: theText,
+			  x: 101, y: 101,
+			  maxWidth: 200
+			});
+			$("#myCanvas").addLayer({
+			  type: 'text',
+			  fillStyle: "#36c",
+			  font: "bold 32pt Trebuchet MS",
+			  text: theText,
+			  x: 100, y: 100,
+			  maxWidth: 200
+			});
+			$("#myCanvas").drawLayers();
+		}
+		// Form submit button actions
+		$('#theButton').click(function() {
+			$("#myCanvas").removeLayer("startLayer");
+			var theAge = $('#age').val();
+			var theGender = $('input:radio[name=gender]:checked').val();
+			localStorage.setItem("age", theAge);
+			localStorage.setItem("gender", theGender);
+			window.location.href = "offer.html";
+		});
+	});
+	// Update text field for slider
+	function printValue(sliderID, textbox) {
+		var x = document.getElementById(textbox);
+		var y = document.getElementById(sliderID);
+		x.value = y.value;
+	}
+	window.onload = function() { 
+		printValue('age', 'rangeValue');
+	}
+	</script>
+	</head>
+
+	<body>
+<div id="outerWrapper">
+      <header><img src="images/logo.png" width="205" height="90" alt="TPA: Trans Planet Airlines" /><br>
+    <img src="images/tpa_name.gif" width="373" height="37" alt="Trans Planet Airlines">
+    <nav>
+          <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="planets.html">PLANETS</a></li>
+        <li><a href="flights.html">FLIGHTS</a></li>
+        <li><a href="book.html">SUIT UP</a></li>
+      </ul>
+        </nav>
+    <!-- End nav --> 
+  </header>
+      <!-- End header -->
+      <div id="contentWrapper">
+    <section>
+          <hgroup>
+        <h1>Mars is Open for Business!</h1>
+        <h2>Be among the first to visit the Red Planet</h2>
+      </hgroup>
+          <p><img src="images/mars.jpg" alt="Visit Mars!" width="200" height="200" class="imageLeft">Our Mars portal is now accepting flights! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+          <p>&nbsp;</p>
+        </section>
+    <!-- End mainContent-->
+    <aside>
+          <div id="outerOffer" class="cardGroup flip">
+        <div id="specialOffer" class="card unsubmitted">
+              <canvas id="myCanvas" width="200" height="200"></canvas>
+              <div class="detail">
+              <p>Tell us just a little about yourself and we'll give you a special discount on one of our famous planetary packages!</p>
+              <form id="personalData"name="personalData" method="post" action="">
+                  <p>
+                <label>
+                      <input name="gender" type="radio" id="gender_0" value="male" checked />
+                      Male</label>
+                <label>
+                      <input type="radio" name="gender" value="female" id="gender_1" />
+                      Female</label>
+              </p>
+                  <p>
+                <label for="age">Age</label>
+                <input type="range" name="age" id="age" min="18" max="98" value="60" onchange="printValue('age','rangeValue')" />
+                <input id="rangeValue" type="text" />
+              </p>
+                  <p id="buttonLine">
+                <input type="button" name="button" id="theButton" value="Get My Special Offer" />
+              </p>
+                </form>
+          </div>
+            </div>
+      </div>
+          <h2><a href="offer.html">Current TPA packages</a></h2>
+        </aside>
+    <!-- End sideContent --> 
+  </div>
+      <!-- End contentWrapper -->
+      <footer>
+    <p>Copyright &copy; 2054 Trans Planet Airlines, LLC. All rights reserved</p>
+  </footer>
+      <!-- End footer --> 
+    </div>
+<!-- End outerWrapper --> 
+<script>
+</script> 
+</body>
+</html>

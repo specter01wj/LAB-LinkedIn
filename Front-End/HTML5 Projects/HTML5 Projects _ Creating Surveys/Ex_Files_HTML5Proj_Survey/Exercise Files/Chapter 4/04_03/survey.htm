@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Roux Academy: Survey</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="../_scripts/respond.min.js"></script>
+<![endif]-->
+<link href="styles/main.css" rel="stylesheet" media="screen, projection">
+<link href="styles/transitions.css" rel="stylesheet" media="screen, projection">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="scripts/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="scripts/utils.js"></script>
+<script type="text/javascript" src="scripts/custom_survey.js"></script>
+<script type="text/javascript" src="scripts/jquery.columnizer.min.js"></script>
+<script type="text/javascript" src="scripts/html5slider.js"></script>
+<script>
+ $(document).ready(function() {
+   $('.column').columnize({ columns: 2 });
+ 	$("#review").click(function () { 
+		interestsChecked = $('.interests:checked').map(function() {
+			return $(this).val();
+		}).get();
+		$("#interestsResult").html('<strong>Interests: </strong>');
+		$("#interestsResult").append(interestsChecked.join(', '));
+		
+		sharedChecked = $('.shared:checked').map(function() {
+			return $(this).val();
+		}).get();
+		$("#sharedResult").html('<strong>Shared: </strong>');
+		$("#sharedResult").append(sharedChecked.join(', '));	
+	});
+});
+   	// Update text field for slider
+	function printValue(sliderID, textbox) {
+		var x = document.getElementById(textbox);
+		var y = document.getElementById(sliderID);
+		x.value = y.value;
+	}
+	window.onload = function() { 
+		printValue('hoursPractice', 'hoursPracticeValue');
+	}
+</script>
+</head>
+<body>
+<header class="aboutHeader pageHeader">
+  <h1>Roux Academy of Art and Design<a href="/index.htm" title="home"></a></h1>
+  <nav id="pageNav" class="cf">
+    <ul>
+      <li><a href="programs/programs.htm" title="programs">Programs</a></li>
+      <li><a href="admissions.htm" title="admissions">Admissions</a></li>
+      <li><a href="student_portal.htm" title="student portal">Student Portal</a></li>
+      <li><a href="campus_portal.htm" title="campus portal">Campus</a></li>
+      <li><a href="alumni.htm" title="alumni">Alumni</a></li>
+      <li><a href="survey.htm"  title="about Roux Academy">About</a></li>
+    </ul>
+  </nav>
+</header>
+<article id="mainContent">
+  <h1>Student Survey Cube</h1>
+  <p>We&rsquo;ve been providing fine art and design education for over 150 years, but we're very much focused on the present and future. Please take the short survey below to help us better understand&#8212;and fulfill&#8212;your desires and needs. </p>
+  <div id="theArt">
+    <div id="cube" class="show-front">
+      <form  id="theForm" method="post" action="thanks.htm">
+        <div class="front panel">
+          <div class="innerContainer">
+            <h2>Q 1/5</h2>
+            <p>What subject(s) are you most interested in? <br>
+              (Check as many as you like.)</p>
+            <div class="column">
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_0" value="Architecture" />
+                  Architecture</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_1" value="Ceramics"/ >
+                  Ceramics</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_2" value="Film/Video" / >
+                  Film/Video</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_3" value="Glass" />
+                  Glass</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_4" value="Graphic Design" />
+                  Graphic Design</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_5" value="Illustration" />
+                  Illustration</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_6" value="Jewelry" />
+                  Jewelry</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_7" value="Metalsmithing">
+                  Metalsmithing</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_8" value="Photography" />
+                  Photography</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_9" value="Printmaking" />
+                  Printmaking</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_10" value="Sculpture" />
+                  Sculpture</label>
+              </p>
+              <p>
+                <label>
+                  <input name="interests_" type="checkbox" class="interests" id="interests_11" value="Textiles" />
+                  Textiles</label>
+              </p>
+            </div>
+            <p class="show-buttons">
+              <input type="button" class="show-back alignRight" value="Next" />
+            </p>
+          </div>
+        </div>
+        <div class="back cf panel">
+          <div class="innerContainer">
+            <h2>Q 2/5</h2>
+            <p>What area of study didn’t you see that you wish you did?</p>
+            <p>
+              <input id="desiredCourse" type="text" placeholder="Desired course" /></p>
+            <p class="show-buttons">
+              <input type="button" class="show-front alignLeft" value="Previous" />
+              <input type="button" class="show-right alignRight" value="Next" />
+            </p>
+          </div>
+        </div>
+        <div class="right cf panel">
+          <div class="innerContainer">
+            <h2>Q 3/5</h2>
+            <p>How long have you thought of yourself as an artist?</p>
+           <p>
+              <input type="radio" id="artistLength1" name="artistLength" value="Since I was a kid" />
+              <label>Since I was a kid.</label>
+            </p>
+            <p>
+              <input type="radio" id="artistLength2" name="artistLength" value="Since high school" />
+              <label>Since high school.</label>
+            </p>
+            <p>
+              <input type="radio" id="artistLength3" name="artistLength" value="Less than a year" />
+              <label>Less than a year.</label>
+            </p>
+            <p>
+              <input type="radio" id="artistLength4" name="artistLength" value="All my life" />
+              <label>All my life.</label>
+            </p>
+            <p>
+              <input type="radio" id="artistLength5" name="artistLength" value="I don't" />
+              <label>I don't.</label>
+            </p>
+            <p class="show-buttons">
+              <input type="button" class="show-back alignLeft" value="Previous" />
+              <input type="button" class="show-left alignRight" value="Next" />
+            </p>
+          </div>
+        </div>
+        <div class="left cf panel">
+          <div class="innerContainer">
+            <h2>Q 4/5</h2>
+            <p>How many hours a day do you practice your art?</p>
+            <p>
+              <input type="range" min="0" max="24" value="0" id="hoursPractice" onchange="printValue('hoursPractice','hoursPracticeValue')" />
+            </p>
+            <p>
+              <input type="text" id="hoursPracticeValue" placeholder="Move slider from 0 to 24 hours" />
+            </p>
+            <p class="show-buttons">
+              <input type="button" class="show-right alignLeft" value="Previous" />
+              <input type="button" class="show-top alignRight" value="Next" />
+            </p>
+          </div>
+        </div>
+        <div class="top cf panel">
+          <div class="innerContainer">
+            <h2>Q 5/5</h2>
+            <p>Who have you shared your work with?<br>
+              (Check all that apply.)</p>
+              <label>
+                <input class="shared" type="checkbox" name="viewers_" value="Family" id="viewers_0" />
+                Family</label>
+            </p>
+            <p>
+              <label>
+                <input class="shared" type="checkbox" name="viewers_" value="Friends" id="viewers_0" />
+                Friends</label>
+            </p>
+            <p>
+              <label>
+                <input class="shared" type="checkbox" name="viewers_" value="Teachers and classmates" id="viewers_0" />
+                Teachers and classmates</label>
+            </p>
+            <p>
+              <label>
+                <input class="shared" type="checkbox" name="viewers_" value="Public showing" id="viewers_0" />
+                The public in a showing</label>
+            </p>
+            <p>
+              <label>
+                <input class="shared" type="checkbox" name="viewers_" value="No one" id="viewers_0" />
+                No one</label>
+            </p>
+            <p class="show-buttons">
+              <input type="button" class="show-left alignLeft" value="Previous" />
+              <input id="review" type="button" class="show-bottom alignRight" value="Next" />
+            </p>
+          </div>
+        </div>
+        <div class="bottom cf panel">
+          <div class="innerContainer">
+            <h2>Review / Submit</h2>
+            <p>Please review your responses below and click the related Change button to make any updates. When you're satisfied with your responses, click Submit.</p>
+            <table width="100%">
+              <tr>
+                <td width="15%">Q1:</td>
+                <td id="interestsResult" width="60%"><strong>Interests: </strong></td>
+                <td width="25%" class="show-buttons"><input type="button" class="show-front" value="Modify" /></td>
+              </tr>
+              <tr>
+                <td>Q2:</td>
+                <td id="desiredCourseResult"><strong>Desired: </strong></td>
+                <td class="show-buttons"><input type="button" class="show-back" value="Modify" /></td>
+              </tr>
+              <tr>
+                <td>Q3</td>
+                <td id="artistLengthResult"><strong>Artist: </strong></td>
+                <td class="show-buttons"><input type="button" class="show-right" value="Modify" /></td>
+              </tr>
+              <tr>
+                <td>Q4</td>
+                <td id="hoursPracticeResult"><strong>Hours: </strong></td>
+                <td class="show-buttons"><input type="button" class="show-left" value="Modify" /></td>
+              </tr>
+              <tr>
+                <td>Q5</td>
+                <td id="sharedResult"><strong>Shared: </strong></td>
+                <td class="show-buttons"><input type="button" class="show-top" value="Modify" /></td>
+              </tr>
+            </table>
+            <p>Thank you for taking our survey.</p>
+            <p class="show-buttons">
+              <input type="button" class="show-top alignLeft" value="Previous" />
+              <input type="submit" class="alignRight" value="Submit" />
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</article>
+<aside>
+  <section class="academic info">
+    <h2>Academic Links</h2>
+    <ul>
+      <li><a href="about/undergraduate.htm" title="undergraduate degrees">Undergraduate Degrees</a></li>
+      <li><a href="about/graduate.htm" title="Graduate Degrees">Graduate Degree Programs</a></li>
+      <li><a href="about/continuing-education.htm" title="Continuing education">Continuing Education</a></li>
+      <li><a href="about/faculty.htm" title="Faculty">Faculty Profiles</a></li>
+      <li><a href="about/application-requirement.htm" title="Application requirements">Application Requirements</a></li>
+      <li><a href="about/study-abroad.htm" title="Study abroad programs">Study Abroad Programs</a></li>
+      <li><a href="about/internships.htm" title="Internship programs">Internship Programs</a></li>
+      <li><a href="about/calendar.htm" title="Academic calendar">Academic Calendar</a></li>
+    </ul>
+  </section>
+  <section class="connect info">
+    <h2>Connect with us</h2>
+    <ul>
+      <li><a href="http://www.twitter.com/rouxacademy" title="Follow us!" target="_blank" class="twitter">Twitter</a></li>
+      <li><a href="https://plus.google.com/" title="Google Plus" target="_blank" class="google">Google Plus</a></li>
+      <li><a href="http://facebook.com" title="Be our friend" target="_blank" class="facebook">Facebook</a></li>
+      <li><a href="http://www.linkedin.com" title="Let's connect" target="_blank" class="linked">LinkedIn</a></li>
+    </ul>
+  </section>
+  <section class="find info">
+    <h2>Find out more</h2>
+    <ul>
+      <li><a href="tour.htm" title="Take a campus tour">Take a campus tour</a></li>
+      <li><a href="catalog.htm" title="course catalog">Download a course catalog</a></li>
+      <li><a href="admissions.htm" title="Apply now">Apply now</a></li>
+    </ul>
+  </section>
+</aside>
+<footer id="pageFooter" class="cf">
+  <nav class="footerNav">
+    <section class="col">
+      <h3>About Roux Academy</h3>
+      <div class="col1">
+        <ul>
+          <li><a href="mission.htm" title="Our mission">Mission Statement</a></li>
+          <li><a href="history.htm" title="school history">School History</a></li>
+          <li><a href="accreditation.htm" title="accreditation and affliates">Accreditation &amp; Affiliates</a></li>
+          <li><a href="board.htm" title="board members">Board Members</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li><a href="faculty.htm" title="faculty and staff">Faculty &amp; Staff</a></li>
+          <li><a href="visiting_professors.htm" title="visiting professors">Visiting Professors</a></li>
+          <li><a href="museum.htm" title="Maribielle Roux Museum">Marbielle Roux Museum</a></li>
+          <li><a href="directions.htm" title="directions">Map &amp; Directions</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="col">
+      <h3>Admissions &amp; Programs</h3>
+      <div class="col1">
+        <ul>
+          <li><a href="degrees.htm" title="Degree programs">Degree Programs</a></li>
+          <li><a href="catalog.htm" title="course catalog">Course Catalog</a></li>
+          <li><a href="fine_art.htm" title="fine art programs">Fine Art Programs</a></li>
+          <li><a href="design.htm" title="design concentration">Design Concentration</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li><a href="fashion.htm" title="fashion program">Fashion Program</a></li>
+          <li><a href="product_design.htm" title="product design">Product Design</a></li>
+          <li><a href="continuing_ed.htm" title="Continuing Education">Continuing Education</a></li>
+          <li><a href="financial_aid.htm" title="tuition and financial aid">Tuition &amp; Financial Aid</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="col">
+      <h3>Student Resources</h3>
+      <div class="col1">
+        <ul>
+          <li><a href="campus.htm" title="Campus information">Campus Information</a></li>
+          <li><a href="housing.htm" title="student housing">Student Housing</a></li>
+          <li><a href="contact.htm" title="transcript request">Transcript Request</a></li>
+          <li><a href="applying.htm" title="application process">Application Process</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul>
+          <li><a href="portfolio_review.htm" title="portfolio review">Portfolio Review</a></li>
+          <li><a href="conselling.htm" title="career counselling">Career Counselling</a></li>
+          <li><a href="internships.htm" title="internship programs">Internship Programs</a></li>
+          <li><a href="student_portal.htm" title="student portal login">Student Portal Login</a></li>
+        </ul>
+      </div>
+    </section>
+  </nav>
+  <p>&copy;Copyright  Roux Academy of Art &amp; Design.  All rights reserved.<a href="privacy.htm" title="privacy statement"> Privacy Statement</a> |<a href="legal.htm" title="legal terms"> Legal Terms and Conditions</a> |<a href="disclosures.htm" title="student outcomes and disclosures"> Student Outcomes/Disclosures</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>TPA: Offers</title>
+	<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="scripts/jcanvas.min.js"></script>
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	<link href="styles/transitions.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+	$(document).ready(function () {
+		// Get items from localStorage
+		var storedAge = localStorage.getItem('age');
+		var storedGender = localStorage.getItem('gender');
+		// If localStorage item exists, show and populate special offer div
+		if (storedAge != null) {
+			$('#specialOffer').css('display','block');
+			var theAction;
+			var theImage;
+			var theDiscount = '25% Off!';
+			// Determine values based on localStorage
+			if (storedGender == 'male') {
+				theImage = 'images/mars_big.jpg';
+				theImageAlt = 'Mars';
+			} else {
+				theImage = 'images/venus_big.jpg';
+				theImageAlt = 'Venus';
+			}
+			storedAge = parseInt(storedAge);
+			if (storedAge <= 60) {
+				theAction = 'HIKE';
+			} else {
+				theAction = 'TOUR'
+			}
+			// Change values
+			$('#planetImage img').attr({
+				src: theImage,
+				alt: theImageAlt
+			});
+			$('#actionText h1').text(theAction);
+			$('#discount h1').text(theDiscount);
+		}
+		
+	});
+	</script>
+	</head>
+
+	<body id="offerPage">
+<div id="outerWrapper">
+      <header><img src="images/logo.png" width="205" height="90" alt="TPA: Trans Planet Airlines" /><br>
+    <img src="images/tpa_name.gif" width="373" height="37" alt="Trans Planet Airlines">
+    <nav>
+          <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="planets.html">PLANETS</a></li>
+        <li><a href="flights.html">FLIGHTS</a></li>
+        <li><a href="book.html">SUIT UP</a></li>
+      </ul>
+        </nav>
+    <!-- End nav --> 
+  </header>
+      <!-- End header -->
+      <div id="contentWrapper">
+      <div id="specialOffer">
+      	<div class="banner"></div>
+		<div id="actionText"><h1>Tour</h1></div>
+        <div id="planetImage"><img src="images/venus_big.jpg" alt="Venus"></div>
+        <div id="discount"><h1>&nbsp;25% Off!</h1></div>
+        <div class="clearfix"></div>
+      	<div class="banner"></div>
+      </div>
+    <section>
+          <hgroup>
+        <h1>Current Planetary Vacations</h1>
+        <h2>Come ride the Saturn rings!</h2>
+      </hgroup>
+          <p><img src="images/saturn.jpg" alt="Visit Mars!" width="200" height="109" class="imageLeft">Visit the Saturn rings! We're now accepting flights to Saturn perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+          <p>&nbsp;</p>
+        </section>
+    <!-- End mainContent-->
+    <aside>
+          
+          <h2>No special offer?</h2>
+          <p>Visit the <a href="index.html">TPA home page</a> and answer just two questions to get your special discount. architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+        </aside>
+    <!-- End sideContent --> 
+  </div>
+      <!-- End contentWrapper -->
+      <footer>
+    <p>Copyright &copy; 2054 Trans Planet Airlines, LLC. All rights reserved</p>
+  </footer>
+      <!-- End footer --> 
+    </div>
+<!-- End outerWrapper --> 
+</body>
+</html>

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+#outerWrapper {
+	margin: 50px auto;
+	width: 800px;
+	padding: 20px;
+	background: white;
+	border-radius: 25px;
+}
+body {
+	background: #000 url(../images/tpa_bg.jpg) repeat-x center top;
+	font: 12px/18px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#header {
+	width: 100%;
+	text-align: center;
+}
+#content {
+	width: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-top: 20px;
+}
+#footer {
+	width: 100%;
+}
+#footer p {
+	font-size: 10px;
+	color: #000;
+	text-align: center;
+}
+#content h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.imageRight {
+	float: right;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+div#nav {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: white;
+	width: 800px;
+	font-size: 30px;
+	margin: 20px auto 0 auto;
+	overflow: hidden;
+}
+div#nav ul {
+	margin: auto;
+	width: 800px;
+	list-style: none;
+}
+div#nav ul li {
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+div#nav ul li a {
+	line-height: 40px;
+	display: block;
+	color: white;
+	background-color: #00F;
+	text-decoration: none;
+}
+div#nav ul li a:hover {
+	color: #FFF;
+	background-color: #F70816;
+}
+#nav h1 {
+	color: rgba(0,0,255,1);
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+table {
+	margin: 0 auto;	
+}
+table td {
+	padding: 5px;
+	font-size: 18px;	
+}
+
+/* Lunar Lander */
+#container {
+	margin: 20px auto;
+	width: 600px;
+}
+button#saveImage {
+    border-radius: 15px 15px 15px 15px;
+    font-size: 18px;
+    margin: 0 auto 10px 100px;
+    text-align: center;
+    width: 600px;
+	cursor: pointer;
+}
+#steps {
+	width: 600px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 120%;
+}
