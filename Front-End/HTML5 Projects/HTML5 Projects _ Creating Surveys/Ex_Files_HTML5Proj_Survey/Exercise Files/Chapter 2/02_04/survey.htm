@@ -13,10 +13,20 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="scripts/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.columnizer.min.js"></script>
+    <script type="text/javascript" src="scripts/html5slider.js"></script>
 <script>
  $(document).ready(function() {
    $('.column').columnize({ columns: 2 });
  });
+    function printValue(sliderID, textbox) {
+        var x = document.getElementById(textbox);
+        var y = document.getElementById(sliderID);
+        x.value = y.value;
+    }
+
+    window.onload = function() {
+        printValue('hoursPractice', 'hoursPracticeValue');
+    }
 </script>
 </head>
 <body>
@@ -146,6 +156,12 @@
           <div class="innerContainer">
             <h2>Q 4/5</h2>
             <p>How many hours a day do you practice your art?</p>
+              <p>
+                  <input type="range" id="hoursPractice" min="0" max="24" value="0" onchange="printValue('hoursPractice', 'hoursPracticeValue')">
+              </p>
+              <p>
+                  <input type="text" id="hoursPracticeValue" placeholder="Move from 0-24">
+              </p>
           </div>
         </div>
         <div class="top cf panel">
@@ -153,6 +169,31 @@
             <h2>Q 5/5</h2>
             <p>Who have you shared your work with?<br>
               (Check all that apply.)</p>
+              <p>
+                  <label>
+                      <input class="shared" type="checkbox" name="viewers_" value="Family" id="viewers_0" />
+                      Family</label>
+              </p>
+              <p>
+                  <label>
+                      <input class="shared" type="checkbox" name="viewers_" value="Friends" id="viewers_0" />
+                      Friends</label>
+              </p>
+              <p>
+                  <label>
+                      <input class="shared" type="checkbox" name="viewers_" value="Teachers and classmates" id="viewers_0" />
+                      Teachers and classmates</label>
+              </p>
+              <p>
+                  <label>
+                      <input class="shared" type="checkbox" name="viewers_" value="Public showing" id="viewers_0" />
+                      The public in a showing</label>
+              </p>
+              <p>
+                  <label>
+                      <input class="shared" type="checkbox" name="viewers_" value="No one" id="viewers_0" />
+                      No one</label>
+              </p>
           </div>
         </div>
         <div class="bottom cf panel">

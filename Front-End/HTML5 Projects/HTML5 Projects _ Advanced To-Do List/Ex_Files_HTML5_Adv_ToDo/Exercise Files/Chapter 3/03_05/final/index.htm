@@ -194,8 +194,8 @@ $(document).ready(function() {
 	});		
 
 	$('#theList').on('change', '.listItem', function(e){
-		currentValue = $(this).val();
-		$(this).attr('value', currentValue)
+		var currentValue = $(this).val();
+		$(this).attr('value', currentValue);
 		localStorage.setItem('todoListPlus', theList.innerHTML);
 	});
 

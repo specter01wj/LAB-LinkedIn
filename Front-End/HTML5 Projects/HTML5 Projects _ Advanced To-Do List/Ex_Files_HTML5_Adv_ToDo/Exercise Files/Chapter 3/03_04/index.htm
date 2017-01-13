@@ -200,8 +200,30 @@ $(document).ready(function() {
 
 	$('.sortable').sortable().bind('sortupdate', function() {
 	});
-	
 
+    $('#theList').on('mouseover', 'li', function() {
+       var $thisA = $(this).find('a');
+        $thisA.css('display', 'block');
+    });
+
+    $('#theList').on('mouseout', 'li', function() {
+        var $thisA = $(this).find('a');
+        $thisA.css('display', 'none');
+    });
+
+    $('#theList').on('click', '.removeListItem', function(e) {
+        e.preventDefault();
+        $(this).parent().remove();
+    });
+
+    $('#doClearAll').on('click', '#clearAll', function(e) {
+        e.preventDefault();
+        $('#theList').children().remove();
+        newList = true;
+        $('#toDoItem').val('');
+        $('#doClearAll').css('display','none');
+        $('#toDoItem').focus();
+    });
 		
 });
 </script>

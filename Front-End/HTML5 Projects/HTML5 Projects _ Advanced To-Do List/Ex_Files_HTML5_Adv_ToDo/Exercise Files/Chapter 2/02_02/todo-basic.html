@@ -39,6 +39,10 @@
             <ul id="theList" contenteditable >
               <li>Enjoy life :)</li>
             </ul>
+            <p>
+                <a href="" id="saveAll">Save All</a>
+                <a href="" id="clearAll">Clear All</a>
+            </p>
         </div>
   </article>
   <aside>
@@ -142,5 +146,28 @@
   <p>&copy;Copyright  Roux Academy of Art &amp; Design.  All rights reserved. <a href="_source/privacy.htm" title="privacy statement">Privacy Statement</a> |<a href="_source/legal.htm" title="legal terms"> Legal Terms and Conditions</a> |<a href="_source/disclosures.htm" title="student outcomes and disclosures"> Student Outcomes/Disclosures</a></p>
 </footer>
 <script src="_scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+       var theList = document.getElementById('theList');
+        $('#saveAll').click(function(e){
+            e.preventDefault();
+            localStorage.setItem('todoList', theList.innerHTML);
+        });
+        $('#clearAll').click(function(e){
+            e.preventDefault();
+            localStorage.clear();
+            location.reload();
+        });
+
+        loadToDo();
+
+        function loadToDo() {
+            if( localStorage.getItem('todoList') ) {
+                theList.innerHTML = localStorage.getItem('todoList');
+            }
+        }
+
+    });
+</script>
 </body>
 </html>

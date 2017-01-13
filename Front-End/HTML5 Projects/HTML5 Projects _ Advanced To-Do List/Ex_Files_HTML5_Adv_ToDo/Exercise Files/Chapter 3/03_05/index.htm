@@ -182,6 +182,8 @@ $(document).ready(function() {
 			handle: '.handle'
 		});
 
+        localStorage.setItem('todoListPlus', theList.innerHTML);
+
 	});
 
 	 $('input[type="text"]').on('keydown', function(e) {
@@ -194,12 +196,13 @@ $(document).ready(function() {
 	});		
 
 	$('#theList').on('change', '.listItem', function(e){
-		currentValue = $(this).val();
-		$(this).attr('value', currentValue)
+		var currentValue = $(this).val();
+		$(this).attr('value', currentValue);
+        localStorage.setItem('todoListPlus', theList.innerHTML);
 	});
 
 	$('.sortable').sortable().bind('sortupdate', function() {
-
+        localStorage.setItem('todoListPlus', theList.innerHTML);
 	});
 
 	$('#theList').on('mouseover', 'li', function(){
@@ -215,6 +218,7 @@ $(document).ready(function() {
 	$('#theList').on('click', '.removeListItem', function(e){
 		e.preventDefault();
 		$(this).parent().remove();
+        localStorage.setItem('todoListPlus', theList.innerHTML);
 	});
 	
 	$('#doClearAll').on('click', '#clearAll', function(e){
@@ -224,8 +228,25 @@ $(document).ready(function() {
 		$('#toDoItem').val('');
 		$('#doClearAll').css('display','none');
 		$('#toDoItem').focus();
+        localStorage.setItem('todoListPlus', theList.innerHTML);
 	});
 
+    loadToDo();
+
+    function loadToDo() {
+        if ( localStorage.getItem('todoListPlus') ) {
+            theList.innerHTML = localStorage.getItem('todoListPlus');
+            $('.sortable').sortable('destroy');
+            $('.sortable').sortable({
+                handle: '.handle'
+            });
+
+            var theCount = $("#theList li").length + 1;
+            if (theCount > 1) {
+                $('#doClearAll').css('display','block');
+            }
+        }
+    }
 		
 });
 </script>
