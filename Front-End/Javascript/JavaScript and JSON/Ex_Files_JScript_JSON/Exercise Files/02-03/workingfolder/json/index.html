@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<h2>Links</h2>
+<ul id="links">
+
+</ul>
+
 <script>
 
 var info = {
@@ -19,6 +24,18 @@ var info = {
 		"twitter"  : "http://twitter.com/planetoftheweb" 
 	}
 };
+
+    var output = '';
+
+    for ( key in info.links ) {
+        if ( info.links.hasOwnProperty(key) ) {
+            output += '<li>' + '<a href="' + info.links[key] +
+                            '">' + key + '</a>' + '</li>';
+        }
+    }
+
+    var update = document.getElementById('links');
+    update.innerHTML = output;
 
 </script>
 </body>
