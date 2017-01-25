@@ -13,6 +13,8 @@
 <link href="styles/transitions.css" rel="stylesheet" media="screen, projection">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="scripts/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="scripts/utils.js"></script>
+    <script type="text/javascript" src="scripts/custom_survey.js"></script>
 <script type="text/javascript" src="scripts/jquery.columnizer.min.js"></script>
 <script type="text/javascript" src="scripts/html5slider.js"></script>
 <script>
@@ -117,6 +119,11 @@
                   Textiles</label>
               </p>
             </div>
+
+              <p class="show-buttons">
+                  <input type="button" class="show-back alignRight" value="Next" >
+              </p>
+
           </div>
         </div>
         <div class="back cf panel">
@@ -124,7 +131,14 @@
             <h2>Q 2/5</h2>
             <p>What area of study didn’t you see that you wish you did?</p>
             <p>
-              <input id="desiredCourse" type="text" placeholder="Desired course" /></p>
+              <input id="desiredCourse" type="text" placeholder="Desired course" />
+            </p>
+
+              <p class="show-buttons">
+                  <input type="button" class="show-front alignLeft" value="Prev" >
+                  <input type="button" class="show-right alignRight" value="Next" >
+              </p>
+
           </div>
         </div>
         <div class="right cf panel">
@@ -151,6 +165,12 @@
               <input type="radio" id="artistLength5" name="artistLength" value="I don't" />
               <label>I don't.</label>
             </p>
+
+              <p class="show-buttons">
+                  <input type="button" class="show-back alignLeft" value="Prev" >
+                  <input type="button" class="show-left alignRight" value="Next" >
+              </p>
+
           </div>
         </div>
         <div class="left cf panel">
@@ -163,6 +183,12 @@
             <p>
               <input type="text" id="hoursPracticeValue" placeholder="Move slider from 0 to 24 hours" />
             </p>
+
+              <p class="show-buttons">
+                  <input type="button" class="show-right alignLeft" value="Prev" >
+                  <input type="button" class="show-top alignRight" value="Next" >
+              </p>
+
           </div>
         </div>
         <div class="top cf panel">
@@ -194,6 +220,12 @@
                 <input class="shared" type="checkbox" name="viewers_" value="No one" id="viewers_0" />
                 No one</label>
             </p>
+
+              <p class="show-buttons">
+                  <input type="button" class="show-left alignLeft" value="Prev" >
+                  <input id="review" type="button" class="show-bottom alignRight" value="Next" >
+              </p>
+
           </div>
         </div>
         <div class="bottom cf panel">
@@ -204,30 +236,34 @@
               <tr>
                 <td width="15%">Q1:</td>
                 <td id="interestsResult" width="60%"><strong>Interests: </strong></td>
-                <td width="25%" class="show-buttons"></td>
+                <td width="25%" class="show-buttons"><input type="button" class="show-front" value="Modify" ></td>
               </tr>
               <tr>
                 <td>Q2:</td>
                 <td id="desiredCourseResult"><strong>Desired: </strong></td>
-                <td class="show-buttons"></td>
+                <td class="show-buttons"><input type="button" class="show-back" value="Modify" ></td>
               </tr>
               <tr>
                 <td>Q3</td>
                 <td id="artistLengthResult"><strong>Artist: </strong></td>
-                <td class="show-buttons"></td>
+                <td class="show-buttons"><input type="button" class="show-right" value="Modify" ></td>
               </tr>
               <tr>
                 <td>Q4</td>
                 <td id="hoursPracticeResult"><strong>Hours: </strong></td>
-                <td class="show-buttons"></td>
+                <td class="show-buttons"><input type="button" class="show-left" value="Modify" ></td>
               </tr>
               <tr>
                 <td>Q5</td>
                 <td id="sharedResult"><strong>Shared: </strong></td>
-                <td class="show-buttons"></td>
+                <td class="show-buttons"><input type="button" class="show-top" value="Modify" ></td>
               </tr>
             </table>
             <p>Thank you for taking our survey.</p>
+              <p class="show-buttons">
+                  <input type="button" class="show-top alignLeft" value="Prev" >
+                  <input type="submit" class="alignRight" value="Submit" >
+              </p>
           </div>
         </div>
       </form>

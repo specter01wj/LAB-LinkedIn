@@ -46,3 +46,66 @@
 #show-buttons {
 	text-align:  center;	
 }
+
+#cube .front {
+    -webkit-transform: translateZ( 225px );
+    -moz-transform: translateZ( 225px );
+    -ms-transform: translateZ( 225px );
+    -o-transform: translateZ( 225px );
+    transform: translateZ( 225px );
+}
+#cube .back {
+    -webkit-transform: rotateX( -180deg ) translateZ( 225px );
+    -moz-transform: rotateX( -180deg ) translateZ( 225px );
+    -ms-transform: rotateX( -180deg ) translateZ( 225px );
+    -o-transform: rotateX( -180deg ) translateZ( 225px );
+    transform: rotateX( -180deg ) translateZ( 225px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right {
+    -webkit-transform: rotateY( 90deg ) translateZ( 225px );
+    -moz-transform: rotateY( 90deg ) translateZ( 225px );
+    -ms-transform: rotateY( 90deg ) translateZ( 225px );
+    -o-transform: rotateY( 90deg ) translateZ( 225px );
+    transform: rotateY( 90deg ) translateZ( 225px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left {
+    -webkit-transform: rotateY( -90deg ) translateZ( 225px );
+    -moz-transform: rotateY( -90deg ) translateZ( 225px );
+    -ms-transform: rotateY( -90deg ) translateZ( 225px );
+    -o-transform: rotateY( -90deg ) translateZ( 225px );
+    transform: rotateY( -90deg ) translateZ( 225px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .top {
+    -webkit-transform: rotateX( 90deg ) translateZ( 225px );
+    -moz-transform: rotateX( 90deg ) translateZ( 225px );
+    -ms-transform: rotateX( 90deg ) translateZ( 225px );
+    -o-transform: rotateX( 90deg ) translateZ( 225px );
+    transform: rotateX( 90deg ) translateZ( 225px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom {
+    -webkit-transform: rotateX( -90deg ) translateZ( 225px );
+    -moz-transform: rotateX( -90deg ) translateZ( 225px );
+    -ms-transform: rotateX( -90deg ) translateZ( 225px );
+    -o-transform: rotateX( -90deg ) translateZ( 225px );
+    transform: rotateX( -90deg ) translateZ( 225px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
