@@ -20,6 +20,19 @@
 <script>
  $(document).ready(function() {
    $('.column').columnize({ columns: 2 });
+     $("#review").click(function () {
+         interestsChecked = $('.interests:checked').map(function() {
+             return $(this).val();
+         }).get();
+         $("#interestsResult").html('<strong>Interests: </strong>');
+         $("#interestsResult").append(interestsChecked.join(', '));
+
+         sharedChecked = $('.shared:checked').map(function() {
+             return $(this).val();
+         }).get();
+         $("#sharedResult").html('<strong>Shared: </strong>');
+         $("#sharedResult").append(sharedChecked.join(', '));
+     });
  });
    	// Update text field for slider
 	function printValue(sliderID, textbox) {

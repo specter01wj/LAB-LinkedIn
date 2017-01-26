@@ -31,7 +31,19 @@
 			return $(this).val();
 		}).get();
 		$("#sharedResult").html('<strong>Shared: </strong>');
-		$("#sharedResult").append(sharedChecked.join(', '));	
+		$("#sharedResult").append(sharedChecked.join(', '));
+
+        var theDesiredCourse = localStorage.getItem('desiredCourse');
+        theDesiredCourse = "<strong>Desired:</strong> " + theDesiredCourse;
+        $("#desiredCourseResult").html(theDesiredCourse);
+
+        var theArtistLength = localStorage.getItem('artistLength');
+        theArtistLength = "<strong>Artist:</strong> " + theArtistLength;
+        $("#artistLengthResult").html(theArtistLength);
+
+        var theHoursPractice = localStorage.getItem('hoursPractice');
+        theHoursPractice = "<strong>Hours:</strong> " + theHoursPractice;
+        $("#hoursPracticeResult").html(theHoursPractice);
 	});
 });
    	// Update text field for slider
