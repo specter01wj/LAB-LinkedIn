@@ -22,6 +22,33 @@ function initStage(images) {
 		height: 400
 	});
 
+  var dayOneBar = new Kinetic.Rect({
+    x: 0,
+    y: 0,
+    width: 100,
+    height: 10,
+    name: 'bar',
+    fill: '#B20000'
+  });
+
+  var dayTwoBar = new Kinetic.Rect({
+    x: 0,
+    y: 0,
+    width: 100,
+    height: 10,
+    name: 'bar',
+    fill: '#1F0000'
+  });
+
+  var dayThreeBar = new Kinetic.Rect({
+    x: 0,
+    y: 0,
+    width: 100,
+    height: 10,
+    name: 'bar',
+    fill: '#AB0F00'
+  });
+
 	var legendArea = new Kinetic.Rect({
 		x: 0,
 		y: stage.getHeight() - 20,

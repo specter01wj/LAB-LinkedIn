@@ -4,6 +4,8 @@
 <title>TPA: Trans Planet Airlines - Lunar Leaper Training</title>
 <link href="styles/main.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="./scripts/kinetic-v4.40.js"></script>
+        <script type="text/javascript" src="scripts/canvas_chart.js"></script>
 	</head>
 	<body onmousedown="return false;">
 <div id="outerWrapper">
@@ -16,6 +18,10 @@
     <div id="steps">
       <p>Chart your training progress by dragging the corner of the daily bars to the height you reached that day of the training. To make a momento of your training progress, click the Training Complete button.</p>
     </div>
+      <div id="container"></div>
+      <div>
+          <button id="saveImage">Training Complete!</button>
+      </div>
   </div>
   <div id="footer">
     <p>Copyright &copy; 2054 Trans Planet Airlines, LLC. All rights reserved</p>

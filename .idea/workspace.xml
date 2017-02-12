@@ -19,6 +19,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_01/index.htm" afterPath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_01/index.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_03/scripts/canvas_chart.js" afterPath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_03/scripts/canvas_chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/scripts/canvas_chart.js" afterPath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/scripts/canvas_chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/scripts/canvas_chart.js" afterPath="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/scripts/canvas_chart.js" />
     </list>
     <ignored path="Lynda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +43,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 1/01_01/index.htm">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2840909">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvas_chart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/scripts/canvas_chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvas_chart.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/scripts/canvas_chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8369565">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -57,10 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-02/workingfolder/ajax/data.txt" />
-        <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-02/workingfolder/ajax/script.js" />
-        <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-03/workingfolder/ajax/index.html" />
-        <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-03/workingfolder/ajax/script.js" />
         <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-04/workingfolder/ajax/script.js" />
         <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-05/workingfolder/ajax/script.js" />
         <option value="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/02-05/workingfolder/ajax/index.html" />
@@ -108,6 +138,10 @@
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 4/04_02/survey.htm" />
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 4/04_03/survey.htm" />
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 4/04_03/thanks.htm" />
+        <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_01/index.htm" />
+        <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_03/scripts/canvas_chart.js" />
+        <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/scripts/canvas_chart.js" />
+        <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/scripts/canvas_chart.js" />
       </list>
     </option>
   </component>
@@ -117,8 +151,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1571" />
-    <option name="y" value="156" />
+    <option name="x" value="270" />
+    <option name="y" value="55" />
     <option name="width" value="1110" />
     <option name="height" value="696" />
   </component>
@@ -147,7 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,11 +391,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter 1" />
+              <option name="myItemId" value="Chapter 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="01_01" />
+              <option name="myItemId" value="Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5 Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5 Projects _ Interactive Charts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ex_Files_HTML5_Intr_Chrts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercise Files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercise Files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03_02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lynda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Front-End" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5 Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5 Projects _ Interactive Charts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ex_Files_HTML5_Intr_Chrts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercise Files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercise Files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03_02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,6 +503,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -479,26 +597,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1571" y="156" width="1110" height="696" extended-state="0" />
-    <editor active="false" />
+    <frame x="270" y="55" width="1110" height="696" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35078055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35078055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -519,69 +637,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 2/02_04/final/assets/code.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9933775">
-          <caret line="25" column="16" selection-start-line="1" selection-start-column="11" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 2/02_04/survey.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2163355">
-          <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/02-01/json/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/02-02/json/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/02-03/workingfolder/json/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/02-04/workingfolder/json/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.583334">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/03-01/workingfolder/json/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/03-01/workingfolder/json/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/03-01/workingfolder/json/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Javascript/JavaScript and JSON/Ex_Files_JScript_JSON/Exercise Files/03-02/finished/json/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -871,8 +926,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 1/01_01/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2840909">
+        <state vertical-scroll-proportion="-5.625">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_01/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_02/scripts/canvas_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_02/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="110" selection-start-line="11" selection-start-column="110" selection-end-line="11" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_03/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 2/02_03/scripts/canvas_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_01/scripts/canvas_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Interactive Charts/Ex_Files_HTML5_Intr_Chrts/Exercise Files/Exercise Files/Chapter 3/03_02/scripts/canvas_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8369565">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -22,6 +22,43 @@ function initStage(images) {
 		height: 400
 	});
 
+  var legendArea = new Kinetic.Rect({
+    x: 0,
+    y: stage.getHeight() - 20,
+    height: 20,
+    width: stage.getWidth(),
+    fill: 'white'
+  });
+
+  var dayOneLabel = new Kinetic.Text({
+    text: 'Day 1',
+    fontSize: 12,
+    x: 40,
+    y: stage.getHeight() - 18,
+    fontFamily: 'sans-serif',
+    fill: '#333333'
+  });
+
+  var dayTwoLabel = new Kinetic.Text({
+    text: 'Day 2',
+    fontSize: 12,
+    x: 170,
+    y: stage.getHeight() - 18,
+    fontFamily: 'sans-serif',
+    fill: '#333333'
+  });
+
+  var dayThreeLabel = new Kinetic.Text({
+    text: 'Day 3',
+    fontSize: 12,
+    x: 300,
+    y: stage.getHeight() - 18,
+    fontFamily: 'sans-serif',
+    fill: '#333333'
+  });
+
+  var layer = new Kinetic.Layer();
+
 	var bgLayer = new Kinetic.Layer();
 
 	// Background image
@@ -35,7 +72,14 @@ function initStage(images) {
 	});
 	
 	bgLayer.add(bgImg);
+
+  layer.add(legendArea);
+  layer.add(dayOneLabel);
+  layer.add(dayTwoLabel);
+  layer.add(dayThreeLabel);
+
 	stage.add(bgLayer);
+  stage.add(layer);
 
 	stage.draw();
 	
