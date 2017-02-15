@@ -48,10 +48,43 @@ function initStage(images) {
 		name: 'bar',
 		fill: 'blue'
 	});
-	
-	var barOneY = 370;
+
+/*	var barOneY = 370;
 	var barTwoY = 370;
-	var barThreeY = 370;
+	var barThreeY = 370;*/
+  var theDayOneScore = localStorage.getItem('dayOneScore');
+  var theDayTwoScore = localStorage.getItem('dayTwoScore');
+  var theDayThreeScore = localStorage.getItem('dayThreeScore');
+
+  if ( localStorage.getItem('dayOneScore') ) {
+    var theDayOneScore = localStorage.getItem('dayOneScore');
+    var theDayOneNumber = parseInt(theDayOneScore);
+    var barOneY = 370 - (theDayOneNumber * 12) + 20;
+  } else {
+    var theDayOneScore = 0;
+    var barOneY = 370;
+    var dayOneBarHeight = 10;
+  }
+
+  if ( localStorage.getItem('dayTwoScore') ) {
+    var theDayTwoScore = localStorage.getItem('dayTwoScore');
+    var theDayTwoNumber = parseInt(theDayTwoScore);
+    var barTwoY = 370 - (theDayTwoNumber * 12) + 20;
+  } else {
+    var theDayTwoScore = 0;
+    var barTwoY = 370;
+    var dayTwoBarHeight = 10;
+  }
+
+  if ( localStorage.getItem('dayThreeScore') ) {
+    var theDayThreeScore = localStorage.getItem('dayThreeScore');
+    var theDayThreeNumber = parseInt(theDayThreeScore);
+    var barThreeY = 370 - (theDayThreeNumber * 12) + 20;
+  } else {
+    var theDayThreeScore = 0;
+    var barThreeY = 370;
+    var dayThreeBarHeight = 10;
+  }
 	
 	var barOneGroup = new Kinetic.Group({
 		x: 10,
@@ -184,17 +217,38 @@ function initStage(images) {
 	dayOneBar.on('heightChange', function() {
 		var theHeight = parseInt(dayOneBar.getHeight()/12);
 		dayOneText.setText(theHeight);
+    localStorage.setItem('dayOneScore', theHeight);
 	});
 
 	dayTwoBar.on('heightChange', function() {
 		var theHeight = parseInt(dayTwoBar.getHeight()/12);
 		dayTwoText.setText(theHeight);
+    localStorage.setItem('dayTwoScore', theHeight);
 	});
 
 	dayThreeBar.on('heightChange', function() {
 		var theHeight = parseInt(dayThreeBar.getHeight()/12);
 		dayThreeText.setText(theHeight);
+    localStorage.setItem('dayThreeScore', theHeight);
 	});
+
+  var theDayOneHeight = 10;
+  if ( localStorage.getItem('dayOneScore') ) {
+    theDayOneHeight = parseInt(theDayOneScore) * 12;
+    dayOneBar.setHeight(theDayOneHeight);
+  }
+
+  var theDayTwoHeight = 10;
+  if ( localStorage.getItem('dayTwoScore') ) {
+    theDayTwoHeight = parseInt(theDayTwoScore) * 12;
+    dayTwoBar.setHeight(theDayTwoHeight);
+  }
+
+  var theDayThreeHeight = 10;
+  if ( localStorage.getItem('dayThreeScore') ) {
+    theDayThreeHeight = parseInt(theDayThreeScore) * 12;
+    dayThreeBar.setHeight(theDayThreeHeight);
+  }
 
 	stage.draw();
 	

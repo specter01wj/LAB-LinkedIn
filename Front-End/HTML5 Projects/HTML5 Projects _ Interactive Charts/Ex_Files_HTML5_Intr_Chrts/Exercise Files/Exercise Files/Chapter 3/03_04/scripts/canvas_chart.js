@@ -131,10 +131,22 @@ function initStage(images) {
 	stage.add(layer);
 
 	barOneGroup.add(dayOneBar);
+  addAnchor(barOneGroup, 0, 0, 'topLeft');
+  addAnchor(barOneGroup, 100, 0, 'topRight');
+  addAnchor(barOneGroup, 100, 20, 'bottomRight');
+  addAnchor(barOneGroup, 0, 20, 'bottomLeft');
 	
 	barTwoGroup.add(dayTwoBar);
+  addAnchor(barTwoGroup, 0, 0, 'topLeft');
+  addAnchor(barTwoGroup, 100, 0, 'topRight');
+  addAnchor(barTwoGroup, 100, 20, 'bottomRight');
+  addAnchor(barTwoGroup, 0, 20, 'bottomLeft');
 	
 	barThreeGroup.add(dayThreeBar);
+  addAnchor(barThreeGroup, 0, 0, 'topLeft');
+  addAnchor(barThreeGroup, 100, 0, 'topRight');
+  addAnchor(barThreeGroup, 100, 20, 'bottomRight');
+  addAnchor(barThreeGroup, 0, 20, 'bottomLeft');
 
 	stage.draw();
 	

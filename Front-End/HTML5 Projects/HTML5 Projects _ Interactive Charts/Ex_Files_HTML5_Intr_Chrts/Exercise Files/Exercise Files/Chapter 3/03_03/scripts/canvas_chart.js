@@ -48,7 +48,29 @@ function initStage(images) {
 		name: 'bar',
 		fill: 'blue'
 	});
-	
+
+  var barOneY = 370;
+  var barTwoY = 370;
+  var barThreeY = 370;
+
+  var barOneGroup = new Kinetic.Group({
+    x: 10,
+    y: barOneY,
+    draggable: false
+  });
+
+  var barTwoGroup = new Kinetic.Group({
+    x: 140,
+    y: barTwoY,
+    draggable: false
+  });
+
+  var barThreeGroup = new Kinetic.Group({
+    x: 270,
+    y: barThreeY,
+    draggable: false
+  });
+
 	var legendArea = new Kinetic.Rect({
 		x: 0,
 		y: stage.getHeight() - 20,
@@ -99,6 +121,11 @@ function initStage(images) {
 	
 
 	bgLayer.add(bgImg);
+
+  layer.add(barOneGroup);
+  layer.add(barTwoGroup);
+  layer.add(barThreeGroup);
+
 	layer.add(legendArea);
 	layer.add(dayOneLabel);
 	layer.add(dayTwoLabel);
@@ -106,33 +133,10 @@ function initStage(images) {
 	stage.add(bgLayer);
 	stage.add(layer);
 
-	var dayOneBar = new Kinetic.Rect({
-		x: 0,
-		y: 0,
-		width: 100,
-		height: dayOneBarHeight,
-		name: 'bar',
-		fill: '#B20000'
-	});
-	
-	var dayTwoBar = new Kinetic.Rect({
-		x: 0,
-		y: 0,
-		width: 100,
-		height: 10,
-		name: 'bar',
-		fill: 'green'
-	});
-	
-	var dayThreeBar = new Kinetic.Rect({
-		x: 0,
-		y: 0,
-		width: 100,
-		height: 10,
-		name: 'bar',
-		fill: 'blue'
-	});
-		
+  barOneGroup.add(dayOneBar);
+  barTwoGroup.add(dayTwoBar);
+  barThreeGroup.add(dayThreeBar);
+
 	stage.draw();
 	
 } // End initStage()

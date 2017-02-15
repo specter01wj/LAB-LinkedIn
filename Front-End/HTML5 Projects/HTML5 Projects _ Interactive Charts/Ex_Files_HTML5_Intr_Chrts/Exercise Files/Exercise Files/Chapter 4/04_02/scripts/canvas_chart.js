@@ -248,6 +248,15 @@ function initStage(images) {
 	}
 
 	stage.draw();
+
+  document.getElementById('saveImage').addEventListener('click', function(){
+    stage.toDataURL({
+      callback: function(dataUrl) {
+        window.open(dataUrl);
+      }
+    });
+  }, false);
+
 	
 } // End initStage()
 

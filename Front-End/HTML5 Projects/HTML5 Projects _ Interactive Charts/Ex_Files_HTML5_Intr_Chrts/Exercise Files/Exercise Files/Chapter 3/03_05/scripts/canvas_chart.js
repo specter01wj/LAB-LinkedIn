@@ -71,6 +71,36 @@ function initStage(images) {
 		draggable: false
 	});
 
+  var dayOneText = new Kinetic.Text({
+    text: '',
+    fontSize: 48,
+    x: 35,
+    y: 338,
+    fontFamily: 'sans-serif',
+    stroke: 'black',
+    fill: 'white'
+  });
+
+  var dayTwoText = new Kinetic.Text({
+    text: '',
+    fontSize: 48,
+    x: 165,
+    y: 338,
+    fontFamily: 'sans-serif',
+    stroke: 'black',
+    fill: 'white'
+  });
+
+  var dayThreeText = new Kinetic.Text({
+    text: '',
+    fontSize: 48,
+    x: 295,
+    y: 338,
+    fontFamily: 'sans-serif',
+    stroke: 'black',
+    fill: 'white'
+  });
+
 	var legendArea = new Kinetic.Rect({
 		x: 0,
 		y: stage.getHeight() - 20,
@@ -127,6 +157,11 @@ function initStage(images) {
 	layer.add(dayOneLabel);
 	layer.add(dayTwoLabel);
 	layer.add(dayThreeLabel);
+
+  layer.add(dayOneText);
+  layer.add(dayTwoText);
+  layer.add(dayThreeText);
+
 	stage.add(bgLayer);
 	stage.add(layer);
 
@@ -147,6 +182,21 @@ function initStage(images) {
 	addAnchor(barThreeGroup, 100, 0, 'topRight');
 	addAnchor(barThreeGroup, 100, 20, 'bottomRight');
 	addAnchor(barThreeGroup, 0, 20, 'bottomLeft');
+
+  dayOneBar.on('heightChange', function(){
+    var theHeight = parseInt(dayOneBar.getHeight()/12);
+    dayOneText.setText(theHeight);
+  });
+
+  dayTwoBar.on('heightChange', function(){
+    var theHeight = parseInt(dayTwoBar.getHeight()/12);
+    dayTwoText.setText(theHeight);
+  });
+
+  dayThreeBar.on('heightChange', function(){
+    var theHeight = parseInt(dayThreeBar.getHeight()/12);
+    dayThreeText.setText(theHeight);
+  });
 
 	stage.draw();
 	
