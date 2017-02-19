@@ -10,7 +10,30 @@
     <body>
         <div id='react-container'></div>
         <script type="text/babel">
+        var Note = React.createClass({
+            edit() {
+                alert('Edit!');
+            },
 
+            remove() {
+                alert('Reomve?');
+            },
+
+            render() {
+                return(
+                    <div className='note'>
+                        <p>{this.props.children}</p>
+                        <span>
+                            <button onClick={this.edit}>Edit</button>
+                            <button onClick={this.remove}>X</button>
+                        </span>
+                    </div>
+                )
+            }
+        })
+
+        ReactDOM.render(<Note>James Wang!!!</Note>,
+                document.getElementById('react-container'))
         
 
         </script>

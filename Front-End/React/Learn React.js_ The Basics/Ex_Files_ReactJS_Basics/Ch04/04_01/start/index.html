@@ -13,13 +13,23 @@
             var MyComponent = React.createClass({
                 render() {
                     return <div>
-                        <h1>Hello World</h1>
-                        <p>This is my first React component!</p>
+                        <h1>{ this.props.text }</h1>
+                        <p>{ this.props.children }</p>
                     </div>
                 }
             })
 
-            ReactDOM.render(<MyComponent />,
+            ReactDOM.render(<div>
+                <MyComponent text='hello world!' >
+                            TTTTTTT
+                            </MyComponent>
+                    <MyComponent text='hello world! 2' >
+                            KKKKKKK
+                    </MyComponent>
+                    <MyComponent text='hello world! 3' >
+                            PPPPPPPP
+                    </MyComponent>
+                    </div>,
                 document.getElementById('react-container'))
 
         </script>
