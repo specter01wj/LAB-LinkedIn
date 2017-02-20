@@ -23,6 +23,15 @@
                     top: this.randomBetween(0, window.innerHeight -150, 'px')
                 }
             },
+            componentDidUpdate() {
+                if (this.state.editing) {
+                    this.refs.newText.focus()
+                    this.refs.newText.select()
+                }
+            },
+            shouldComponentUpdate( nextProps, nextState ) {
+                return this.props.children !== nextProps.children || this.state !== nextState
+            },
             randomBetween(x, y, s) {
                 return (x + Math.ceil(Math.random() * (y-x))) + s
             },
@@ -40,7 +49,9 @@
                 return (
                     <div className="note" 
                          style={this.style}>
-                      <textarea ref="newText"></textarea>
+                      <textarea ref="newText"
+                                defaultValue={this.props.children}>
+                      </textarea>
                       <button onClick={this.save}>SAVE</button>
                     </div>
                 )
@@ -58,8 +69,12 @@
                     )
             },
             render() {
-              return (this.state.editing) ? this.renderForm()
-                                          : this.renderDisplay()
+              return (
+                <ReactDraggable>
+                {(this.state.editing) ? this.renderForm()
+                                          : this.renderDisplay()}
+                </ReactDraggable>
+                )
 
             }
         })
@@ -79,6 +94,20 @@
             getInitialState() {
                 return {
                     notes: []
+                }
+            },
+            componentWillMount() {
+                if( this.props.count ) {
+                    var url = `http://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`
+                    fetch(url)
+                            .then(results => results.json())
+                            .then(array => array[0])
+                            .then(text => text.split('. '))
+                            .then(array => array.forEach(
+                                  sentence => this.add(sentence) ))
+                            .catch(function(err){
+                                console.log('Error to API', err)
+                            })
                 }
             },
             nextId() {
@@ -126,7 +155,7 @@
             }
         })
         
-        ReactDOM.render(<Board count={10}/>, 
+        ReactDOM.render(<Board count={50}/>,
             document.getElementById('react-container'))
 
         </script>

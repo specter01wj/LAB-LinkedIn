@@ -10,17 +10,22 @@
         <div id='react-container'></div>
         <script type="text/babel">
             var Box = React.createClass({
-                getDefaultProps() {
+                getInitialState() {
                     return {
                         backgroundColor: 'purple',
                         height: 200,
                         width: 200
                     }
                 },
+                update() {
+                    this.setState({backgroundColor: 'red'})
+                },
+                componentDidUpdate() {
+                    alert('comp did update')
+                },
                 render() {
-                    return (<div id='myDiv'>
-                                <div style={this.props}></div>
-                                <section style={this.props}></section>
+                    return (<div style={this.state}
+                                onClick={this.update}>
                             </div>)
                 }
             })

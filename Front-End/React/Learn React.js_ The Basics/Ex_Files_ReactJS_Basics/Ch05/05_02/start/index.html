@@ -65,13 +65,26 @@
             getInitialState() {
                 return {
                     notes: [
-                      {id: 0, note: 'Call Bob'},
-                      {id: 1, note: 'Email Sarah'},
-                      {id: 2, note: 'Eat Lunch'},
-                      {id: 3, note: 'Finish proposal'}
                     ]
                 }
             },
+
+            nextId() {
+                this.uniqueId = this.uniqueId || 0
+                return this.uniqueId++
+            },
+
+            add(text) {
+                var notes = [
+                        ...this.state.notes,
+                    {
+                        id: this.nextId(),
+                        note: text
+                    }
+                ]
+                this.setState({notes})
+            },
+
             update(newText, id) {
                 var notes = this.state.notes.map(
                     note => (note.id !== id) ?
@@ -98,6 +111,7 @@
             render() {
                 return (<div className='board'>
                            {this.state.notes.map(this.eachNote)}
+                            <button onClick={() => this.add('New Note') }>+</button>
                         </div>)
             }
         })
