@@ -97,6 +97,24 @@
 		sources[i].setAttribute('data-orig', orig);
 		sources[i].setAttribute('src', orig.replace(/(\w+)\.(\w+)/, 'bumper-in.$2'));
 	}
+
+    videos = document.getElementsByTagName('video');
+    for(i = 0, l = videos.length; i < l; i++) {
+        videos[i].load();
+        videos[i].addEventListener('ended', function(){
+            sources = this.getElementsByTagName('source');
+            for( i = 0, l = sources.length; i < l; i++ ) {
+                orig = sources[i].getAttribute('data-orig');
+                if( orig ) {
+                    sources[i].setAttribute('src', orig);
+                }
+                sources[i].setAttribute('data-orig', '');
+            }
+            this.load();
+            this.play();
+        });
+    }
+
 </script>
 
 
