@@ -18,8 +18,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_05/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_05/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_06/project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" afterPath="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/8_Up and Running with Git and GitHub/Ex_Files_UaR_Git_GitHub/Exercise Files/Ch01/01_07/project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch05/05_07/start/index.html" afterPath="$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch05/05_07/start/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.html" afterPath="$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.html" />
     </list>
     <ignored path="Lynda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +39,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/finish/dist/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/finish/dist/index.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24456522">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_02/finish/dist/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_02/finish/dist/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -65,8 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 3/03_01/survey.htm" />
-        <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 3/03_02/styles/transitions.css" />
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 3/03_03/styles/transitions.css" />
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 3/03_04/survey.htm" />
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Creating Surveys/Ex_Files_HTML5Proj_Survey/Exercise Files/Chapter 4/04_01/scripts/custom_survey.js" />
@@ -116,6 +163,8 @@
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Video Bumpers/Ex_Files_HTML5Proj_Bumpers/Exercise Files/Chapter 2/02_03/index.htm" />
         <option value="$PROJECT_DIR$/Front-End/HTML5 Projects/HTML5 Projects _ Video Bumpers/Ex_Files_HTML5Proj_Bumpers/Exercise Files/Chapter 2/02_04/index.htm" />
         <option value="$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch05/05_07/start/index.html" />
+        <option value="$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.html" />
+        <option value="$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.js" />
       </list>
     </option>
   </component>
@@ -125,8 +174,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="259" />
-    <option name="y" value="126" />
+    <option name="x" value="69" />
+    <option name="y" value="189" />
     <option name="width" value="1110" />
     <option name="height" value="696" />
   </component>
@@ -341,6 +390,14 @@
               <option name="myItemId" value="02_01" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -443,11 +500,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist" />
       <recent name="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/04-01/workingfolder/ajax" />
       <recent name="$PROJECT_DIR$/Front-End/Javascript/JavaScript and AJAX/Ex_Files_JScript_AJAX/Exercise Files/01-02/workingfolder/ajax" />
       <recent name="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/7_jQuery Essential Training/Ex_Files_jQuery_EssT/Exercise Files/landonhotel/Start" />
       <recent name="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_08/08_07" />
-      <recent name="$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/5_HTML Essential Training/Ex_Files_HTML_EssT/Exercise_files/Chapter_07/07_06" />
     </key>
   </component>
   <component name="RunManager">
@@ -523,26 +580,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="259" y="126" width="1110" height="696" extended-state="0" />
+    <frame x="69" y="189" width="1110" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35261708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -563,41 +620,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch02/02_03/start/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3125">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch03/03_02/start/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch03/03_03/start/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/React/Learn React.js_ The Basics/Ex_Files_ReactJS_Basics/Ch03/03_04/start/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5113636">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/11_Learn React.js_ The Basics/Ex_Files_LReact_js_2016/Exercise Files/Ch04/04_01/start/js/Note.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front-End/Become a Front-End Web Developer/11_Learn React.js_ The Basics/Ex_Files_LReact_js_2016/Exercise Files/Ch04/04_01/start/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -916,10 +938,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.html">
+    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_02/finish/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_02/finish/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/finish/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/finish/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front-End/React/React.js Essential Training/Ex_Files_React_EssT/Ch02/02_01/start/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24456522">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
