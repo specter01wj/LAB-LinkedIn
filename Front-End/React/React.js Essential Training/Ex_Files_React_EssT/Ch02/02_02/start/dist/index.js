@@ -1,4 +1,4 @@
-const { createElement } = React
+
 const { render } = ReactDOM
 
 const style = {
@@ -7,13 +7,11 @@ const style = {
   fontFamily: 'verdana'
 }
 
-const title = createElement(
-	'h1',
-	{id: 'title', className: 'header', style: style},
-	'Hello World'
-)
-
 render(
-	title,
+  <h1 id='title'
+      className='header'
+      style={style}>
+  Hello World
+  </h1>,
 	document.getElementById('react-container')
 )
