@@ -7,15 +7,29 @@ class Member extends Component {
   	this.style = {
   		backgroundColor: 'gray'
   	}
-  }	
+  }
+
+  componentWillUpdate(nextProps) {
+    this.style = {backgroundColor: (nextProps.admin) ? 'green' : 'gray'}
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return this.props.admin !== nextProps.admin
+  }
 
   render() {
 
-	const { name, thumbnail, email, admin, makeAdmin } = this.props
+	const { name, thumbnail, email, admin, makeAdmin, removeAdmin } = this.props
     return (
         <div className="member" style={this.style}>
         	<h1>{name} {(admin) ? <FaShield /> : null}</h1>
-        	<a onClick={makeAdmin}>Make Admin</a>
+
+          {
+            (admin) ?
+              <a onClick={() => removeAdmin(email)}>Remove Admin</a> :
+              <a onClick={() => makeAdmin(email)}>Make Admin</a>
+          }
+
         	<img src={thumbnail} alt="profile picture" />
         	<p><a href={`mailto:${email}`}>{email}</a></p>
 

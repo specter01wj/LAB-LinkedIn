@@ -3,11 +3,17 @@ import { Component } from 'react'
 
 class Member extends Component {
 
-render() {
+  componentWillMount() {
+    this.style = {
+      backgroundColor: 'orange'
+    }
+  }
+
+  render() {
 
 	const { name, thumbnail, email, admin, makeAdmin } = this.props
     return (
-        <div className="member">
+        <div className="member" style={this.style}>
         	<h1>{name} {(admin) ? <FaShield /> : null}</h1>
         	<a onClick={makeAdmin}>Make Admin</a>
         	<img src={thumbnail} alt="profile picture" />
@@ -15,7 +21,7 @@ render() {
 
         </div>
     )
-}
+  }
 }
 
 export default Member
