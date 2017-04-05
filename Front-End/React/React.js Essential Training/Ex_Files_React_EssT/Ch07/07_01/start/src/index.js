@@ -5,6 +5,7 @@ import Member from './components/ui/Member'
 
 window.React = React
 
+
 render(
 	<Member admin={true}
             name="Edna Welch"
