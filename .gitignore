@@ -71,8 +71,17 @@
 /Become_a_Java_Programmer/3_Java Essential Training/Ex_Files_JavaEssT_Q32015/Exercise Files/Ch12/12_02/ex12_2/build/
 /Become_a_Java_Programmer/3_Java Essential Training/Ex_Files_JavaEssT_Q32015/Exercise Files/Ch12/12_02/ex12_2/dist/
 
-node_modules/
-.DS_Store
-runtime
+*.iml
+*.m4a
 target
 .idea
+build
+nbproject
+conf/*.properties
+node_modules
+nbproject
+npm-debug.log
+.DS_Store
+runtime
+symlinks
+# IntelliJ
