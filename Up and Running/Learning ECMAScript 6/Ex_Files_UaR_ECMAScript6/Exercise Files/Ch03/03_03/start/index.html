@@ -4,12 +4,33 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
 	<script type="text/babel">
 
-		var cats = ["Tabby", "Siamese", "Persian"];
-		var dogs = ["Schnauzer", "Golden Retriever", "Pug"];
+		// var cats = ["Tabby", "Siamese", "Persian"];
+		// var dogs = ["Schnauzer", "Golden Retriever", "Pug"];
 
-		var animals = ["Whale", "Giraffe", dogs, "Snake", cats, "Coyote"];
+		// var animals = ["Whale", "Giraffe", dogs, "Snake", cats, "Coyote"];
 
-		console.log(animals);
+		// console.log(animals);
+
+		function print(firstName) {
+			console.log(`Hello ${firstName}`)
+		}
+
+		print('Japan');
+
+		function createEmail(firstName, purchasePrice) {
+			var shipping = 5.95;
+			console.log(
+				`Hi ${firstName}, Thanks for buying from us!
+					Total: $${purchasePrice}
+					Shipping: $${shipping}
+					Grand Total: $${purchasePrice + shipping};
+				`	
+				);
+		}
+
+		createEmail("James", 1100);
+
+
 
 	</script>
 	<title>Spread Operators</title>

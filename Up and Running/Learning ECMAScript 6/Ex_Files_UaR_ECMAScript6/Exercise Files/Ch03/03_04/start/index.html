@@ -4,6 +4,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
 	<script type="text/babel">
 
+		var cats = ["Tabby", "Siamese", "Persian"];
+		var dogs = ["Golden Retriever", "Pug", "Schnauzer"];
+
+		var animals = ["Whale", "Giraffe", cats, "Snake", dogs, "Coyote"];
+		var animals2 = ["Whale", "Giraffe", ...cats, "Snake", ...dogs, "Coyote"];
+
+		console.log(animals);
+		console.log(animals2);
+
 	</script>
 	<title>Spread Operators</title>
 </head>
