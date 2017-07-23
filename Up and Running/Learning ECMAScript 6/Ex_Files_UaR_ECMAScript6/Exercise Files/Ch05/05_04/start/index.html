@@ -5,9 +5,30 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.min.js"></script>
 	<script type="text/babel">
 		class Restaurant extends React.Component {
+			constructor(){
+				super();
+				this.state = {
+					status: "not open"
+				};
+				this.openRestaurant = this.openRestaurant.bind(this);
+				this.closeRestaurant = this.closeRestaurant.bind(this);
+			}
+			openRestaurant(){
+				this.setState({
+					status: "open"
+				});
+			}
+			closeRestaurant(){
+				this.setState({
+					status: "not open"
+				});
+			}
 			render() {
 				return (<div>
 						<h1>{this.props.name}</h1>
+						<p>The restaurant is {this.state.status}.</p>
+						<button onClick={this.openRestaurant}>Open Restaurant</button>
+						<button onClick={this.closeRestaurant}>Close Restaurant</button>
 					</div>);
 			}
 		}

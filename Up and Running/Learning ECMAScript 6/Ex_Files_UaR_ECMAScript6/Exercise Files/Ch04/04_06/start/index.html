@@ -2,8 +2,41 @@
 <html>
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser-polyfill.js"></script>
 	<script type="text/babel">
 
+		function* director() {
+			yield 'Three';
+			yield 'Two';
+			yield 'One';
+			yield 'Action';
+		}
+
+		var action = director();
+
+		console.log(action.next().value);
+		console.log(action.next());
+		console.log(action.next());
+		console.log(action.next());
+		console.log(action.next());
+
+		function* eachItem(arr) {
+			for(var i=0; i< arr.length; i++) {
+				yield arr[i];
+			}
+		}
+
+		var letters = eachItem(["a", "b", "c", "d", "e", "f", "g"]);
+
+		var abcs = setInterval(function(){
+			var letter = letters.next();
+			if(letter.done) {
+				clearInterval(abcs);
+				console.log("Now I know my ABC's");
+			} else {
+				console.log(letter.value);
+			}
+		}, 1000);
 
 
 	</script>

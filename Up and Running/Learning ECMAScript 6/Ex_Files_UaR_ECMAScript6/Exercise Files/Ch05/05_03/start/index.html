@@ -2,7 +2,33 @@
 <html>
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.min.js"></script>
 	<script type="text/babel">
+
+		/*var Restaurant = React.createClass({
+
+			render: function() {
+				return (<div>
+						<h1>James Wang!!!</h1>
+						<h4>{this.props.title}</h4>
+					</div>)
+			}
+
+		});*/
+
+		class Restaurant extends React.Component {
+
+			render() {
+				return (<div>
+						<h1>James Wang!!!</h1>
+						<h4>{this.props.title}</h4>
+					</div>)
+			}
+
+		}
+
+		React.render(<Restaurant title='Professor'></Restaurant>, document.body);
+
 
 	</script>
 	<title>Classes</title>

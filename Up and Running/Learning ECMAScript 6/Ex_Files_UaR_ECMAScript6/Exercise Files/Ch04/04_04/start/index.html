@@ -4,7 +4,34 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
 	<script type="text/babel">
 		
-		
+		var person = {
+			first: "Doug",
+			actions: ['bike', 'hike', 'ski', 'surf'],
+			printActions: function() {
+				/*var self = this;
+				this.actions.forEach(function(action) {
+					var str = self.first + " likes to " + action;
+					console.log(str);
+				});*/
+				this.actions.forEach(function(action) {
+					var str = this.first + " likes to " + action;
+					console.log(str);
+				}.bind(this));
+			}
+		};
+		person.printActions();	
+
+		var person = {
+			first: "Doug",
+			actions: ['bike', 'hike', 'ski', 'surf'],
+			printActions() {
+				this.actions.forEach( (action) => {
+					var str = this.first + " likes to " + action;
+					console.log(str);
+				});
+			}
+		};
+		person.printActions();
 
 	
 	</script>

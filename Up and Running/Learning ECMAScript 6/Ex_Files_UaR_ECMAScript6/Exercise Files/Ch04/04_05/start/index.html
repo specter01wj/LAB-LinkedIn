@@ -4,7 +4,41 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
 	<script type="text/babel">
 		
-		var cities = ["Spokane", "Boston", "Los Angeles", "Seattle", "Portland"];
+		//var cities = ["Spokane", "Boston", "Los Angeles", "Seattle", "Portland"];
+		var [first,,, forth] = ["Spokane", "Boston", "Los Angeles", "Seattle", "Portland"];
+		console.log(first);
+		console.log(forth);
+
+		/*var sandwich = {
+			title: 'Reuben',
+			price: 7,
+			desc: 'Clevland\'s favorite sandwich',
+			ingred: ["bread", "beef", "dressing", "sauerkraut", "cheese"]
+		}*/
+
+		var {title, price, ingred} = {
+			title: 'Reuben',
+			price: 7,
+			desc: 'Clevland\'s favorite sandwich',
+			ingred: ["bread", "beef", "dressing", "sauerkraut", "cheese"]
+		}
+
+		console.log(title);
+		console.log(ingred);
+
+		var vacation = {
+			destination: "Chile",
+			travelers: 2,
+			activity: "skiing", 
+			cost: 4000
+		};
+
+		function vacationMarketing({destination, activity}) {
+			return `Come to ${destination} and do some ${activity}`
+		}
+
+		console.log(vacationMarketing(vacation));
+
 		
 	</script>
 	<title>Destructuring Assignment</title>
