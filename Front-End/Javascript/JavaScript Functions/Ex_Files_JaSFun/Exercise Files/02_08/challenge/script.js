@@ -14,9 +14,11 @@ var socialList = function() {
       '<img src="images/' + key + '.png" alt="icon for '+key+'">' +
       '</a></li>';
   }
+
   output+= '</ul>';
   
   for (var i = myList.length - 1; i >= 0; i--) {
     myList[i].innerHTML = output;
-  };
+  }
+
 }(socialMedia);
