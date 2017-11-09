@@ -9,5 +9,6 @@ var ray = (function() {
       var statement = myArguments.say || DEFAULTS.say;
       console.log(statement);
     }
-  };
+  }
+  
 })();

@@ -17,5 +17,6 @@ var ray = (function() {
       console.log('running...'+ running);
       return this;
     }
-  };
+  }
+  
 })();
