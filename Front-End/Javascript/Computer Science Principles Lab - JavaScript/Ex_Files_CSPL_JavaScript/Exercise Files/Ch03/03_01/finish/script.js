@@ -10,7 +10,6 @@ function init()
 function clickButton()
 {
     var name = document.getElementById("textEntry").value;
-    
     document.getElementById("textOutput").innerHTML = createGreeting(name);
 }
 
