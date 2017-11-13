@@ -21,6 +21,6 @@ var msg = "myVariable is equal to " + myVariable + " and is a " + typeof myVaria
 console.log(msg);
 
 // Try to convert a number with commas
-myVariable = Number("1,234.56");
+myVariable = Number("1234.56");
 var msg = "myVariable is equal to " + myVariable + " and is a " + typeof myVariable;
 console.log(msg);
