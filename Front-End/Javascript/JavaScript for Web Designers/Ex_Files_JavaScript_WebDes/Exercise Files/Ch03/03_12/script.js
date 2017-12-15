@@ -33,6 +33,7 @@ function estimateTotal(event) {
 	var itemBball = parseInt(document.getElementById('txt-q-bball').value, 10) || 0,
 		itemJersey = parseInt(document.getElementById('txt-q-jersey').value, 10) || 0,
 		itemPower = parseInt(document.getElementById('txt-q-power').value, 10) || 0,
+		itemWater = parseInt(document.getElementById('txt-q-water').value, 10) || 0,
 		shippingState = state.value,
 		shippingMethod = document.querySelector('[name=r_method]:checked').value || "";
 		
@@ -41,10 +42,12 @@ function estimateTotal(event) {
 		shippingCost,
 		taxFactor = 1,
 		estimate,
-		totalItemPrice = (90 * itemBball) + (25 * itemJersey) + (30 * itemPower);
+		totalItemPrice = (90 * itemBball) + (25 * itemJersey) + (30 * itemPower) + (4 * itemWater);
 	
 	if (shippingState === 'CA') {
 		taxFactor = 1.075;
+	} else if (shippingState === 'WA') {
+		taxFactor = 1.065;
 	}
 	
 	switch(shippingMethod) {
