@@ -64,6 +64,16 @@ function estimateTotal(event) {
 	estimate = '$' + ((totalItemPrice * taxFactor) + shippingCost).toFixed(2);
 	
 	document.getElementById('txt-estimate').value = estimate;
+	
+	var results = document.getElementById('results');
+	
+	results.innerHTML = 'Total items: ' + totalQty + '<br>';
+	results.innerHTML += 'Total shipping: $' + shippingCost.toFixed(2) + '<br>';
+	results.innerHTML += 'Tax: ' + ((taxFactor - 1) * 100).toFixed(2) + '% (' + shippingState + ')';
+	
+	// total items
+	// total shipping cost
+	// tax
 }
 
 })();
