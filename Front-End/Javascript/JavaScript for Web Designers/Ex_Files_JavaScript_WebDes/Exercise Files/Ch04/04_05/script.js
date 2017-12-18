@@ -3,6 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 	var c = document.getElementById('current-time');
+	var currentDate = document.getElementById('current-date');
 	
 	setInterval(updateTime, 1000);
 	
@@ -11,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	
 		var hours = d.getHours(),
 			minutes = d.getMinutes(),
+			month = formatMonth(d.getMonth()),
+			date = d.getDate(),
 			ampm = 'AM';
 			
 		if (hours > 12) {
@@ -30,7 +33,28 @@ document.addEventListener('DOMContentLoaded', function(){
 		var sep = '<span class="' + sepClass + '">:</span>';
 	
 		c.innerHTML = hours + sep + minutes + ' ' + ampm;
+		currentDate.textContent = month + ' ' + date;
 	}
+
+	function formatMonth(m) {
+		m = parseInt(m, 10);
+	
+		if (m < 0) {
+			m = 0;
+		} else if (m > 11) {
+			m = 11;
+		}
+		
+		var monthNames = [
+			'January', 'February', 'March',
+			'April', 'May', 'June', 
+			'July', 'August', 'September',
+			'October', 'November', 'December'
+		];
+		
+		return monthNames[m];
+	}
+
 });
 
 
