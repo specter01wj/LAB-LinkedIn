@@ -1,30 +1,44 @@
 var map;
 function initMap() {
-	var storeLocation = {lat: 34.1031131, lng: -118.326343};
+	var storeLocationHollywood = {lat: 40.326829706785986, lng: -74.5720756934926},
+		storeLocationChavez = {lat: 40.3262653332, lng: -74.57053074110001},
+		centerPoint = {lat: 40.3262653332, lng: -74.57053074110001};
 
 	map = new google.maps.Map(document.getElementById('hplus-map'), {
-		'center' : storeLocation,
-		'zoom' : 12,
-		'mapTypeId' : google.maps.MapTypeId.ROADMAP,
-		'draggable' : false,
-		'scrollwheel' : false
+		'center' : centerPoint,
+		'zoom' : 16,
+		'mapTypeId' : google.maps.MapTypeId.HYBRID,
+		'draggable' : true,
+		'scrollwheel' : true
 	});
 	
-	var popupContent = 'H+ Sport Hollywood<br>';
-	    popupContent += '1750 Vine St<br>';
-	    popupContent += 'Los Angeles, CA';
+	var popupContentHollywood = 'BHT LLP<br>2106 Deer Creek Dr.<br>Jin Wang';
 	
-	var infowindow = new google.maps.InfoWindow({
-		content: popupContent
+	var popupContentChavez = 'CCGG LLC<br>1107 Deer Creek Dr.<br>James Wang';
+	
+	var infowindowHollywood = new google.maps.InfoWindow({
+			content: popupContentHollywood
+		});
+	var infowindowChavez = new google.maps.InfoWindow({
+			content: popupContentChavez
+		});
+	
+	var markerHollywood = new google.maps.Marker({
+			'position': storeLocationHollywood,
+			'map': map,
+			'title': 'BHT LLP'
+		});
+	var markerChavez = new google.maps.Marker({
+			'position': storeLocationChavez,
+			'map': map,
+			'title': 'CCGG LLC'
+		});
+	
+	markerHollywood.addListener('click', function() {
+		infowindowHollywood.open(map, markerHollywood);
 	});
 	
-	var marker = new google.maps.Marker({
-		'position': storeLocation,
-		'map': map,
-		'title': 'H+ Sport in Hollywood (actually Capitol Records in real life)'
-	});
-	
-	marker.addListener('click', function() {
-		infowindow.open(map, marker);
+	markerChavez.addListener('click', function() {
+		infowindowChavez.open(map, markerChavez);
 	});
 }
