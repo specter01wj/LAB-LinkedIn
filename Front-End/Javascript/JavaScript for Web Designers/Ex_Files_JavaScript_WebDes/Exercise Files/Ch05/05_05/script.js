@@ -1,10 +1,20 @@
 var map;
 function initMap() {
+
+	var storeLocation = {lat: 40.3262653332, lng: -74.5705307411};
+
 	map = new google.maps.Map(document.getElementById('hplus-map'), {
-		'center' : {lat: 34.1031131, lng: -118.326343},
-		'zoom' : 12,
-		'mapTypeId' : google.maps.MapTypeId.ROADMAP,
-		'draggable' : false,
-		'scrollwheel' : false
+		'center' : storeLocation,
+		'zoom' : 17,
+		'mapTypeId' : google.maps.MapTypeId.HYBRID,
+		'draggable' : true,
+		'scrollwheel' : true
 	});
+
+	var marker = new google.maps.Marker({
+		'position': storeLocation,
+		'map': map,
+		'title': 'CCGG 1107 house!'
+	});
+
 }
