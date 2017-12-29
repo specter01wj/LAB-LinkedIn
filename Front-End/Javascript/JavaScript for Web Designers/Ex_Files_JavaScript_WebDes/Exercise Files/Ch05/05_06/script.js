@@ -1,18 +1,30 @@
 var map;
 function initMap() {
-	var storeLocation = {lat: 34.1031131, lng: -118.326343};
+	var storeLocation = {lat: 40.3262653332, lng: -74.5705307411};
 
 	map = new google.maps.Map(document.getElementById('hplus-map'), {
 		'center' : storeLocation,
-		'zoom' : 12,
-		'mapTypeId' : google.maps.MapTypeId.ROADMAP,
-		'draggable' : false,
-		'scrollwheel' : false
+		'zoom' : 17,
+		'mapTypeId' : google.maps.MapTypeId.HYBRID,
+		'draggable' : true,
+		'scrollwheel' : true
+	});
+
+	var popupContent = 'CCGG<br>1107 Deer Creek Dr.<br>James Wang';
+	
+	var infowindow = new google.maps.InfoWindow({
+		maxWidth: 50,
+		content: popupContent
 	});
 	
 	var marker = new google.maps.Marker({
 		'position': storeLocation,
 		'map': map,
-		'title': 'hplus sport in Los Angeles (actually Capitol Records in real life)'
+		'title': 'CCGG 1107 house!!!'
 	});
+
+	marker.addListener('click', function() {
+		infowindow.open(map, marker);
+	});
+
 }
