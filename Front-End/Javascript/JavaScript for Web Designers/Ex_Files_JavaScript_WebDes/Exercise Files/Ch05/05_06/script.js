@@ -13,7 +13,7 @@ function initMap() {
 	var popupContent = 'CCGG<br>1107 Deer Creek Dr.<br>James Wang';
 	
 	var infowindow = new google.maps.InfoWindow({
-		maxWidth: 50,
+		maxWidth: 150,
 		content: popupContent
 	});
 	
