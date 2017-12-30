@@ -1,0 +1,50 @@
+/* Global styles 
+------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h2 {
+  font-size: 40px;
+}
+h1 {
+  font-size: 80px;
+}
+
+
+/* Header & Footer 
+------------------------------------*/
+header, 
+footer {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+header h1,
+header h2 {
+  color: #EDF2F4;
+}
+
+
+
+/* Work Experience
+------------------------------------*/
+.work {
+  background: #EDF2F4;
+}
+
+
+
+/* Education
+------------------------------------*/
+.education {
+  background: #8D99AE;
+}
