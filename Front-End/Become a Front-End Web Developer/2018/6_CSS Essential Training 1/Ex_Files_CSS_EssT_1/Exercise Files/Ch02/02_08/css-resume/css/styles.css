@@ -11,15 +11,26 @@ body {
     background: lightblue;
 }
 
+a {
+	color: #EF233C;
+}
+a:hover {
+	text-decoration: none;
+}
 
 /* Header & Footer 
 ------------------------------------*/
-
+header, footer {
+	background: #2B2D42;
+	color: #8D99AE;
+}
 
 
 /* Work Experience
 ------------------------------------*/
-
+#work_exp, #edu {
+	background: #EDF2F4;
+}
 
 
 /* Education
