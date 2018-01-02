@@ -1,0 +1,11 @@
+body {
+  margin: 0 auto;
+  width: 700px;
+  font-size: 32px;
+  padding: 50px;
+}
+
+input, button {
+  font-size: inherit;
+  margin: 10px 0;
+}

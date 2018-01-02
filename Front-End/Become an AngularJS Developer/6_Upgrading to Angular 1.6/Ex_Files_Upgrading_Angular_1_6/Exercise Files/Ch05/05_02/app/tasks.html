@@ -1,0 +1,11 @@
+<div class="tasks" ng-class="$ctrl.tasksTheme">
+    <ul>
+        <li ng-repeat="todo in $ctrl.tasks">
+            <todo todo="todo"></todo>
+        </li>
+    </ul>
+
+    <footer>
+        <dark-mode-toggle mode="$ctrl.mode"></dark-mode-toggle>
+    </footer>
+</div>

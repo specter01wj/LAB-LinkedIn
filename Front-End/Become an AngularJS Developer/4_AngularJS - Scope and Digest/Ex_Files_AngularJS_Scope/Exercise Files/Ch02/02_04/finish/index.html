@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scope and Digest</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="learndigest">
+    <div ng-controller="PlaygroundCtrl as vm">
+      <div>
+        How strong is the force {{ vm.userProperties.force }}
+      </div>
+      <div ng-bind="vm.userProperties.force"></div>
+      <div id="bindme"></div>
+      <div ng-if="vm.enableForceEdit">
+        <input type="number" ng-model="vm.userProperties.force">
+      </div>
+      <button type="button" ng-click="vm.resetForce()">Reset</button>
+    </div>
+
+  </body>
+</html>

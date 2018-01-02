@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scope and Digest</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="learndigest">
+    <div ng-controller="PlaygroundCtrl as vm">
+      <div>
+        How strong is the force {{ vm.force }}
+      </div>
+      <div>Force in USD {{ vm.forceInUSD }}</div>
+      <input type="number" ng-model="vm.force">
+      <button type="button" ng-click="vm.resetForce()">Reset</button>
+    </div>
+
+  </body>
+</html>

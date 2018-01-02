@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scope and Digest</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="learndigest">
+    <div ng-controller="PlaygroundCtrl as playground">
+      <div>
+        How strong is the force {{ playground.force }}
+      </div>
+      <div>The real value of secret is: {{ secret }}</div>
+      <input type="number" ng-model="playground.force">
+      <button type="button" ng-click="playground.resetForce()">Reset</button>
+      <div ng-controller="InternalCtrl">
+        <div>The secret is: {{ secret }}</div>
+        <div>The internal force: {{ playground.force }}</div>
+        <input type="number" ng-model="playground.force">
+      </div>
+    </div>
+
+  </body>
+</html>
