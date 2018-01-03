@@ -1,7 +1,10 @@
 /* Global styles
 ------------------------------------*/
 body {
-
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
 }
 a {
   color: #EF233C;
