@@ -48,3 +48,8 @@ header h2 {
 .education {
   background: #8D99AE;
 }
+
+.content-wrap {
+  max-width: 800px;
+  margin: 10px auto;
+}
