@@ -11,6 +11,7 @@ a:hover {
 }
 h1, h2 {
   font-family: 'Caveat', cursive;
+  font-weight: 400;
 }
 h2 {
   font-size: 40px;
