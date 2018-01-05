@@ -2,6 +2,7 @@
 ------------------------------------*/
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 a {
   color: #EF233C;
@@ -18,12 +19,17 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-top: 0;
 }
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
+  padding: 50px;
 }
 
+h2, p {
+  margin: 0;
+}
 
 
 /* Header & Footer
@@ -38,6 +44,16 @@ header h2 {
   color: #EDF2F4;
 }
 
+footer {
+  text-align: center;
+}
+
+.contact-info {
+  background: white;
+  margin: 10px;
+  padding: 40px;
+  display: inline-block;
+}
 
 /* Work Experience
 ------------------------------------*/
