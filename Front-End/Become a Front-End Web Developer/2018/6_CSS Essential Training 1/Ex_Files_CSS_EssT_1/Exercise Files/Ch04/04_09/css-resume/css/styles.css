@@ -1,5 +1,13 @@
 /* Global styles
 ------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -28,7 +36,15 @@ h2 {
   overflow: hidden;
 }
 
-
+.col-narrow {
+  width: 30%;
+  float: left;
+}
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+}
 
 /* Header & Footer
 ------------------------------------*/
@@ -48,10 +64,10 @@ header {
   /*text-align: center;*/
 }
 .profile-img {
-  width: 300px;
+  //width: 300px;
   border-radius: 50%;
-  float: left;
-  margin-right: 30px;
+  /*float: left;*/
+  /*margin-right: 30px;*/
 }
 
 /* Footer styles only */
