@@ -1,8 +1,8 @@
 var a = 5;
-var b = 5;
+var b = 15;
 var theNumbersMatch
 
-if ( a == b ) {
+if ( a === b ) {
     theNumbersMatch = true;
 } else {
     theNumbersMatch = false;
