@@ -5,6 +5,7 @@ function multiply() {
 }
 multiply();
 
+
 // Anonymous function stored in variable.
 // Invoked by calling the variable as a function:
 var divided = function() {
@@ -13,9 +14,11 @@ var divided = function() {
 }
 divided();
 
+
 // Immediately Invoked Function Expression.
 // Runs as soon as the browser finds it:
 (function() {
     var result = 12 / 0.75;
     console.log("12 divided by 0.75 is ", result);
 }())
+
