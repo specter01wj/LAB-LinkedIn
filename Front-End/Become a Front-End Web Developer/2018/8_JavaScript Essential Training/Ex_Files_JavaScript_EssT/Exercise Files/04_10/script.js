@@ -11,4 +11,5 @@ var course = {
     }
 }
 
+
 console.log(course);
