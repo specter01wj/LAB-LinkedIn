@@ -1,15 +1,26 @@
-var course = new Object();
+//var course = new Object();
 
-var course = {
-    title: "JavaScript Essential Training",
-    instructor: "Morten Rand-Hendriksen",
-    level: 1,
-    published: true,
-    views: 0,
-    updateViews: function() {
-        return ++course.views;
+function Course(title, instr, lv, pub, views) {
+    this.title = title;
+    this.instr = instr;
+    this.lv = lv;
+    this.pub = pub;
+    this.views = views;
+    this.updateViews = function() {
+	    	++this.lv;
+	        ++this.views;
+        return true;
     }
 }
 
 
-console.log(course);
+var newCourse1 = new Course('FPGA', 'Lee', 10, true, 101);
+
+console.log(newCourse1);
+console.log(newCourse1.lv);
+console.log(newCourse1.views);
+
+newCourse1.updateViews();
+newCourse1.updateViews();
+
+console.log(newCourse1);
