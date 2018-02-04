@@ -20,3 +20,4 @@ const theTimer = document.querySelector(".timer");
 
 
 // Event listeners for keyboard input and the reset button:
+
