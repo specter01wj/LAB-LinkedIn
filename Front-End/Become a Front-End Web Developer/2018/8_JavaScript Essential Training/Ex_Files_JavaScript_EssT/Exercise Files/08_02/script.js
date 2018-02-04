@@ -4,7 +4,6 @@ const originText = document.querySelector("#origin-text p").innerHTML;
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
-
 // Add leading zero to numbers 9 or below (purely for aesthetics):
 
 
