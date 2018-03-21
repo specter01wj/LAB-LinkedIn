@@ -20,7 +20,7 @@ function leadingZero(time) {
 function runTimer() {
     let currentTime = leadingZero(timer[0]) + ":" + leadingZero(timer[1]) + ":" + leadingZero(timer[2]);
     theTimer.innerHTML = currentTime;
-    timer[3]+;
+    timer[3]++;
 
     timer[0] = Math.floor((timer[3]/100)/60);
     timer[1] = Math.floor((timer[3]/100) - (timer[0] * 60));
