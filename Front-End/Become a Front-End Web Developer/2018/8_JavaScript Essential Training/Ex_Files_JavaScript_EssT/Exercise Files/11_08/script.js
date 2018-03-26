@@ -71,3 +71,4 @@ function reset() {
 testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellCheck);
 resetButton.addEventListener("click", reset, false);
+
