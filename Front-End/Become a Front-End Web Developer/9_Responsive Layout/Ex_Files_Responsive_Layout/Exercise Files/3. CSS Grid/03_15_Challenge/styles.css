@@ -1,0 +1,44 @@
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.container {
+	border: 1px solid black;
+	margin: 30px;
+	width: 600px;
+	font-size: 4em;
+}
+.container>* {
+	border: 1px solid black;
+	padding: 10px;
+}
+.red {
+	background-color: red;
+}
+.orange {
+	background-color: orange;
+}
+.yellow {
+	background-color: yellow;
+}
+.green {
+	background-color: green;
+}
+.blue {
+	background-color: blue;
+}
+.purple {
+	background-color: purple;
+}
+.gray {
+	background-color: gray;
+}
+.white {
+	background-color: white;
+}

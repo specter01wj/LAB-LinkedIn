@@ -1,0 +1,20 @@
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+p {
+	border: 2px solid #408C29;
+	background-color: #ffec99;
+	padding: 10px;
+}
+div {
+	border: 2px solid black;
+	padding: 10px;
+	height: 400px;
+}

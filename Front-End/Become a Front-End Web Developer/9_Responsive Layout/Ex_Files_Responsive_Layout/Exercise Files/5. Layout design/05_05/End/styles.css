@@ -1,0 +1,17 @@
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+*,*:before,*:after {
+	box-sizing: inherit;
+}
+.container {
+	margin: 30px;
+}
+.container > * {
+	border: 1px solid #000;
+	padding: 10px;
+}

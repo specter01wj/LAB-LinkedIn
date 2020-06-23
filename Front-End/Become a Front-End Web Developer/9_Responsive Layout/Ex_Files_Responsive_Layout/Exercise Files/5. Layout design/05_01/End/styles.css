@@ -1,0 +1,27 @@
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.container {
+	border: 1px solid #000;
+	margin: 30px;
+	height: 500px;
+	width: 500px;
+}
+.container>* {
+	border: 2px dashed blue;
+	background-color: #ffec99;
+	padding: 10px;
+}
+.item {
+	border: 2px solid green;
+	width: 200px;
+	height: 200px;
+}
+
