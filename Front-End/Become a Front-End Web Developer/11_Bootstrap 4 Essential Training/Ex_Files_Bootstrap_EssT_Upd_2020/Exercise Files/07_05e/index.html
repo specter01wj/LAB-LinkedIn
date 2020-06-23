@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Bootstrap</title>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Medical Questionnaire</h2>
+
+<form>
+
+  <fieldset class="form-group">
+    <legend>Owner Info</legend>
+
+    <div class="form-group row">
+      <label class="col-form-label text-md-right col-md-2" 
+        for="ownername">Owner</label>
+      <div class="col-md-10">
+        <input class="form-control"
+          type="text" id="ownername" placeholder="Your Name">
+      </div>
+    </div><!-- form-group -->
+
+    <div class="form-group row">
+      <label  class="col-form-label text-md-right col-md-2" 
+        for="owneremail">Address</label>
+      <div class="col-md-10">
+        <input class="form-control"
+          type="text" id="owneremail" placeholder="Address">
+      </div>
+    </div><!-- form-group -->
+
+    <div class="form-group form-row">
+      <div class="form-group offset-md-2 col">
+        <label class="col-form-label sr-only" for="ownercity">City</label>
+        <input class="form-control"
+          type="text" id="ownercity" placeholder="City">
+      </div><!-- form-group -->
+
+      <div class="form-group col">
+        <label class="col-form-label sr-only" for="ownerzip">Zip</label>
+        <input class="form-control"
+          type="text" id="ownerzip" placeholder="Zip">
+      </div><!-- form-group -->
+    </div><!-- form-group -->
+
+    <div class="form-group row">
+      <div class="offset-md-2 col-auto">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </div>
+
+  </fieldset><!-- fieldset -->
+</form>
+
+
+</div><!-- content container -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
