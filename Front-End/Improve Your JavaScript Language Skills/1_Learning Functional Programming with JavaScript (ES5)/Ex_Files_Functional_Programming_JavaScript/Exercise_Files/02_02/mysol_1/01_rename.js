@@ -1,7 +1,7 @@
 // Learning Functional Programming with Javascript
 // Chapter 02, Video 02, Exercise 01
 
-console.log()
+/*console.log()
 console.log("Hello and welcome to the course!")
 console.log("We seem to be using")
 console.log("a lot of console.logs here.")
@@ -12,4 +12,10 @@ console.log("'console.log' to another variable.")
 console.log("You can call it whatever you want.")
 console.log("I called mine 'line' to reflect the")
 console.log("way that I'm using it.")
-console.log()
+console.log()*/
+
+let line = console.log;
+
+line();
+line("Hello and welcome to the course!");
+line();
