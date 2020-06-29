@@ -24,7 +24,7 @@ console.log(myCounter.currentValue())*/
 
 
 function createCounter() {
-  var count = 0;
+  let count = 0;
   return {
   	increment: function() {
 	    count += 1;
