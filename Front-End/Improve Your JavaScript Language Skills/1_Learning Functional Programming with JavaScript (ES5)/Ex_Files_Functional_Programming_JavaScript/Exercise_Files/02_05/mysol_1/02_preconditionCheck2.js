@@ -55,10 +55,10 @@ var getSubstringOfLengthSafe = createSafeVersion(getSubstringOfLength);
 
 
 printMessageNTimesSafe(4, "Banana"); // prints "Banana Banana Banana Banana"
-getNthLetterSafe(2, "Javascript"); // 'v'
-getSubstringOfLengthSafe(5, "Hello and welcome"); // "Hello"
+console.log(getNthLetterSafe(2, "Javascript")); // 'v'
+console.log(getSubstringOfLengthSafe(5, "Hello and welcome")); // "Hello"
 
-getNthLetterSafe("two", "Javascript");
+console.log(getNthLetterSafe("two", "Javascript"));
 
 
 
