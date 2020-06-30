@@ -9,3 +9,5 @@ fs.readFile('message.txt', 'utf8', function(err, data) {
   fileContents = data;
   console.log(fileContents);
 })
+
+console.log(fileContents);
