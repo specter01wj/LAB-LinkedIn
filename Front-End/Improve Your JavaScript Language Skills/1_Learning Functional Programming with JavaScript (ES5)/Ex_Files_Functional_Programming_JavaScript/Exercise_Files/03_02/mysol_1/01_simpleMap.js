@@ -8,6 +8,7 @@ for(var i = 0; i < numbers.length; i++) {
   var element = numbers[i]
 
 
+
   
   numbersCubed.push(element * element * element)
 }
