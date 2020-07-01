@@ -457,7 +457,7 @@
       console.log(dataObject);
 
       if (dataObject.category === 'arrangement') {
-        newItem = {
+        /*newItem = {
           type: 'floral',
           storage: 'cool',
           name: dataObject.itemname,
@@ -469,9 +469,10 @@
               console.log(' ', prop, ': ', this[prop])
             }
           }
-        }
+        }*/
+        newItem = new Arrangement(dataObject.itemname, dataObject.vasetype, dataObject.qty);
       } else if (dataObject.category === 'live') {
-        newItem = {
+        /*newItem = {
           type: 'floral',
           storage: 'warm',
           name: dataObject.itemname,
@@ -483,14 +484,15 @@
               console.log(' ', prop, ': ', this[prop])
             }
           }
-        }
+        }*/
+        newItem = new Live(dataObject.itemname, dataObject.pottype, dataObject.qty);
       } else if (dataObject.category === 'bouquet') {
         if ($.cookie('bouquetCount')) {
           $.cookie('bouquetCount', parseInt($.cookie('bouquetCount')) + 1);
         } else {
           $.cookie('bouquetCount', 1)
         }
-        newItem = {
+        /*newItem = {
           type: 'floral',
           storage: 'cool',
           name: dataObject.category,
@@ -502,7 +504,8 @@
               console.log(' ', prop, ': ', this[prop])
             }
           }
-        }
+        }*/
+        newItem = new Bouquet(dataObject.itemname, dataObject.vasetype);
         for (item in dataObject) {
           // if item starts with 'qty' and has a value greater than 0
           if(RegExp('qty.+').test(item) && dataObject[item] > 0) {
@@ -514,15 +517,17 @@
             dataObject['color' + stemType] !== '---') {
               // add new item, specifying name, quantity, and color
               let stemName = dataObject['color' + stemType];
-              newItem.flowers[key] = {};
+              /*newItem.flowers[key] = {};
               newItem.flowers[key][stemName] = dataObject[item];
-              newItem.flowers[key].type = 'floral';
+              newItem.flowers[key].type = 'floral';*/
+              newItem.flowers.addStem(key, dataObject[item], dataObject['color' + stemType]);
             } else {
               // add new item specifying only name and quantity
-              newItem.flowers[key] = {
+              /*newItem.flowers[key] = {
                 Default: dataObject[item],
                 type: 'floral'
-              };
+              };*/
+              newItem.flowers.addStem(key, dataObject[item]);
             }
           }
         }
