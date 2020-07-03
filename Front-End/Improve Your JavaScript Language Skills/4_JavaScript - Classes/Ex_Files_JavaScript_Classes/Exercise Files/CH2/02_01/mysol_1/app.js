@@ -26,6 +26,7 @@ const cx5 = new Car(4,'V6','grey');
 
 
 
+
 const civic = new Car(3,'V4','blue');
 
 console.log(cx5);
