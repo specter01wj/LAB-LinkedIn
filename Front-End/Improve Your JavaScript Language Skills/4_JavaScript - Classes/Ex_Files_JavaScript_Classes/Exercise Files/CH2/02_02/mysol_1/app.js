@@ -17,10 +17,26 @@ class Car {
     }
 }
 
+class SUV extends Car {
+    constructor(doors, engine, color, brand, carStats) {
+        super(doors, engine, color, carStats);
+        this.brand = brand;
+        this.wheels = 4;
+        this.ac = true;
+    }
+
+    myBand() {
+        return console.log(`This SUV is a ${this.brand}`);
+    }
+}
+
 const cx5 = new Car(4,'V6','grey');
 const civic = new Car(3,'V4','blue');
 
+const cx6 = new SUV(12,'V12','red', 'BMW');
+
 console.log(cx5);
+console.log(cx6);
 // console.log(cx5.carStats());
 // console.log(civic);
 // console.log(civic.carStats());
