@@ -11,6 +11,7 @@ const screamWarrior = () => {
 
 
 
+
     
     console.log(warrior, warrior2);
 }
