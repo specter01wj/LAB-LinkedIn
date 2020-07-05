@@ -1,4 +1,4 @@
-// this array is globally scoped 
+/*// this array is globally scoped 
 const warriors = [
     {
         name: 'Jujin Take',
@@ -26,5 +26,24 @@ const screamWarriors = () => {
 }
 
 // no issues running this function!
-screamWarriors();
+screamWarriors();*/
+
+
+const screamWarrior = () => {
+    let warrior1 = 'Ninja';
+    let warrior2 = 'Samurai';
+
+    return `Our warriors are ${warrior1} and ${warrior2}`;
+}
+
+
+console.log(screamWarrior());
+
+
+
+
+
+
+
+
 
