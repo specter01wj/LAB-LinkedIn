@@ -36,8 +36,15 @@ const screamWarrior = () => {
     return `Our warriors are ${warrior1} and ${warrior2}`;
 }
 
+const screamWarrior2 = () => {
+    let warrior1 = 'Viking';
+    let warrior2 = 'DeadPool';
 
-console.log(screamWarrior());
+    return `Our warriors are ${warrior1} and ${warrior2}`;
+}
+
+
+console.log(screamWarrior(), screamWarrior2());
 
 
 
