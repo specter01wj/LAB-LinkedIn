@@ -1,5 +1,5 @@
 warrior = 'Ninja';
-var warrior3 = 'Viking';
+warrior3 = 'Viking';
 
 
 const screamWarrior = () => {
@@ -19,7 +19,7 @@ newWarrior.shootWarrior();
 console.log(warrior, warrior3);
 
 var warrior;
-
+var warrior3;
 
 // console.log(warrior, warrior2);
 
