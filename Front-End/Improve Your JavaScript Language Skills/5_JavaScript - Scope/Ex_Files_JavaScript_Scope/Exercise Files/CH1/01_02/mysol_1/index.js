@@ -13,7 +13,7 @@ const screamWarrior = () => {
 screamWarrior();
 
 
-
+console.log(warrior, warrior2);
 
 
 
