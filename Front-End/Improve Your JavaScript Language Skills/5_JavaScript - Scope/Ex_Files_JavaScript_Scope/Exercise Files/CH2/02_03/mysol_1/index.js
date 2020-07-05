@@ -1,10 +1,10 @@
 // this array is globally scoped 
 const warriors = [
     {
-        name: 'Jujin Take',
+        name: 'James',
         type: 'Ninja',
         weapon: 'Shuriken',
-        agility: 79
+        agility: 91
     },
     {
         name: 'Viggo Rusen',
