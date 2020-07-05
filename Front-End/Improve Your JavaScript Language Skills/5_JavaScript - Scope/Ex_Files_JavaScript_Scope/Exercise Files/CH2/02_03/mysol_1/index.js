@@ -7,16 +7,16 @@ const warriors = [
         agility: 91
     },
     {
-        name: 'Viggo Rusen',
+        name: 'Kim',
         type: 'Viking',
         weapon: 'Swing blade',
-        agility: 60
+        agility: 72
     },
     {
-        name: 'Ro Rake',
+        name: 'May',
         type: 'Samurai',
         weapon: 'Boken',
-        agility: 82
+        agility: 65
     }
 ]
 
