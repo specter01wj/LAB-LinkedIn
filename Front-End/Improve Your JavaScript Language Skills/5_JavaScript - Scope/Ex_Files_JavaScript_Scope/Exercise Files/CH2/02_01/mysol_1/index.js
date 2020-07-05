@@ -1,3 +1,5 @@
+// 'use strict';
+
 const warrior = {
 	name: 'Kim',
 	type: 'Ninja',
