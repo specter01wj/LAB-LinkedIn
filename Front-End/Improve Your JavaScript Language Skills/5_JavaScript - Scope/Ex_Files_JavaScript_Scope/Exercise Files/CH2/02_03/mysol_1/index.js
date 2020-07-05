@@ -24,6 +24,7 @@ const warriors = [
 const screamWarriors = () => {
     return console.log(warriors);
 
+
     
 }
 
