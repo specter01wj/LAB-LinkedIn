@@ -1,4 +1,6 @@
-var warrior = 'Ninja';
+warrior = 'Ninja';
+var warrior3 = 'Viking';
+
 
 const screamWarrior = () => {
     let warrior2 = 'Samurai';
@@ -14,5 +16,10 @@ const newWarrior = screamWarrior();
 
 newWarrior.shootWarrior();
 
-console.log(warrior, warrior2);
+console.log(warrior, warrior3);
+
+var warrior;
+
+
+// console.log(warrior, warrior2);
 
