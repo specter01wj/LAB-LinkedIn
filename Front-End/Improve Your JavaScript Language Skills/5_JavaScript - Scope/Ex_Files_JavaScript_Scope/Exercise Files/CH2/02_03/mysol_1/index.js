@@ -25,6 +25,7 @@ const screamWarriors = () => {
     return console.log(warriors);
 
 
+
     
 }
 
