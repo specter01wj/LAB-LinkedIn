@@ -23,6 +23,7 @@ const warriors = [
 // this functions is globally scoped
 const screamWarriors = () => {
     return console.log(warriors);
+    
 }
 
 // no issues running this function!
