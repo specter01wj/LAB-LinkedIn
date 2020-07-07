@@ -3,10 +3,15 @@
 let clicks = {};
 
 function updateClicks(menu) {
-  // let clicks = {};
   let button = menu.id;
   clicks[button] = clicks[button] + 1 || 1;
-  console.log(clicks);
+  // console.log(clicks);
+
+  function reportClicks() {
+    const report = [button, clicks];
+    console.log(...report);
+  }
+  reportClicks();
 }
 
 const activities = {
@@ -20,7 +25,7 @@ const activities = {
 let state = {};
 let category = 'all';
 let url = 'http://api.openweathermap.org/data/2.5/weather?q=';
-let apiKey = "5c12903e7cafe84855f79cc0fee3becf"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+let apiKey = "APIKEY"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 function updateActivityList(event) {
   if (event !== undefined && event.target.classList.contains('selected')) {
     return true;
@@ -94,7 +99,7 @@ document.querySelector('.forecast-button').addEventListener('click', function(e)
     return(response.json());
   }).then(function(response) {
     updateUISuccess(response);
-  }).catch(function() {
+  }).catch(function(response) {
     updateUIFailure();
   });
 }, false);
