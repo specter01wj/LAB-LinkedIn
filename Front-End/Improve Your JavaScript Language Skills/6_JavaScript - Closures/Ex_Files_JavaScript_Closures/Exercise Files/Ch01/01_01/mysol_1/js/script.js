@@ -55,6 +55,7 @@ function updateActivityList(event) {
 function updateUISuccess(response) {
   const degC = response.main.temp - 273.15;
 
+
   
   const degF = degC * 1.8 + 32;
   state = {
