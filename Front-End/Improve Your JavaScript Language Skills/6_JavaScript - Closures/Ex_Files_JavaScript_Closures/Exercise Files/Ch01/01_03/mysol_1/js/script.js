@@ -1,9 +1,9 @@
 'use strict';
 
-let clicks = {};
 
 function updateClicks() {
   // let button = menu.id;
+  let clicks = {};
   let button;
   // clicks[button] = clicks[button] + 1 || 1;
   
