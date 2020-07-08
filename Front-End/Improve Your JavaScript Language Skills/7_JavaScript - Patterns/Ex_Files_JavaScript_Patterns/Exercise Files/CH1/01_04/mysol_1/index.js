@@ -14,6 +14,7 @@ const calc = () => {
 
 const printCalc = (callback) => {
 	console.log(callback);
+
 	
 }
 
