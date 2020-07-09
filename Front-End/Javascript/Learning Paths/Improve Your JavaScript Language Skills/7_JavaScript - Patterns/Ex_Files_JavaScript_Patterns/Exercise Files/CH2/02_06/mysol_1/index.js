@@ -44,6 +44,7 @@ const carFactory = new CarFactory();
 
 
 
+
 const suvFactory = new SuvFactory();
 
 const autoManufacturer = (type, model) => {
