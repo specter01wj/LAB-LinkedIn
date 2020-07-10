@@ -74,6 +74,8 @@ newsfeeds = [
       type: 'technology',
       query: 'domains=comicbookmovie.com&language=en'
     }
-]
+];
 
-
+for(let feed of newsfeeds) {
+    console.log(feed);
+}
