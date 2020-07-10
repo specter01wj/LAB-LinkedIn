@@ -77,5 +77,5 @@ newsfeeds = [
 ];
 
 for(let feed of newsfeeds) {
-    console.log(feed);
+    console.log(feed.type);
 }
