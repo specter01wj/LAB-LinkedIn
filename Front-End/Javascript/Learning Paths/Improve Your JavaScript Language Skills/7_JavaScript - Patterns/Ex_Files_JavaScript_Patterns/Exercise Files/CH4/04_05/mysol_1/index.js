@@ -60,3 +60,20 @@ Object.assign(Car.prototype, carMixin);
 const honda = autoManufacturer('car', 'honda');
 
 honda.revEngine(); */
+
+newsfeeds = [
+    {
+      type: 'top-headlines',
+      query: 'sources=bbc-news'
+    },
+    {
+      type: 'everything',
+      query: 'domains=techcrunch.com&language=en'
+    },
+    {
+      type: 'technology',
+      query: 'domains=comicbookmovie.com&language=en'
+    }
+]
+
+
