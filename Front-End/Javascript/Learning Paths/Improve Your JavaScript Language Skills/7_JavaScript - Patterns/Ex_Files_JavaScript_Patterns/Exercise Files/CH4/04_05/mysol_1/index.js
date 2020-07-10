@@ -68,13 +68,6 @@ newsfeeds = [
     },
     {
       type: 'everything',
-
-    
-
-
-
-
-      
       query: 'domains=techcrunch.com&language=en'
     },
     {
