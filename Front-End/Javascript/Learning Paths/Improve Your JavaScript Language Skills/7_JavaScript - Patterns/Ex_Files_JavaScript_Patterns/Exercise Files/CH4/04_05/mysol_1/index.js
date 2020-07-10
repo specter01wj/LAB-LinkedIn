@@ -1,4 +1,4 @@
-class Car {
+/* class Car {
     constructor(doors, engine, color) {
         this.doors = doors;
         this.engine = engine;
@@ -59,4 +59,4 @@ Object.assign(Car.prototype, carMixin);
 
 const honda = autoManufacturer('car', 'honda');
 
-honda.revEngine();
+honda.revEngine(); */
