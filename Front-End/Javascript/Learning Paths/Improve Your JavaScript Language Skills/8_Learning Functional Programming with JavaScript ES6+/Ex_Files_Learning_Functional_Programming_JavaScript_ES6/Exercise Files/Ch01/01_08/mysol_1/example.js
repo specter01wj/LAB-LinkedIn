@@ -8,6 +8,7 @@ numbers[0] = 100;
 
 
 
+
 numbers.reverse();
 
 const person = {
