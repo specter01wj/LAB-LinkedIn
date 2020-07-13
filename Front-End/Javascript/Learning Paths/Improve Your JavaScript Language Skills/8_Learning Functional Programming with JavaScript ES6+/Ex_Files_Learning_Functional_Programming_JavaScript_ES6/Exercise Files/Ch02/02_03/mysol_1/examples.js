@@ -19,10 +19,10 @@ const functionsArray = [
 
 var number = 42;
 
-// functionsArray.forEach(func => number = func(number));
+functionsArray.forEach(func => number = func(number));
 
-functionsArray.forEach( (func) => {
-    return number = func(number);
-});
+// functionsArray.forEach( (func) => {
+//     return number = func(number);
+// });
 
 console.log(number);
