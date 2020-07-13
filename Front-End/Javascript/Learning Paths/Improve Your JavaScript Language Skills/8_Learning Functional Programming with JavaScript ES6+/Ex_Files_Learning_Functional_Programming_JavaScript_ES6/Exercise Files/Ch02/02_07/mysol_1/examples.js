@@ -14,11 +14,17 @@ const Person = ({ name, age, job }) => {
 }
 
 
+const me = Person({ name: 'Shaun', age: 25, job: 'developer' });
 
+console.log(me.getName());
+me.setJob('Lead Developer');
+console.log(me.getJob());
 
+const Person2 = ({ name, age, job }) => {
+    var _name = name;
+    var _age = age;
+    var _job = job;
+}
+const me2 = Person({ name: 'Shaun', age: 25, job: 'developer' });
 
-
-
-
-
-
+console.log(me2._name);
