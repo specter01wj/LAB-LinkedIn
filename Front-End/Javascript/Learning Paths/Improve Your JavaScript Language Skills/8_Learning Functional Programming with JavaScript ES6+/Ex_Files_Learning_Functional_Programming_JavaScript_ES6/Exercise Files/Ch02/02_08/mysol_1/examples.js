@@ -30,7 +30,7 @@ const divideSafe = secondArgumentIsntZero(divide2);
 console.log(divideSafe(7, 0));
 console.log(divideSafe(5, 3));
 
-
+console.log(secondArgumentIsntZero(divide2)(7, 0));
 
 
 
