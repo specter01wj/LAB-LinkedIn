@@ -3,21 +3,6 @@ const person = {
     age: 40,
     hairColor: 'brown',
     eyeColor: 'blue',
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 };
 
 const careerData = {
