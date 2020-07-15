@@ -1,11 +1,14 @@
-const person = {
-    name: 'Jimmy Smith',
-    age: 40,
-    hairColor: 'brown',
-    eyeColor: 'blue',
-};
+// const person = {
+//     name: 'Jimmy Smith',
+//     age: 40,
+//     hairColor: 'brown',
+//     eyeColor: 'blue',
+// };
 
-const careerData = {
-    title: 'developer',
-    company: 'ABC Software',
-};
+// const careerData = {
+//     title: 'developer',
+//     company: 'ABC Software',
+// };
+
+
+
