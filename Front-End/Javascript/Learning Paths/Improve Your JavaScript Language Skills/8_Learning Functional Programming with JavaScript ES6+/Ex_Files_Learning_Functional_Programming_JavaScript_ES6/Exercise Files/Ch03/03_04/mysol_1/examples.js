@@ -6,9 +6,20 @@ const evenNum = numbers.filter( (x) => {
 
 console.log(evenNum);
 
+const words = [
+    'hello',
+    'goodbye',
+    'the',
+    'Antarctica',
+];
 
+const createLengthTest = (minLen) => {
+    return (word) => {
+        return word.length > minLen;
+    }
+};
 
+const longWords = words.filter(createLengthTest(5));
 
-
-
+console.log(longWords);
 
