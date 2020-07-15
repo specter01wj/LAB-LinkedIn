@@ -19,8 +19,18 @@ const result = employees.some( (emp) => {
 
 console.log(result);
 
+const formValues = [
+    'Shaun',
+    'Wassell',
+    'Maine',
+    '',
+    'developer',
+];
 
 
+const allFieldsFilled = formValues.every( (string) => {
+    return !!string;
+});
 
-
+console.log(allFieldsFilled);
 
