@@ -52,5 +52,10 @@ console.log(averageDeveloperSalary);
 const nonDevelopers = employees.filter(employee =>
     employee.jobTitle !== 'developer');
 
+const nonDeveloperSalaries = nonDevelopers.map(nonDev => 
+    nonDev.salary);
+
+
+
 
 
