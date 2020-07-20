@@ -41,7 +41,8 @@ const developers = employees.filter(employee =>
 const developerSalaries = developers.map(developer => 
     developer.salary);
 
-
+const totalDeveloperSalaries = developerSalaries.reduce((acc, x) => 
+    acc + x, 0);
 
 
 
