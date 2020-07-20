@@ -34,3 +34,10 @@ const employees = [{
     jobTitle: 'developer',
     salary: 90000,
 }];
+
+const developers = employees.filter(employee =>
+    employee.jobTitle === 'developer');
+
+
+
+
