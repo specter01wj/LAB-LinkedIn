@@ -44,7 +44,7 @@ const developerSalaries = developers.map(developer =>
 const totalDeveloperSalaries = developerSalaries.reduce((acc, x) => 
     acc + x, 0);
 
-
+const averageDeveloperSalary = totalDeveloperSalaries / developerSalaries.length;
 
 
 
