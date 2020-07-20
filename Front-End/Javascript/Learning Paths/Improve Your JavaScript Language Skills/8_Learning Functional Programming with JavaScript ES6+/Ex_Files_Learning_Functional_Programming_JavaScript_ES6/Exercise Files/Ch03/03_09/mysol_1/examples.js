@@ -49,7 +49,8 @@ const averageDeveloperSalary = totalDeveloperSalaries / developerSalaries.length
 console.log(averageDeveloperSalary);
 
 
-
+const nonDevelopers = employees.filter(employee =>
+    employee.jobTitle !== 'developer');
 
 
 
