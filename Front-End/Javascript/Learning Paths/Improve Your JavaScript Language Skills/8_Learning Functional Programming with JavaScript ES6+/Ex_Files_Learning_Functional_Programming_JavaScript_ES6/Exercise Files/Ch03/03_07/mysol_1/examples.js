@@ -6,9 +6,19 @@ const ascending = (a, b) => {
     return 0;
 }
 
+const descending = (a, b) => {
+    if (a > b) return -1;
+    if (a < b) return 1;
+    return 0;
+}
+
 let sortedNum = mixedUpNumbers.slice().sort(ascending);
 
+console.log(sortedNum);
 
-console.log(sortedNumbers);
+let sortedNum2 = mixedUpNumbers.slice().sort(descending);
+
+console.log(sortedNum2);
+
 console.log(mixedUpNumbers);
 
