@@ -46,7 +46,7 @@ const totalDeveloperSalaries = developerSalaries.reduce((acc, x) =>
 
 const averageDeveloperSalary = totalDeveloperSalaries / developerSalaries.length;
 
-
+console.log(averageDeveloperSalary);
 
 
 
