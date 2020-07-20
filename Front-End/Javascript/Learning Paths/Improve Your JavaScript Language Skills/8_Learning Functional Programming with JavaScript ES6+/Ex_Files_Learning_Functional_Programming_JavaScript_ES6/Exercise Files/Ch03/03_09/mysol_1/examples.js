@@ -56,6 +56,7 @@ const nonDeveloperSalaries = nonDevelopers.map(nonDev =>
     nonDev.salary);
 
 const totalNonDeveloperSalaries = nonDeveloperSalaries.reduce((acc, x) => 
+
     acc + x, 0);
 
 const averageNonDeveloperSalary = totalNonDeveloperSalaries / nonDeveloperSalaries.length;
