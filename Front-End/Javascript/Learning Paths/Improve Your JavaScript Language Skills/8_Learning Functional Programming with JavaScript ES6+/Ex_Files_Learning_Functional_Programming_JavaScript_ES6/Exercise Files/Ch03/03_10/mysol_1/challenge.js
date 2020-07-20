@@ -1,9 +1,15 @@
+// const map = (arr, func) => {
+//     let result = [];
+//     for(let i = 0; i < arr.length; i++) {
+//         result.push(func(arr[i]));
+//     }
+//     return result;
+// }
+
 const map = (arr, func) => {
-    let result = [];
-    for(let i = 0; i < arr.length; i++) {
-        result.push(func(arr[i]));
-    }
-    return result;
+    return arr.reduce( (acc, elem) => {
+        return [...acc, func(elem)];
+    }, []);
 }
 
 // testing if it works:
