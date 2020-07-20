@@ -38,6 +38,17 @@ const employees = [{
 const developers = employees.filter(employee =>
     employee.jobTitle === 'developer');
 
+const developerSalaries = developers.map(developer => 
+    developer.salary);
+
+
+
+
+
+
+
+
+
 
 
 
