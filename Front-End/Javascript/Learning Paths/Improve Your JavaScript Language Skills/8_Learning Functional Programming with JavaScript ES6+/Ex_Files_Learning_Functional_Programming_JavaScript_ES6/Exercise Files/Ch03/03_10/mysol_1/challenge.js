@@ -1,5 +1,9 @@
 const map = (arr, func) => {
-    
+    let result = [];
+    for(let i = 0; i < arr.length; i++) {
+        result.push(func(arr[i]));
+    }
+    return result;
 }
 
 // testing if it works:
