@@ -60,7 +60,7 @@ const totalNonDeveloperSalaries = nonDeveloperSalaries.reduce((acc, x) =>
 
 const averageNonDeveloperSalary = totalNonDeveloperSalaries / nonDeveloperSalaries.length;
 
-
+console.log(averageNonDeveloperSalary);
 
 
 
