@@ -9,19 +9,23 @@ const inputCriteria = {
     firstName: [
         value => value.length >= 2
             ? ''
-            : 'First name must be at least 2 characters',
+            : 'First name must be at least 2 characters'
     ],
     lastName: [
         value => value.length >= 2
             ? ''
-            : 'Last name must be at least 2 characters',
+            : 'Last name must be at least 2 characters'
     ],
     zipCode: [
         value => value.length === 5
             ? ''
-            : 'Zip must be exactly 5 characters long',
+            : 'Zip must be exactly 5 characters long'
     ],
-    state: [],
+    state: [
+        value => value.length === 2
+            ? ''
+            : 'State must be exactly 2 characters long'
+    ]
 };
 
 const getErrorMessages = (inputs, criteria) => {
