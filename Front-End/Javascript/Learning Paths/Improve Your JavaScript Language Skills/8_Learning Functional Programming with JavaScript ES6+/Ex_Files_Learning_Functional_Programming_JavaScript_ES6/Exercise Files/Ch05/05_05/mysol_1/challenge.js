@@ -16,7 +16,11 @@ const inputCriteria = {
             ? ''
             : 'Last name must be at least 2 characters',
     ],
-    zipCode: [],
+    zipCode: [
+        value => value.length === 5
+            ? ''
+            : 'Zip must be exactly 5 characters long',
+    ],
     state: [],
 };
 
