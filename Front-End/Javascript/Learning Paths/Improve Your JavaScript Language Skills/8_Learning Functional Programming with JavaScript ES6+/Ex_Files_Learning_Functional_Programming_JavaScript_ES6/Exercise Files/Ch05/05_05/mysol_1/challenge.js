@@ -11,7 +11,11 @@ const inputCriteria = {
             ? ''
             : 'First name must be at least 2 characters',
     ],
-    lastName: [],
+    lastName: [
+        value => value.length >= 2
+            ? ''
+            : 'Last name must be at least 2 characters',
+    ],
     zipCode: [],
     state: [],
 };
