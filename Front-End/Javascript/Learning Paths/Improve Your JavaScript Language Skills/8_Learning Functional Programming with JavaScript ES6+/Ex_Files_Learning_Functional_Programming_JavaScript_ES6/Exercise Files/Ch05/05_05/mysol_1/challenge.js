@@ -29,7 +29,11 @@ const inputCriteria = {
 };
 
 const getErrorMessages = (inputs, criteria) => {
-
+    return Object.keys(inputs).reduce((acc, fieldName) => [
+        ...acc,
+        ...criteria[fieldName].map(test =>
+            test(inputs[fieldName])),
+    ], []).filter(message => message);
 }
 
 console.log(getErrorMessages(currentInputValues, inputCriteria));
