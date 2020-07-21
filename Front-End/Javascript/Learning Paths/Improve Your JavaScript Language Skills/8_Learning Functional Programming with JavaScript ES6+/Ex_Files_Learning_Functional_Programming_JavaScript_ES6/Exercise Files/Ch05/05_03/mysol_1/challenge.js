@@ -1,10 +1,11 @@
-import words from 'an-array-of-english-words';
+// import words from 'an-array-of-english-words';
+let words = require('an-array-of-english-words');
 
-const countOccurrences = arr =>
-    arr.reduce((acc, str) => ({
-        ...acc,
-        [str]: acc[str] ? acc[str] + 1 : 1,
-    }), {});
+const countOccurrences = arr => {
+    return arr.reduce((acc, str) => {
+        return { ...acc, [str]: acc[str] ? acc[str] + 1 : 1 }
+    }, {});
+}
 
 const hasSameLetterCount = (word1, word2) => {
     const word1Count = countOccurrences(word1.split(''));
