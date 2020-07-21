@@ -16,6 +16,7 @@ countDown(10);
 
 
 
+
 const countUp = (x, max) => {
     if (x > max) return;
     console.log(x);
