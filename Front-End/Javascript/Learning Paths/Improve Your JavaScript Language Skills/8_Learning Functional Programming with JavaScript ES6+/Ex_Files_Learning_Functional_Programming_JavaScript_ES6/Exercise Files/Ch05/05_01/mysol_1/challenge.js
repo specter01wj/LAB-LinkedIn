@@ -11,12 +11,18 @@ const tallyVotes = votes => {
     votes.map( (item) => {
         result[item] ? result[item]++ : result[item] = 1;
     });
-    
+
     return result;
 };
 
-console.log(tallyVotes(electionVotes));
+const tallyVotes2 = votes => {
+    return votes.reduce( (acc, name) => ({
+        ...acc, [name]: acc[name] ? acc[name] + 1 : 1
+    }), {});
+};
 
+console.log(tallyVotes(electionVotes));
+console.log(tallyVotes2(electionVotes));
 /* Expected Output (something like this):
     {
         Harry: <some number>
