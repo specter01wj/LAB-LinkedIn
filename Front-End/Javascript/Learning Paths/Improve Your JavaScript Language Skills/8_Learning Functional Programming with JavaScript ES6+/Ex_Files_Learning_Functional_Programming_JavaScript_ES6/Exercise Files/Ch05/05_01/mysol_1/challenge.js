@@ -7,7 +7,12 @@ const electionVotes = [
 ];
 
 const tallyVotes = votes => {
-    // Your code here
+    let result = {};
+    votes.map( (item) => {
+        result[item] ? result[item]++ : result[item] = 1;
+    });
+    
+    return result;
 };
 
 console.log(tallyVotes(electionVotes));
