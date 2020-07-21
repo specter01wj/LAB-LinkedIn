@@ -1,8 +1,8 @@
 const currentInputValues = {
-    firstName: 'James', // Must be at least 2 characters
-    lastName: 'Wang', // Must be at least 2 characters
-    zipCode: '22015', // Must be exactly 5 characters
-    state: 'VA', // Must be exactly 2 characters
+    firstName: 'J', // Must be at least 2 characters
+    lastName: 'W', // Must be at least 2 characters
+    zipCode: '3123455', // Must be exactly 5 characters
+    state: 'UVA', // Must be exactly 2 characters
 }
 
 const inputCriteria = {
