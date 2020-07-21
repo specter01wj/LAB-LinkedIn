@@ -16,9 +16,9 @@ const tallyVotes = votes => {
 };
 
 const tallyVotes2 = votes => {
-    return votes.reduce( (acc, name) => ({
-        ...acc, [name]: acc[name] ? acc[name] + 1 : 1
-    }), {});
+    return votes.reduce( (acc, name) => {
+        return { ...acc, [name]: acc[name] ? acc[name] + 1 : 1 }
+    }, {});
 };
 
 console.log(tallyVotes(electionVotes));
