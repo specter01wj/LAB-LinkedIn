@@ -15,9 +15,9 @@ const hasSameLetterCount = (word1, word2) => {
 }
 
 const findAnagrams = (word, allWords) => {
-    const letters = word.split('');
-
-    // Your code here
+    return allWords
+        .filter(entry => hasSameLetterCount(word, entry))
+        .filter(anagram => anagram !== word);
 }
 
 console.log(findAnagrams('cinema', words));
