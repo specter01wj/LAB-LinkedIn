@@ -2,3 +2,4 @@
 
 const city = 'Chicago';
 console.log(city);
+

@@ -3,6 +3,6 @@ module.exports = {
     es6: true
   },
   rules: {
-    strict: ['error', 'global']
+    strict: ['error', 'global'],
   },
 };
