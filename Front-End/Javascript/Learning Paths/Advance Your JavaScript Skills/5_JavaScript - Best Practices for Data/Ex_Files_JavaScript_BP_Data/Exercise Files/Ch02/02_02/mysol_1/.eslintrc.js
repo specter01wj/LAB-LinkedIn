@@ -8,5 +8,6 @@ module.exports = {
     'strict': ['error', 'global'],
     'no-var': 'error',
     'prefer-const': 'error',
+    'one-var': ['error', 'never'],
   },
 };
