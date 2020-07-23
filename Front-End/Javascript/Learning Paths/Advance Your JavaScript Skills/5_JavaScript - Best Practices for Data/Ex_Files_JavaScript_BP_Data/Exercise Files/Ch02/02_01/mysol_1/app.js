@@ -9,11 +9,6 @@ var square = (value) => {
   return (value * value);
 };
 
-
-
-
-
-
 var double = (value) => {
   return (value * 2);
 };
