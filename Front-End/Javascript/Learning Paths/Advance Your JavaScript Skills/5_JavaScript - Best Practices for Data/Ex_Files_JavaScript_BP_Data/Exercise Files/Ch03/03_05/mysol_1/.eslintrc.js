@@ -11,5 +11,10 @@ module.exports = {
     'one-var': ['error', 'never'],
     'camelcase': 'error',
     'no-unused-vars': 'error',
+    'no-multi-assign': 'error',
+    'quotes': ['error', 'single'],
+    'no-array-constructor': 'error',
+    'no-new-object': 'error',
+    'quote-props': ['error','always'],
   },
 };
