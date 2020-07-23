@@ -6,5 +6,6 @@ module.exports = {
   },
   rules: {
     'strict': ['error', 'global'],
+    'no-var': 'error',
   },
 };
