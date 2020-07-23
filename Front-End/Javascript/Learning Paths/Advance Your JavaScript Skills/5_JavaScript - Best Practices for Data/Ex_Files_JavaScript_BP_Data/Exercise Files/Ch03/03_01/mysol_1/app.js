@@ -6,7 +6,10 @@ let netTotal;
 const cart = [55.83, 22.06, 5.99];
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-subTotal = shipping = netTotal = 0;
+// subTotal = shipping = netTotal = 0;
+subTotal = 0;
+shipping = 0;
+netTotal = 0;
 
 subTotal = cart.reduce(reducer);
 console.log(`Cart total: ${subTotal}`);
