@@ -15,5 +15,6 @@ module.exports = {
     'quotes': ['error', 'single'],
     'no-array-constructor': 'error',
     'no-new-object': 'error',
+    'quote-props': ['error','always'],
   },
 };
