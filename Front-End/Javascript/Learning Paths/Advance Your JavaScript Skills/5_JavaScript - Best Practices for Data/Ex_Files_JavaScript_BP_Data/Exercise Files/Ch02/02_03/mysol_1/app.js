@@ -1,6 +1,6 @@
 'use strict';
 
-const a = [
+const fruits = [
   'apple',
   'banana',
   'guava',
@@ -10,7 +10,7 @@ const a = [
   'pineapple',
 ];
 
-const b = [
+const veggies = [
   'beet',
   'carrot',
   'parsnip',
@@ -20,5 +20,5 @@ const b = [
   'yam',
 ];
 
-const x = 1.29;
-const y = 1.33;
+const inventoryRatio = 1.29;
+const previousYearRatio = 1.33;
