@@ -18,7 +18,7 @@ const triple = (value) => {
 };
 
 // assignment instead of comparison:
-if (abRatio = 0.1) { 
+if (abRatio === 0.9) { 
   console.log(input * abRatio);
 }
 
