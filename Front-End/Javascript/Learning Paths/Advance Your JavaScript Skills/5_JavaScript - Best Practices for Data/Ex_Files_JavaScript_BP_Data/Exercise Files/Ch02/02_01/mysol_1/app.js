@@ -27,6 +27,6 @@ cdRatio = 1.7;
 efRatio = 8.63;
 
 // reassignments:
-square = (input * input);
-double = (input * 2);
-triple = (input * 3);
+// square = (input * input);
+// double = (input * 2);
+// triple = (input * 3);
