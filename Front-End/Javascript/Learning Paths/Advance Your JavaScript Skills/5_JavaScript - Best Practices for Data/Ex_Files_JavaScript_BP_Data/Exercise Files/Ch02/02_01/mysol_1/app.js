@@ -13,6 +13,7 @@ var square = (value) => {
 
 
 
+
 var double = (value) => {
   return (value * 2);
 };
