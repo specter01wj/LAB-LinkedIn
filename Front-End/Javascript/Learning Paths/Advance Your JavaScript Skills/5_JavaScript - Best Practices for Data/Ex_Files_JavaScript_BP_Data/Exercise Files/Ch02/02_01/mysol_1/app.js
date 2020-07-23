@@ -3,16 +3,17 @@
 let abRatio = 0.9;
 let cdRatio = 1.65;
 let efRatio = 8.83;
-let input = 52;
+const input = 52;
 
-let square = (value) => {
+const square = (value) => {
   return (value * value);
 };
 
-let double = (value) => {
+const double = (value) => {
   return (value * 2);
 };
-let triple = (value) => {
+
+const triple = (value) => {
   return (value * 3);
 };
 
