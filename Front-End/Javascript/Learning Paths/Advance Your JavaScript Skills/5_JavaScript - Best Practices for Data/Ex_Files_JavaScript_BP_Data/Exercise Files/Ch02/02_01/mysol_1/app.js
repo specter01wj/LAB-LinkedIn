@@ -1,6 +1,6 @@
 'use strict';
 
-let abRatio = 0.9;
+const abRatio = 0.9;
 let cdRatio = 1.65;
 let efRatio = 8.83;
 const input = 52;
