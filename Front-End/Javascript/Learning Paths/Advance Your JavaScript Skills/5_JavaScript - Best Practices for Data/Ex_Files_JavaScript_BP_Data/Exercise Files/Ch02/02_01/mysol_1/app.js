@@ -1,18 +1,18 @@
 'use strict';
 
-var abRatio = 0.9;
-var cdRatio = 1.65;
-var efRatio = 8.83;
-var input = 52;
+let abRatio = 0.9;
+let cdRatio = 1.65;
+let efRatio = 8.83;
+let input = 52;
 
-var square = (value) => {
+let square = (value) => {
   return (value * value);
 };
 
-var double = (value) => {
+let double = (value) => {
   return (value * 2);
 };
-var triple = (value) => {
+let triple = (value) => {
   return (value * 3);
 };
 
@@ -22,8 +22,8 @@ if (abRatio = 0.1) {
 }
 
 // redeclarations:
-var cdRatio = 1.7;
-var efRatio = 8.63;
+let cdRatio = 1.7;
+let efRatio = 8.63;
 
 // reassignments:
 square = (input * input);
