@@ -22,8 +22,8 @@ if (abRatio = 0.1) {
 }
 
 // redeclarations:
-let cdRatio = 1.7;
-let efRatio = 8.63;
+cdRatio = 1.7;
+efRatio = 8.63;
 
 // reassignments:
 square = (input * input);
