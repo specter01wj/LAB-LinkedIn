@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const fruits = [
   'apple',
@@ -20,8 +20,8 @@ const veggies = [
   'yam',
 ];
 
-const fruitsList = fruits.join(", ");
-const veggiesList = veggies.join(", ");
+const fruitsList = fruits.join(', ');
+const veggiesList = veggies.join(', ');
 
 console.log(`Fruits to buy: ${fruitsList}`);
 console.log(`Veggies to buy: ${veggiesList}`);

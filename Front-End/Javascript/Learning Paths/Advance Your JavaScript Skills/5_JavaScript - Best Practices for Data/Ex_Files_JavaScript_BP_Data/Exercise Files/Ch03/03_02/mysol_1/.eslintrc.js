@@ -12,5 +12,6 @@ module.exports = {
     'camelcase': 'error',
     'no-unused-vars': 'error',
     'no-multi-assign': 'error',
+    'quotes': ['error', 'single'],
   },
 };
