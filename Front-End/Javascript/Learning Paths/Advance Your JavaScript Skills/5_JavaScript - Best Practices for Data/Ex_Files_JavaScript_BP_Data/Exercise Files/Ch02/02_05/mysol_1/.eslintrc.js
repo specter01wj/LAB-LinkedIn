@@ -10,5 +10,6 @@ module.exports = {
     'prefer-const': 'error',
     'one-var': ['error', 'never'],
     'camelcase': 'error',
+    'no-unused-vars': 'error',
   },
 };
