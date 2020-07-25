@@ -2,7 +2,7 @@
 
 const loggedIn = true;
 
-if (!!loggedIn) {
+if (loggedIn) {
   console.log('Display user account information');
 } else {
   console.log('Initiate OAuth request');
