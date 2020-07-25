@@ -19,5 +19,6 @@ module.exports = {
     'no-new-wrappers': 'error',
     'no-extra-boolean-cast': 'error',
     'eqeqeq': 'error',
+    'yoda': 'error',
   },
 };
