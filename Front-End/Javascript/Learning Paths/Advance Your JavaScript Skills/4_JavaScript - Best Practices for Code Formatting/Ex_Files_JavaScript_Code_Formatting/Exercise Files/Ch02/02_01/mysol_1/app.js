@@ -1,3 +1,9 @@
+/*
+  James Wang
+  JavaScript Best Practices for Code Formatting
+  LinkedIn Learning
+*/
+
 'use strict';
 
 const city = 'Chicago';
