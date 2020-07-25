@@ -20,5 +20,7 @@ module.exports = {
     'no-extra-boolean-cast': 'error',
     'eqeqeq': 'error',
     'yoda': 'error',
+    'no-unneeded-ternary': 'error',
+    'no-nested-ternary': 'error',
   },
 };
