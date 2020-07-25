@@ -6,5 +6,6 @@
 
 'use strict';
 
+// my comments
 const city = 'Chicago';
 console.log(city);
