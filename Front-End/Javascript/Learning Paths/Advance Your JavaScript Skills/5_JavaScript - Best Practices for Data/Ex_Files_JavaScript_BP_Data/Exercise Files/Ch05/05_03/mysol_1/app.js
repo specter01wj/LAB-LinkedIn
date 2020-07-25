@@ -10,10 +10,10 @@ const data = {
 if (data.warning) {
   console.log(data.warningText);
 }
-if (data.notes) {
-  console.log(data.notes);
+if (data.notes !== '') {
+  console.log(data.warningText);
 }
-if (data.alert) {
+if (data.alert > 0) {
   if (data.alert === 1) {
     console.log('Winter storm');
   } else if (data.alert === 2) {
