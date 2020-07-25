@@ -4,5 +4,6 @@ module.exports = {
   },
   rules: {
     strict: ['error', 'global'],
+    'multiline-comment-style': ['error', 'bare-block'],
   },
 };
