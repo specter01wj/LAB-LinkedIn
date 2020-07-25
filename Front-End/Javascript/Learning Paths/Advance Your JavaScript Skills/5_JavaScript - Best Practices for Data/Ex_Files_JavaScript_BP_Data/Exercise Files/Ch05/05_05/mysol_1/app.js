@@ -21,7 +21,11 @@ thirdChoice = choose();
 while (secondChoice === firstChoice) {
   secondChoice = choose();
 }
-while (thirdChoice === firstChoice || thirdChoice === secondChoice) {
+/* while (thirdChoice === firstChoice || thirdChoice === secondChoice) {
+  thirdChoice = choose();
+} */
+while ((thirdChoice === firstChoice) ||
+       (thirdChoice === secondChoice)) {
   thirdChoice = choose();
 }
 
