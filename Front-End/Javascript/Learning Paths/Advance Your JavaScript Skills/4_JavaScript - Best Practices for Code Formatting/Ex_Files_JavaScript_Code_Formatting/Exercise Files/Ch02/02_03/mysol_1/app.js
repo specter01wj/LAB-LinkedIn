@@ -6,10 +6,5 @@
 
 'use strict';
 
-/**
- * James Wang
- * Note: setup
- */
-
 const city = 'Chicago';
 console.log(city);
