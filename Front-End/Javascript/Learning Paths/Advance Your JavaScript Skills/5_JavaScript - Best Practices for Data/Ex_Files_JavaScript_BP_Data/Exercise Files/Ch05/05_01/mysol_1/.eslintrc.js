@@ -18,5 +18,6 @@ module.exports = {
     'quote-props': ['error','as-needed'],
     'no-new-wrappers': 'error',
     'no-extra-boolean-cast': 'error',
+    'eqeqeq': 'error',
   },
 };
