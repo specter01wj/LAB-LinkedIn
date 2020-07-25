@@ -16,5 +16,7 @@ module.exports = {
     'no-array-constructor': 'error',
     'no-new-object': 'error',
     'quote-props': ['error','as-needed'],
+    'no-new-wrappers': 'error',
+    'no-extra-boolean-cast': 'error',
   },
 };
