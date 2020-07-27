@@ -320,6 +320,7 @@
           swipeLeft : function(event, direction, distance, duration, fingerCount) {
 			jQuery.colorbox.prev();
 			console.log('swipe left', direction, event);
+			console.log('swipe %s using %O event', direction, event);
           },
           swipeRight:function(event, direction, distance, duration, fingerCount) {
             jQuery.colorbox.next();
