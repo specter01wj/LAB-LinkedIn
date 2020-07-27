@@ -319,7 +319,7 @@
         $("#colorbox").swipe( {
           swipeLeft : function(event, direction, distance, duration, fingerCount) {
 			jQuery.colorbox.prev();
-			alert('swipe left');
+			console.log('swipe left', direction, event);
           },
           swipeRight:function(event, direction, distance, duration, fingerCount) {
             jQuery.colorbox.next();
