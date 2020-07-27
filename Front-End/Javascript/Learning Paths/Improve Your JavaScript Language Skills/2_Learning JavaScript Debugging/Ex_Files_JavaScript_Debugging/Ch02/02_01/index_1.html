@@ -318,9 +318,11 @@
         $("#colorbox").swipe( {
           swipeLeft : function(event, direction, distance, duration, fingerCount) {
 			jQuery.colorbox.prev();
+			console.log('swipe left!');
           },
           swipeRight:function(event, direction, distance, duration, fingerCount) {
 			jQuery.colorbox.next();
+			console.log('swipe right!');
           }
         });
       }
