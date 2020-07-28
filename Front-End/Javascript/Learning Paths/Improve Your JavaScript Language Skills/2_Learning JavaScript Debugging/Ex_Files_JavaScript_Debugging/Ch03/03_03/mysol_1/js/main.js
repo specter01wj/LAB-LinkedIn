@@ -20,7 +20,12 @@ jQuery(document).ready(function($) {
         .swipe( {
             swipeLeft : function(event, direction, distance, duration, fingerCount) {
                 // want to remove this item
-                console.log('swipe left.');
+                // console.log('swipe left.');
+                var $item = $(event.target);
+                
+                if ($item.is('.item')) {
+                	$item.fadeOut('fast');
+                }
             },
             threshold: 100
         });
