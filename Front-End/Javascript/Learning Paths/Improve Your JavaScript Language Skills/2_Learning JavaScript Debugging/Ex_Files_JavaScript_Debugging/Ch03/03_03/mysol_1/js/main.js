@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
         .swipe( {
             swipeLeft : function(event, direction, distance, duration, fingerCount) {
                 // want to remove this item
+                console.log('swipe left.');
             },
             threshold: 100
         });
