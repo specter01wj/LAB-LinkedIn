@@ -1,3 +1,3 @@
 jQuery(function($){
-    $('article h1').lettering('word');
+    $('article h1').lettering('words');
 });
