@@ -144,6 +144,7 @@
           this.peopleData = response.data.people;
 
           this.setState({
+            isLoaded: true,
             people: this.peopleData,
             titles: response.data.titles
           });
