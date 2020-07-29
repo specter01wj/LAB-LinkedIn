@@ -648,15 +648,21 @@
     this.name = name;
     this.vase = vase;
     this.quantity = quantity;
-    this.logItem = function() {
+    /* this.logItem = function() {
       console.log('%c' + this.name,'font-weight: bold');
       for (let prop in this) {
         console.log(' ', prop, ': ', this[prop])
       }
-    };
+    }; */
   }
   Arrangement.prototype.type = 'floral';
   Arrangement.prototype.storage = 'cool';
+  Arrangement.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
   function Live(name, pot, quantity = 1) {
     this.type = 'floral';
     this.storage = 'warm';
