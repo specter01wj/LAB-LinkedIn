@@ -652,16 +652,17 @@
     }
   };
 
-  function Cut() {};
+/*   function Cut() {};
   Cut.prototype = new Item();
-  Cut.prototype.storage = 'cool';
+  Cut.prototype.storage = 'cool'; */
 
   function Arrangement(name, vase, quantity = 1) {
     this.name = name;
     this.vase = vase;
     this.quantity = quantity;
   }
-  Arrangement.prototype.type = new Cut();
+  Arrangement.prototype = new Item();
+  Arrangement.prototype.storage = 'cool';
   /* Arrangement.prototype.type = 'floral';
   Arrangement.prototype.storage = 'cool';
   Arrangement.prototype.logItem = function() {
