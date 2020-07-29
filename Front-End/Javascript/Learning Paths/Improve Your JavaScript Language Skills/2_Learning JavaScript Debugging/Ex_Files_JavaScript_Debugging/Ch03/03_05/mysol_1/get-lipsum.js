@@ -30,7 +30,8 @@ rl.question('How many paragraphs do you need? ', function getParagraphs(numParag
             // process.stdout.write(feedData);
 
             const feedJSON = JSON.parse(feedData);
-            process.stdout.write(feedJSON.feed.lipsum);
+            // process.stdout.write(feedJSON.feed.lipsum);
+            process.stdout.write(feedJSON.feed.lipsum.replace('\n', '\n\n'));
 
             process.stdout.write('\n');
         });
