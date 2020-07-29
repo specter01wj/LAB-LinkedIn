@@ -29,6 +29,9 @@ rl.question('How many paragraphs do you need? ', function getParagraphs(numParag
         response.on('end', function printLipsum() {
             process.stdout.write(feedData);
 
+            const feedJSON = JSON.parse(feedData);
+            process.stdout.write(feedJSON.feed.lissum);
+
             process.stdout.write('\n');
         });
     });
