@@ -643,8 +643,8 @@
     }
   };
   function Arrangement(name, vase, quantity = 1) {
-    this.type = 'floral';
-    this.storage = 'cool';
+    // this.type = 'floral';
+    // this.storage = 'cool';
     this.name = name;
     this.vase = vase;
     this.quantity = quantity;
@@ -655,6 +655,8 @@
       }
     };
   }
+  Arrangement.prototype.type = 'floral';
+  Arrangement.prototype.storage = 'cool';
   function Live(name, pot, quantity = 1) {
     this.type = 'floral';
     this.storage = 'warm';
