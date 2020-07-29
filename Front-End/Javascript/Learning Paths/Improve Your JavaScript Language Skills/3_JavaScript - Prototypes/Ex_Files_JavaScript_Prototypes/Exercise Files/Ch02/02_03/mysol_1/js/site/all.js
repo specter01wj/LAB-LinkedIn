@@ -642,19 +642,34 @@
       });
     }
   };
+
+  function Item() {};
+  Item.prototype.type = 'floral';
+  Item.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+
+  function Cut() {};
+  Cut.prototype = new Item();
+  Cut.prototype.storage = 'cool';
+
   function Arrangement(name, vase, quantity = 1) {
     this.name = name;
     this.vase = vase;
     this.quantity = quantity;
   }
-  Arrangement.prototype.type = 'floral';
+  Arrangement.prototype.type = new Cut();
+  /* Arrangement.prototype.type = 'floral';
   Arrangement.prototype.storage = 'cool';
   Arrangement.prototype.logItem = function() {
     console.log('%c' + this.name,'font-weight: bold');
     for (let prop in this) {
       console.log(' ', prop, ': ', this[prop])
     }
-  };
+  }; */
 
   function Live(name, pot, quantity = 1) {
     this.name = name;
