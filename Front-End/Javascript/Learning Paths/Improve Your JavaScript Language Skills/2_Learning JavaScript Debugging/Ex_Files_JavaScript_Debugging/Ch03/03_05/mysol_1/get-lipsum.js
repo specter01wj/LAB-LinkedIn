@@ -27,10 +27,10 @@ rl.question('How many paragraphs do you need? ', function getParagraphs(numParag
 
         // When the response is completely collected, we have complete data and can act
         response.on('end', function printLipsum() {
-            process.stdout.write(feedData);
+            // process.stdout.write(feedData);
 
             const feedJSON = JSON.parse(feedData);
-            process.stdout.write(feedJSON.feed.lissum);
+            process.stdout.write(feedJSON.feed.lipsum);
 
             process.stdout.write('\n');
         });
