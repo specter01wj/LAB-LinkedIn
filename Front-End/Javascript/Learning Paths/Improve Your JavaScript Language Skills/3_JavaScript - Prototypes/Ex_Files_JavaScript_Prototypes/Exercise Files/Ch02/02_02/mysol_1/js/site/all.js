@@ -687,11 +687,11 @@
   };
 
   function Bouquet(name, vase) {
-    this.type = 'floral';
-    this.storage = 'cool';
+    // this.type = 'floral';
+    // this.storage = 'cool';
     this.name = name;
     this.vase = vase;
-    this.logItem = function() {
+    /* this.logItem = function() {
       console.log('%c' + this.name,'font-weight: bold');
       for (let prop in this) {
         console.log(' ', prop, ': ', this[prop])
@@ -701,7 +701,7 @@
       addStem: function(name, quantity = 1, color = 'Default') {
         this[name] = new Flower(quantity, color)
       }
-    }
+    } */
   }
   Bouquet.prototype.type = 'floral';
   Bouquet.prototype.storage = 'cool';
@@ -709,6 +709,11 @@
     console.log('%c' + this.name,'font-weight: bold');
     for (let prop in this) {
       console.log(' ', prop, ': ', this[prop])
+    }
+  };
+  Bouquet.prototype.flowers = {
+    addStem: function(name, quantity = 1, color = 'Default') {
+      this[name] = new Flower(quantity, color)
     }
   };
 
