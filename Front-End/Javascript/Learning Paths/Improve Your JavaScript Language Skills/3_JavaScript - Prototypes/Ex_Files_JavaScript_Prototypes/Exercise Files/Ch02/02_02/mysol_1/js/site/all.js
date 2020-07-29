@@ -726,4 +726,11 @@
       }
     };
   }
+  Flower.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+
 })();
