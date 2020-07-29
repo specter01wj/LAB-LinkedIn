@@ -663,9 +663,10 @@
       console.log(' ', prop, ': ', this[prop])
     }
   };
+
   function Live(name, pot, quantity = 1) {
-    this.type = 'floral';
-    this.storage = 'warm';
+    // this.type = 'floral';
+    // this.storage = 'warm';
     this.name = name;
     this.pot = pot;
     this.quantity = quantity;
@@ -676,6 +677,15 @@
       }
     };
   }
+  Live.prototype.type = 'floral';
+  Live.prototype.storage = 'warm';
+  Live.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+
   function Bouquet(name, vase) {
     this.type = 'floral';
     this.storage = 'cool';
