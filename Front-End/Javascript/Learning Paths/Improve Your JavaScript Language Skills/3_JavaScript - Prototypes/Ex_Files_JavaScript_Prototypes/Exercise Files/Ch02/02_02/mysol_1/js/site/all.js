@@ -21,9 +21,6 @@
     $html = $(html),
     multiplier,
     current = 'current',
-
-
-    
     close = 'close',
     open = 'open',
     hidden = 'hidden',
