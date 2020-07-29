@@ -692,7 +692,14 @@
     this.name = name;
     this.vase = vase;
   }
-  Bouquet.prototype.type = 'floral';
+  Bouquet.prototype = new Item();
+  Bouquet.prototype.storage = 'cool';
+  Bouquet.prototype.flowers = {
+    addStem: function(name, quantity = 1, color = 'Default') {
+      this[name] = new Flower(quantity, color)
+    }
+  };
+  /* Bouquet.prototype.type = 'floral';
   Bouquet.prototype.storage = 'cool';
   Bouquet.prototype.logItem = function() {
     console.log('%c' + this.name,'font-weight: bold');
@@ -704,7 +711,7 @@
     addStem: function(name, quantity = 1, color = 'Default') {
       this[name] = new Flower(quantity, color)
     }
-  };
+  }; */
 
   function Flower(quantity, color) {
     this[color] = quantity;
