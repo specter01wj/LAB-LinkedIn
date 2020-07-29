@@ -670,12 +670,12 @@
     this.name = name;
     this.pot = pot;
     this.quantity = quantity;
-    this.logItem = function() {
+    /* this.logItem = function() {
       console.log('%c' + this.name,'font-weight: bold');
       for (let prop in this) {
         console.log(' ', prop, ': ', this[prop])
       }
-    };
+    }; */
   }
   Live.prototype.type = 'floral';
   Live.prototype.storage = 'warm';
@@ -703,6 +703,15 @@
       }
     }
   }
+  Bouquet.prototype.type = 'floral';
+  Bouquet.prototype.storage = 'cool';
+  Bouquet.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+
   function Flower(quantity, color) {
     this[color] = quantity;
     this.logItem = function() {
