@@ -676,14 +676,16 @@
     this.pot = pot;
     this.quantity = quantity;
   }
-  Live.prototype.type = 'floral';
+  Live.prototype = new Item();
+  Live.prototype.storage = 'warm';
+  /* Live.prototype.type = 'floral';
   Live.prototype.storage = 'warm';
   Live.prototype.logItem = function() {
     console.log('%c' + this.name,'font-weight: bold');
     for (let prop in this) {
       console.log(' ', prop, ': ', this[prop])
     }
-  };
+  }; */
 
   function Bouquet(name, vase) {
     this.name = name;
