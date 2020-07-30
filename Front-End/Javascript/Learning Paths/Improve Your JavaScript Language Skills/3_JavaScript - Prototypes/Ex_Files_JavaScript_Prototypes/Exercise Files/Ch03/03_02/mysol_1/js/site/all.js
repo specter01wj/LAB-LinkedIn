@@ -665,13 +665,22 @@
     }
   }
 
-  function Live(name, pot, quantity = 1) {
+  /* function Live(name, pot, quantity = 1) {
     this.name = name;
     this.pot = pot;
     this.quantity = quantity;
   }
   Live.prototype = new Item();
-  Live.prototype.storage = 'warm';
+  Live.prototype.storage = 'warm'; */
+  class Live extends Item {
+    constructor(name, pot, quantity = 1) {
+      super();
+      this.name = name;
+      this.pot = pot;
+      this.quantity = quantity;
+      this.storage = 'warm';
+    }
+  }
 
   function Flower(quantity, color) {
     this[color] = quantity;
