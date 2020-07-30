@@ -682,23 +682,43 @@
     }
   }
 
-  function Flower(quantity, color) {
+  /* function Flower(quantity, color) {
     this[color] = quantity;
   }
-  Flower.prototype = new Item();
+  Flower.prototype = new Item(); */
+  class Flower extends Item {
+    constructor(quantity, color) {
+      super();
+      this[color] = quantity;
+    }
+  }
 
-  function Cut() {};
+  /* function Cut() {};
   Cut.prototype = new Item();
-  Cut.prototype.storage = 'cool';
+  Cut.prototype.storage = 'cool'; */
+  class Cut extends Item {
+    constructor(name, vase) {
+      super();
+      this.name = name;
+      this.vase = vase;
+      this.storage = 'cool';
+    }
+  }
 
-  function Arrangement(name, vase, quantity = 1) {
+  /* function Arrangement(name, vase, quantity = 1) {
     this.name = name;
     this.vase = vase;
     this.quantity = quantity;
   }
-  Arrangement.prototype = new Cut();
+  Arrangement.prototype = new Cut(); */
+  class Arrangement extends Cut {
+    constructor(name, vase, quantity = 1) {
+      super(name, vase);
+      this.quantity = quantity;
+    }
+  }
 
-  function Bouquet(name, vase) {
+  /* function Bouquet(name, vase) {
     this.name = name;
     this.vase = vase;
   }
@@ -707,5 +727,17 @@
     addStem: function(name, quantity = 1, color = 'Default') {
       this[name] = new Flower(quantity, color)
     }
-  };
+  }; */
+  class Bouquet extends Cut {
+    constructor(name, vase) {
+      super(name, vase);
+      this.flowers = {
+        addStem: function(name, quantity = 1, color = 'Default') {
+          this[name] = new Flower(quantity, color)
+        }
+      }
+    }
+  }
+
+  
 })();
