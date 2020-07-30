@@ -7,12 +7,10 @@ const userPrefs = {
 };
 
 const makeLowerCase = (input) => {
-  return
-  String(input).toLowerCase();
+  return String(input).toLowerCase();
 };
 
-userPrefs.setting = makeLowerCase
-  (window.prompt('Urban or rural?'));
+userPrefs.setting = makeLowerCase(window.prompt('Urban or rural?'));
 
-console.log(userPrefs
-['setting']);
+console.log(userPrefs['setting']);
+
