@@ -643,14 +643,27 @@
     }
   };
 
-  function Item() {};
+  /* function Item() {};
   Item.prototype.type = 'goods';
   Item.prototype.logItem = function() {
     console.log('%c' + this.name,'font-weight: bold');
     for (let prop in this) {
       console.log(' ', prop, ': ', this[prop])
     }
-  };
+  }; */
+
+  class Item {
+    constructor() {
+      this.type = 'goods';
+    }
+
+    logItem() {
+      console.log('%c' + this.name,'font-weight: bold');
+      for (let prop in this) {
+        console.log(' ', prop, ': ', this[prop])
+      }
+    }
+  }
 
   function Live(name, pot, quantity = 1) {
     this.name = name;
