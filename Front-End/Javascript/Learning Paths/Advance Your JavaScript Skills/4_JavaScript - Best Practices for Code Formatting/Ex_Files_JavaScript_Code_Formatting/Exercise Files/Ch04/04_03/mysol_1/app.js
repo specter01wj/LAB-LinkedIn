@@ -6,22 +6,14 @@ const userPrefs = {
   lon: -87.629799,
 };
 
-const region = ((city) => 
-{
-  if (city === 'Buenos Aires') 
-  {
-    return 'South America'; 
-  } 
-  else if (city === 'Los Angeles') 
-  {
+const region = ((city) => {
+  if (city === 'Buenos Aires') {
+    return 'South America';
+  } else if (city === 'Los Angeles') {
     return 'North America';
-  } 
-  else if (city === 'Beijing') 
-  {
+  } else if (city === 'Beijing') {
     return 'Asia';
-  } 
-  else 
-  {
+  } else {
     return 'lookup';
   }
 });
