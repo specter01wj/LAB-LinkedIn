@@ -6,10 +6,10 @@ const userPrefs = {
   lon: -87.629799,
 };
 
-const updateUserPrefs = function(date) {
+const updateUserPrefs = function (date) {
   userPrefs = refreshData(date);
 };
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
   updateUserPrefs(date);
 });

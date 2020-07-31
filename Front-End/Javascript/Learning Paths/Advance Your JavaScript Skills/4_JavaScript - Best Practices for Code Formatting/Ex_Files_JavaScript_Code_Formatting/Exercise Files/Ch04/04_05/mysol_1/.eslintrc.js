@@ -19,5 +19,6 @@ module.exports = {
     'brace-style': 'error',
     'keyword-spacing': 'error',
     'arrow-spacing': 'error',
+    'space-before-function-paren': ['error', {'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always'}],
   },
 };
