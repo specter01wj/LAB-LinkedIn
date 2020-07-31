@@ -9,4 +9,4 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=il')
     }
   })
   .then((data ) => console.log(data))
-  .catch((error) => console.log('Error: ', error) );
+  .catch((error) => console.log('Error: ', error));
