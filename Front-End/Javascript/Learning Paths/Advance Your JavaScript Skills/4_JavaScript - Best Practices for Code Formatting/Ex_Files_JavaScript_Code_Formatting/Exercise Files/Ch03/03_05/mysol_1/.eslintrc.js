@@ -12,5 +12,6 @@ module.exports = {
     'no-unexpected-multiline': 'error',
     'max-len': ['error', { 'code': 80 }],
     'comma-style': ['error', 'last'],
+    'comma-dangle': ['error', 'always-multiline'],
   },
 };
