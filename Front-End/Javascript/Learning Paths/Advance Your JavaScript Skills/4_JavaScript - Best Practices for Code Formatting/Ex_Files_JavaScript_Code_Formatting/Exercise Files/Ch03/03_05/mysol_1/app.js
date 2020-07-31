@@ -2,7 +2,8 @@
 
 fetch({
   method: 'GET',
-  url: 'https://developer.nps.gov/api/v1/parks?stateCode=il'
+  url: 'https://developer.nps.gov/api/v1/parks?stateCode=il',
+  'X-Api-Key': 'INSERT-API-KEY-HERE',
 })
   .then((response) => {
     if (response.ok) {
