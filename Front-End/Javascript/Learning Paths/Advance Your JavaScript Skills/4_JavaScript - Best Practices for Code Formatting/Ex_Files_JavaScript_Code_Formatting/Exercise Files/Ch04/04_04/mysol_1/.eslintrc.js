@@ -17,5 +17,7 @@ module.exports = {
     'space-infix-ops': 'error',
     'space-before-blocks': 'error',
     'brace-style': 'error',
+    'keyword-spacing': 'error',
+    'arrow-spacing': 'error',
   },
 };
