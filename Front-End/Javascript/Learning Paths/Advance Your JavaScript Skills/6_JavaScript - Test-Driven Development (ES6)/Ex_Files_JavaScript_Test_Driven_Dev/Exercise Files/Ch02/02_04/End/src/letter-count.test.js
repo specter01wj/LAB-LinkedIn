@@ -11,6 +11,7 @@ describe('getLetterCount - basic functionality', () => {
 
 
 
+
     	
         const expected = {};
         const actual = getLetterCount('');
