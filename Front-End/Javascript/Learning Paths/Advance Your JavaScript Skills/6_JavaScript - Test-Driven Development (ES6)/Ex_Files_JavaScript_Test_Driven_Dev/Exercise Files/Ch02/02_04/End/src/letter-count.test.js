@@ -11,6 +11,7 @@ describe('getLetterCount - basic functionality', () => {
 
 
 
+
         
         expect(actual).to.deep.equal(expected);
     })
