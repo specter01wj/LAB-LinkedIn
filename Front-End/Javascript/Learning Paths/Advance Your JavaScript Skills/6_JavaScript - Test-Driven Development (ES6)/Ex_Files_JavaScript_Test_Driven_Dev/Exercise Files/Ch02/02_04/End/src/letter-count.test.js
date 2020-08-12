@@ -18,6 +18,7 @@ import { expect } from 'chai';
 
 
 
+
 import { getLetterCount } from './letter-count';
 
 describe('getLetterCount - basic functionality', () => {
