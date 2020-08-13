@@ -13,8 +13,8 @@ export const isAnagram = (string1, string2) => {
 
 
 export const isAnagram = (string1, string2) => {
-  let str1 = string1.replace(/\s+/g, '');
-  let str2 = string2.replace(/\s+/g, '');
+  let str1 = string1.toLowerCase().replace(/\s+/g, '');
+  let str2 = string2.toLowerCase().replace(/\s+/g, '');
   if (str1.length !== str2.length) {
     return false;
   }
