@@ -12,6 +12,7 @@ describe('getLetterCount - basic functionality', () => {
         const expected = { c: 1, a: 1, t: 1 };
         const actual = getLetterCount('cat');
 
+
         
         expect(actual).to.deep.equal(expected);
     });
