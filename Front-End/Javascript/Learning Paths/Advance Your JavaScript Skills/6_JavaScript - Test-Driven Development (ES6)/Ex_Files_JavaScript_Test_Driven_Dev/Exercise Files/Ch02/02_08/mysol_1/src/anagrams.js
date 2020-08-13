@@ -12,7 +12,9 @@ export const isAnagram = (string1, string2) => {
 }; */
 
 
-export const isAnagram = (str1, str2) => {
+export const isAnagram = (string1, string2) => {
+  let str1 = string1.replace(/\s+/g, '');
+  let str2 = string2.replace(/\s+/g, '');
   if (str1.length !== str2.length) {
     return false;
   }
