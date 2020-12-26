@@ -3,17 +3,27 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styles: [
+    `
+      .list-group-item:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 0;
+      }
+    `
+  ]
 })
 export class AppComponent {
-  title = 'ch2-exe';
-
   query: string;
-  artists: any;
+  artists: object;
+
+  showArtist(item) {
+    this.query = item.name;
+  }
 
   constructor() {
-  	this.query = 'Barot';
-  	this.artists = [
+    this.query = '';
+    this.artists = [
       {
         "name":"Barot Bellingham",
         "shortname":"Barot_Bellingham",
@@ -70,5 +80,4 @@ export class AppComponent {
       }
     ]
   }
-
 }
