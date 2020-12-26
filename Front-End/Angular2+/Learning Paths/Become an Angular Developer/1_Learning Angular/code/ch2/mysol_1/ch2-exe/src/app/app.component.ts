@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'ch2-exe';
 
   query: string;
-  artists: object;
+  // artists: object;
 
   constructor() {
   	this.query = 'Barot';
