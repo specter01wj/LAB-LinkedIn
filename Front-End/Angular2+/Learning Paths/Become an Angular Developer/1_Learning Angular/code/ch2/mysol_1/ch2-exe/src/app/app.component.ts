@@ -20,6 +20,7 @@ export class AppComponent {
 
 
 
+
   	
   	this.artists = [
       {
