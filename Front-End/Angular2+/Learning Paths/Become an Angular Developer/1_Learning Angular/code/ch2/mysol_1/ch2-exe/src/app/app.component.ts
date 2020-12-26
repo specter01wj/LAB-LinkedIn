@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   constructor() {
-  	this.query = 'Barot';
+  	this.query = '';
   	this.artists = [
       {
         "name":"Barot Bellingham",
