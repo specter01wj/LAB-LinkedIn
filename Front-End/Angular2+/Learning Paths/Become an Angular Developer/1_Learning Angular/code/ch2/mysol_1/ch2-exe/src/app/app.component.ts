@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ch2-exe';
+
+  query: string;
+  artists: object;
+
+  constructor() {
+  	this.query = 'Barot';
+  }
+
 }
