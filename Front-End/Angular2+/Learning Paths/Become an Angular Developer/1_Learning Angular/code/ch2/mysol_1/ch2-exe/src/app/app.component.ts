@@ -11,7 +11,7 @@ export class AppComponent {
   query: string;
   artists: any;
 
-  showArtist(e, item) {
+  showArtist(e: any, item: any) {
     this.query = item.name;
   }
 
