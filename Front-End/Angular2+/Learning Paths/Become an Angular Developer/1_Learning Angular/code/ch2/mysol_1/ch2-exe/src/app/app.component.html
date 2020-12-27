@@ -20,7 +20,8 @@
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
             *ngFor="let artist of artists"
-            (click)="showArtist($event, artist)" >
+            (click)="showArtist($event, artist)"
+            [style.backgroundColor]="artist.highlight ? '#EEE' : '#FFF'" >
               <div class="media">
                 <img class="mr-3 rounded align-self-center img-fluid" 
                   style="width:70px;" [src]="'./assets/images/' + artist.shortname + '_tn.jpg'" alt="{{ 'Photo of ' + artist.name }}">
