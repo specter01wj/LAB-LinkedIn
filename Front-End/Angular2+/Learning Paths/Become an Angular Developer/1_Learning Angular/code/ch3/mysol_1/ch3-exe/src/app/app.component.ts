@@ -18,10 +18,6 @@ export class AppComponent {
 
   constructor() {
   	this.query = '';
-
-
-
-  	
   	this.artists = [];
   }
 
