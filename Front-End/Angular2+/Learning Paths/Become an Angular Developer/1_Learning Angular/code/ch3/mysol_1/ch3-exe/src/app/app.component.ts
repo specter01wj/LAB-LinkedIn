@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ch3-exe';
 
-  query: string;
+  query: string = '';
   artists: any;
 
   showArtist(e: any, item: any) {
@@ -16,9 +17,14 @@ export class AppComponent {
     item.highlight = !item.highlight;
   }
 
-  constructor() {
-  	this.query = '';
-  	this.artists = [];
+  constructor(private http: HttpClient) {
+  }
+
+  ngOnInit(): void {
+  	this.http.get<Object>('./assets/data.json')
+  		.subscribe( data => {
+  			this.artists = data;
+  		});
   }
 
 }
