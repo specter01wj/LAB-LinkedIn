@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { Artist } from './interface/artist';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,7 +23,7 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-  	this.http.get<Object>('./assets/data.json')
+  	this.http.get<Artist[]>('./assets/data.json')
   		.subscribe( data => {
   			this.artists = data;
   		});

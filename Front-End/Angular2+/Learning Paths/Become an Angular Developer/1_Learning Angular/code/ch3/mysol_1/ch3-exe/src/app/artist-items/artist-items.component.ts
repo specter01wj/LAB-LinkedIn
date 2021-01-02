@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Artist } from '../interface/artist';
 
 @Component({
   selector: 'app-artist-items',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistItemsComponent implements OnInit {
 
+	@Input('innerArtist') artist: Artist[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+  	console.log(this.artist);
   }
 
 }
