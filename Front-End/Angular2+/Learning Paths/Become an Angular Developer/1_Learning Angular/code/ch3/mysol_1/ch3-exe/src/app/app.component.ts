@@ -12,9 +12,9 @@ export class AppComponent {
   title = 'ch3-exe';
 
   query: string = '';
-  artists: any;
+  artists: Artist[] = [];
 
-  showArtist(e: any, item: any) {
+  showArtist(e: any, item: Artist) {
     this.query = item.name;
     item.highlight = !item.highlight;
   }
