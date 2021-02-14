@@ -13,10 +13,12 @@ export class AppComponent {
 
   query: string = '';
   artists: Artist[] = [];
+  currentArtist: any;
 
   showArtist(e: any, item: Artist) {
     this.query = item.name;
     item.highlight = !item.highlight;
+    this.currentArtist = item;
   }
 
   constructor(private http: HttpClient) {

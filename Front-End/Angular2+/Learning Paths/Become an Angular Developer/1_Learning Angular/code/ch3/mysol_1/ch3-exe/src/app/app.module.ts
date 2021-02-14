@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArtistItemsComponent } from './artist-items/artist-items.component';
 import { SearchArtistsPipe } from './pipe/search-artists.pipe';
+import { ArtistDetailsComponent } from './artist-details/artist-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArtistItemsComponent,
-    SearchArtistsPipe
+    SearchArtistsPipe,
+    ArtistDetailsComponent
   ],
   imports: [
     BrowserModule,
