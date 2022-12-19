@@ -21,11 +21,25 @@
           return "In stock";
         }
 
+        Book.prototype.sell = function(numCopiesSold = 1) {
+          this.numCopies -= numCopiesSold;
+        }
+
+        Book.prototype.restock = function(numCopiesStocked = 5) {
+          this.numCopies += numCopiesStocked;
+        }
+
         let title = "Hunger Games", author = "Suzanne Collins", 
             ISBN = 123919, numCopies = 5;
 				let HungerGames = new Book(title, author, ISBN, numCopies);
 				let tt1 = HungerGames.getAvailability();
-				$('#t1').html('<h2>Input: ' + title + '<br>Results: ' + (tt1) + '</h2>');
+        $('#t1').html('<h2>Input: ' + title + '<br>Results: ' + (tt1) + '</h2>');
+        HungerGames.restock(12);
+        tt1 = HungerGames.getAvailability();
+        $('#t2').html('<h2>Results2: ' + (tt1) + '</h2>');
+        HungerGames.sell(17);
+        tt1 = HungerGames.getAvailability();
+				$('#t3').html('<h2>Results3: ' + (tt1) + '</h2>');
 			});
 
 		</script>
@@ -34,6 +48,8 @@
 	<body>
 		<div>
 			<p id='t1'></p>
+			<p id='t2'></p>
+			<p id='t3'></p>
 		</div>
 	</body>
 
