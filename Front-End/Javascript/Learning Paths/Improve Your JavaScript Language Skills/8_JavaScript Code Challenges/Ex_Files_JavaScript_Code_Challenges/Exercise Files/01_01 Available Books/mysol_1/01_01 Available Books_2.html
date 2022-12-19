@@ -17,7 +17,7 @@
             return this.getAvailability();
           }
 
-          getAvailability = function() {
+          getAvailability() {
             if (this.numCopies === 0) {
               return "Out of stock";
             } else if (this.numCopies < 10) {
@@ -26,18 +26,20 @@
             return "In stock";
           }
 
+          sell(numCopiesSold = 1) {
+            this.numCopies -= numCopiesSold;
+          }
+
+          restock(numCopiesStocked = 5) {
+            this.numCopies += numCopiesStocked;
+          }
+
         }
 				
 
         
 
-        Book.prototype.sell = function(numCopiesSold = 1) {
-          this.numCopies -= numCopiesSold;
-        }
-
-        Book.prototype.restock = function(numCopiesStocked = 5) {
-          this.numCopies += numCopiesStocked;
-        }
+        
 
         let title = "Hunger Games", author = "Suzanne Collins", 
             ISBN = 123919, numCopies = 5;
