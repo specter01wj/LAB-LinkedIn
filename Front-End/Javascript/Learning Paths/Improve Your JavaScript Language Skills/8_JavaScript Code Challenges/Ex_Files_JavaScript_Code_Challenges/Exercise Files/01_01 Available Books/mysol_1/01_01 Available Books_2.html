@@ -39,13 +39,13 @@
         let title = "Hunger Games", author = "Suzanne Collins", 
             ISBN = 123919, numCopies = 5;
 				let HungerGames = new Book(title, author, ISBN, numCopies);
-				let tt1 = HungerGames.getAvailability;
+				let tt1 = HungerGames.availability;
         $('#t1').html('<h2>Input: ' + title + '<br>Results: ' + (tt1) + '</h2>');
         HungerGames.restock(12);
-        tt1 = HungerGames.getAvailability();
+        tt1 = HungerGames.availability;
         $('#t2').html('<h2>Results2: ' + (tt1) + '</h2>');
         HungerGames.sell(17);
-        tt1 = HungerGames.getAvailability();
+        tt1 = HungerGames.availability;
 				$('#t3').html('<h2>Results3: ' + (tt1) + '</h2>');
 			});
 
