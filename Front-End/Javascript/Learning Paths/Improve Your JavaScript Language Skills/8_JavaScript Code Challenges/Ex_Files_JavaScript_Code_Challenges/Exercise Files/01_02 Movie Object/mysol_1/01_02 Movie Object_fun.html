@@ -13,29 +13,24 @@
           this.rating = rating;
 				};
 
-        Book.prototype.getAvailability = function() {
-          if (this.numCopies === 0) {
-            return "Out of stock";
-          } else if (this.numCopies < 10) {
-            return "Low stock";
-          }
-          return "In stock";
+        Movie.prototype.getOverview = function() {
+          return `${this.title}, a ${this.genre} film directed by 
+            ${this.director} was released in ${this.releaseYear}. 
+            It received a rating of ${this.rating}`;
         }
 
-        Movie.prototype.getOverview = function(numCopiesSold = 1) {
-          this.numCopies -= numCopiesSold;
-        }
+        let title = "Spiderman", director = "Sam Raimi", 
+            genre = "Action", releaseYear = 2002, rating = 87;
+				let Spiderman = new Movie(title, director, genre, releaseYear, rating);
+        const Batman = new Movie("The Dark Knight", "Christopher Nolan", "Action", 2008, 83);
+        const TheNotebook = new Movie("The Notebook", "Nick Cassavetes", "Romance", 2004, 54);
 
-        let title = "Hunger Games", author = "Suzanne Collins", 
-            ISBN = 123919, numCopies = 5;
-				let HungerGames = new Book(title, author, ISBN, numCopies);
-				let tt1 = HungerGames.getAvailability();
+        console.log(Spiderman);
+				let tt1 = Spiderman.getOverview();
         $('#t1').html('<h2>Input: ' + title + '<br>Results: ' + (tt1) + '</h2>');
-        HungerGames.restock(12);
-        tt1 = HungerGames.getAvailability();
+        tt1 = Batman.getOverview();
         $('#t2').html('<h2>Results2: ' + (tt1) + '</h2>');
-        HungerGames.sell(17);
-        tt1 = HungerGames.getAvailability();
+        tt1 = TheNotebook.getOverview();
 				$('#t3').html('<h2>Results3: ' + (tt1) + '</h2>');
 			});
 
