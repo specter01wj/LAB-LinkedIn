@@ -5,11 +5,12 @@
 		<script>
 			$(document).ready(function(){
 
-				function Book(title, author, ISBN, numCopies) {
+				function Movie(title, director, genre, releaseYear, rating) {
           this.title = title;
-          this.author = author;
-          this.ISBN = ISBN;
-          this.numCopies = numCopies;
+          this.director = director;
+          this.genre = genre;
+          this.releaseYear = releaseYear;
+          this.rating = rating;
 				};
 
         Book.prototype.getAvailability = function() {
