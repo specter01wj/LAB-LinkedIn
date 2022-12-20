@@ -26,10 +26,6 @@
           this.numCopies -= numCopiesSold;
         }
 
-        Book.prototype.restock = function(numCopiesStocked = 5) {
-          this.numCopies += numCopiesStocked;
-        }
-
         let title = "Hunger Games", author = "Suzanne Collins", 
             ISBN = 123919, numCopies = 5;
 				let HungerGames = new Book(title, author, ISBN, numCopies);
