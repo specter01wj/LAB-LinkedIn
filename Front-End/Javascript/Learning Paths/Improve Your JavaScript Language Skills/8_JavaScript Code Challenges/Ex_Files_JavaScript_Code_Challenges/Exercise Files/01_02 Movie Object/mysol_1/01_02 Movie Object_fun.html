@@ -22,7 +22,7 @@
           return "In stock";
         }
 
-        Book.prototype.sell = function(numCopiesSold = 1) {
+        Movie.prototype.getOverview = function(numCopiesSold = 1) {
           this.numCopies -= numCopiesSold;
         }
 
