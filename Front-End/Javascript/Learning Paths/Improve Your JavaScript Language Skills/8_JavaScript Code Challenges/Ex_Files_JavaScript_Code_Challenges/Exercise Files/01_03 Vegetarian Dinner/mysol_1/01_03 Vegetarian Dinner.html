@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				function vegetarianMenu(menu) {
+          return vegetarianOptions = menu.filter((item) => item.isVegetarian);
+				};
+
+        function objToArr(data) {
+          let output = [];
+          data.forEach((item) => {
+            output.push(item.name);
+          })
+          return output;
+        }
+
+        let vegetarianMenuData = [
+          {
+            name: "Chicken parmesan",
+            isVegetarian: false,
+          },
+          {
+            name: "Penne a la vodka",
+            isVegetarian: true,
+          },
+          {
+            name: "Mushroom risotto",
+            isVegetarian: true,
+          },
+          {
+            name: "Veal saltambuca",
+            isVegetarian: false,
+          },
+          {
+            name: "Filet mignon",
+            isVegetarian: false,
+          },
+        ];
+        
+				let input = objToArr(vegetarianMenuData);
+				let tt1 = objToArr(vegetarianMenu(vegetarianMenuData));
+        $('#t1').html('<h2>Input: ' + input + '<br>Results: ' + (tt1) + '</h2>');
+			});
+
+		</script>
+	</head>
+	
+	<body>
+		<div>
+			<p id='t1'></p>
+		</div>
+	</body>
+
+</html>
