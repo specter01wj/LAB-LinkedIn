@@ -49,13 +49,21 @@
 
         let HungerGames = new Book("Hunger Games", "Suzanne Collins", 123919, 5);
 
-				let tt1 = HungerGames.availability;
-        $('#t1').html('<h2>Input: ' + HungerGames.getAvailability() + '<br>Results: ' + (tt1) + '</h2>');
-        HungerGames.restock(12);
-        tt1 = HungerGames.availability;
+        let CrackingTheCodingInterview = new TechnicalBook(
+          "Cracking The Coding Interview",
+          "Gayle Laackmann McDowell",
+          1209123,
+          7,
+          "2.3"
+        );
+
+				let tt1 = CrackingTheCodingInterview.availability;
+        $('#t1').html('<h2>Input: ' + CrackingTheCodingInterview.getEdition() + '<br>Results: ' + (tt1) + '</h2>');
+        CrackingTheCodingInterview.restock(12);
+        tt1 = CrackingTheCodingInterview.availability;
         $('#t2').html('<h2>Results2: ' + (tt1) + '</h2>');
-        HungerGames.sell(17);
-        tt1 = HungerGames.availability;
+        CrackingTheCodingInterview.sell(19);
+        tt1 = CrackingTheCodingInterview.availability;
 				$('#t3').html('<h2>Results3: ' + (tt1) + '</h2>');
 			});
 
