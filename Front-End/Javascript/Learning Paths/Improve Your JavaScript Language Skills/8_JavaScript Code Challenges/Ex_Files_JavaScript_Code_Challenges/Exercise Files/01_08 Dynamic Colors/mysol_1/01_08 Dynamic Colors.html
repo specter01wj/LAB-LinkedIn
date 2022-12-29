@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+        function changeColor(color) {
+          return function() {
+            document.body.style.background = color;
+          };
+        }
+        function changeColor_1(color) {
+          document.body.style.background = color;
+        }
+
+        $('#blue').click( () => {
+          changeColor_1("#0f62fe");
+        });
+        $('#pink').click( () => {
+          changeColor_1("#ff7eb6");
+        });
+        $('#green').click( () => {
+          changeColor_1("#42be65");
+        });
+
+        const bgColorBlue = changeColor("#0f62fe");
+        const bgColorPink = changeColor_1("#ff7eb6");
+        const bgColorGreen = changeColor("#42be65");
+
+        document.querySelector("#blue2").addEventListener("click", () => changeColor_1("#0f62fe"));
+        document.querySelector("#pink2").addEventListener("click", bgColorPink);
+        document.querySelector("#green2").addEventListener("click", bgColorGreen);
+
+			});
+
+		</script>
+	</head>
+	
+	<body>
+		<div>
+			<p id='t1'>
+        <button id="blue">Blue</button>
+        <button id="pink">Pink</button>
+        <button id="green">Green</button> 
+      </p>
+			<p id='t2'>
+        <button id="blue2">Blue2</button>
+        <button id="pink2">Pink2</button>
+        <button id="green2">Green2</button> 
+      </p>
+		</div>
+	</body>
+
+</html>
