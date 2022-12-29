@@ -5,18 +5,24 @@
 		<script>
 			$(document).ready(function(){
 
-        function clock() {
-          let clockNode = $('#t1');
-          let clockNode_1 = document.querySelector("#t1");
-          return setInterval(() => {
-            let date = new Date();
-            let tick = date.toLocaleTimeString();
-            clockNode.text(tick);
-            // clockNode_1.textContent = tick;
-          }, 1000)
+        function getStudents(classroom) {
+          let { hasTeachingAssistant, classList } = classroom;
+          let teacher, teachingAssitant, students;
+
+          if (hasTeachingAssistant) {
+            [teacher, teachingAssitant, ...students] = classList;
+          } else {
+            [teacher, ...students] = classList;
+          }
+
+          return students;
         }
 
-        clock();
+        let hasTeachingAssistant = true;
+        let classList = ["Rashida", "John", "Roman", "Lisa", "Omair", "Lukas"];
+        let tt1 = getStudents({hasTeachingAssistant, classList});
+        $('#t1').html('<h2>Input: ' + classList + '<br>Results: ' + (tt1) + '</h2>');
+
 			});
 
 		</script>
