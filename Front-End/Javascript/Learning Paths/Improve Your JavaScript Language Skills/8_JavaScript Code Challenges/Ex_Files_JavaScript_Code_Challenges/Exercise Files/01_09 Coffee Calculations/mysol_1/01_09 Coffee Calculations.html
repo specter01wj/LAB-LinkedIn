@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+        function coffeeDate(coffeeArr) {
+          let coffeeSum = coffeeArr.reduce((totalCoffees, numCoffees) => {
+            return totalCoffees += numCoffees;
+          });
+
+          return `The total bill is $${coffeeSum * 1.25}`;
+        }
+
+        let coffeeArr = [2, 5, 7, 1, 4];
+        let tt1 = coffeeDate(coffeeArr);
+        $('#t1').html('<h2>Input: ' + coffeeArr + '<br>Results: ' + (tt1) + '</h2>');
+
+			});
+
+		</script>
+	</head>
+	
+	<body>
+		<div>
+			<p id='t1'></p>
+		</div>
+	</body>
+
+</html>
