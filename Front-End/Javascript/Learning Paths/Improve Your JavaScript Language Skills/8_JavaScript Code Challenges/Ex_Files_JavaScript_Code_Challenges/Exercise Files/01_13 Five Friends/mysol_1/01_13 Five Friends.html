@@ -5,18 +5,20 @@
 		<script>
 			$(document).ready(function(){
 
-        function numPermutations(letters) {
-          if (letters.length === 1) {
-            return 1;
-          }
-          
-          return letters.length * numPermutations(letters.slice(1));
+        async function getUsers() {
+          let people = await fetch("https://randomuser.me/api/?results=5");
+          let data = await people.json();
+          const timeline = document.querySelector("#timeline");
+
+          data.results.forEach((person) => {
+            let image = document.createElement("img");
+            image.src = person.picture.medium;
+            timeline.appendChild(image);
+          });
         }
 
-        let input = "hello";
-        let tt1 = numPermutations(input);
-        $('#t1').html('<h2>Input: ' + input + '<br>Results: ' + (tt1) + '</h2>');
-
+        getUsers();
+        
 			});
 
 		</script>
@@ -24,6 +26,7 @@
 	
 	<body>
 		<div>
+      <div id="timeline"></div>
 			<p id='t1'>
       </p>
 		</div>
