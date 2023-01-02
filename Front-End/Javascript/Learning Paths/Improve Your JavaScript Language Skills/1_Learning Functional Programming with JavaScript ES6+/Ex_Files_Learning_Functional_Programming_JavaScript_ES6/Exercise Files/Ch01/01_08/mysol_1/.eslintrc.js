@@ -10,6 +10,10 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  plugins: [
+    'immutable',
+  ],
   rules: {
+    'immutable/no-mutation': 2,
   },
 };
