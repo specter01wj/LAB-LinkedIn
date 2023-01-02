@@ -27,6 +27,8 @@ const getPersonData = () => ({
     job: 'programmer',
 });
 
+const myArrowFunction = (arg1, arg2) => arg1 + arg2;
+
 const myArrowFunction = (arg1, arg2) => ({
     name: 'John Doe',
 });
