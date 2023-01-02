@@ -14,7 +14,7 @@ const functionsArray = [
     subtractOne,
     triple,
     add5,
-    Math.sqrt,
+    // Math.sqrt,
 ];
 
 var number = 42;
