@@ -27,6 +27,8 @@ const updatedPerson = {
     ...updates,
 };
 
+console.log(updatedPerson);
+
 const numbers = [1, 2, 3, 4, 5];
 const newNumbers = [
     0,
