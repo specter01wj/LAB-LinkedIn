@@ -8,3 +8,12 @@ const product = numbers.reduce((acc, x) => {
 }, 1);
 
 console.log(product);
+
+const product_2 = numbers.reduce((acc, x) => {
+    console.log(`acc is ${acc}`);
+    console.log(`x is ${x}`);
+
+    return acc + x;
+}, 0);
+
+console.log(product_2);
