@@ -19,9 +19,11 @@ const makesLessThanOneThousand = employee =>
     employee.salary < 1000;
 
 const result = employees.some(makesMoreThanOneMillion);
+const result_1 = employees.every(makesMoreThanOneMillion);
 const result_2 = employees.some(makesLessThanOneThousand);
 
 console.log(result);
+console.log(result_1);
 console.log(result_2);
 
 const formValues = [
