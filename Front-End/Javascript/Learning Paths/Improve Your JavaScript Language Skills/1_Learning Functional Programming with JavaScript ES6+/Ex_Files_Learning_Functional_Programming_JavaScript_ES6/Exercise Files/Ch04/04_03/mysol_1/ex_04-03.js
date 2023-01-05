@@ -5,3 +5,11 @@ const countUp = (x, max) => {
 };
 
 countUp(0, 10);
+
+const countDown = (x) => {
+    if (x < 0) return;
+    console.log(x);
+    countDown(x -1);
+};
+
+countDown(10);
