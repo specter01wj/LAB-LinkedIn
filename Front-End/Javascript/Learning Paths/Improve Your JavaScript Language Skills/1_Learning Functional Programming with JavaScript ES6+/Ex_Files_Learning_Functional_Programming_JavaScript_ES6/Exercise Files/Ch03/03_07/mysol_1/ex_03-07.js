@@ -15,3 +15,7 @@ const descending = (a, b) => {
 const sortedNumbers = mixedUpNumbers.slice().sort(descending);
 
 console.log(sortedNumbers);
+
+const sortedNumbers_2 = mixedUpNumbers.slice().sort(ascending);
+
+console.log(sortedNumbers_2);
