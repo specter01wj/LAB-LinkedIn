@@ -29,21 +29,21 @@
 	</section>
 </body>
 <script type="text/javascript">
-	let block = document.getElementsByClassName("block")
-	let row = document.getElementById("row")
+  let block = document.getElementsByClassName("block")
+  let row = document.getElementById("row")
 
-	// using loops
+  // using loops
 
-	 
-	for ( let i = 1; i < 5; i++ ) {
-	 	let squareBlock = document.createElement("div")
-	 	squareBlock.setAttribute("class", "block")
-		squareBlock.style.height = `${i * 10}px`
-	 	squareBlock.innerText = i
-		console.log(i)
-	 	row.appendChild(squareBlock)
-	 } 
-	 
-	
+
+  for (let i = 1; i < 5; i++) {
+    let squareBlock = document.createElement("div")
+    squareBlock.setAttribute("class", "block")
+    squareBlock.style.height = `${i * 10}px`
+    squareBlock.innerText = i
+    console.log(i)
+    row.appendChild(squareBlock)
+  }
+
+
 </script>
 </html>
