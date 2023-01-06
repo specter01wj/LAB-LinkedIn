@@ -1,6 +1,6 @@
 const currentInputValues = {
     firstName: 'J', // Must be at least 2 characters
-    lastName: 'W', // Must be at least 2 characters
+    lastName: 'Wang', // Must be at least 2 characters
     zipCode: '2086', // Must be exactly 5 characters
     state: 'MDVA', // Must be exactly 2 characters
 }
