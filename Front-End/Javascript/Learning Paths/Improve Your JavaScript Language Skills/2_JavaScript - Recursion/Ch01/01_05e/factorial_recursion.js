@@ -17,7 +17,6 @@ console.log(recursive_factorial(5))
 
 console.log(recursive_factorial(50))
 
-
 const t0 = performance.now();
 
 console.log(recursive_factorial(5))
