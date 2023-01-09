@@ -20,3 +20,5 @@ function isCommuntative(testFunction, testOperandOne, testOperandTwo){
 
 	return firstResult == secondResult
 }
+
+console.log(isCommuntative(division, 4, 7));
