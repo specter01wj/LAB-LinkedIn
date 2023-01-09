@@ -8,5 +8,5 @@ function fibo(index) {
 
 
 let d1 = new Date()
-console.log("fibo: " + fibo(50))
+console.log("fibo: " + fibo(5))
 console.log(new Date() - d1)

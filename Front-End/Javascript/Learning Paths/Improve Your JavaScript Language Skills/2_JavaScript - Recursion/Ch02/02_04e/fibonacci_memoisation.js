@@ -3,25 +3,24 @@
  * @return {number}
  */
 
-
 function fibo(position) {
-    let cache = {}
+  let cache = {};
 
-    if (cache[n]) {
-        return cache[n]
-    }
+  if (cache[position]) {
+    return cache[position];
+  }
 
-    let result = position
-    if (position < 2) {
-        result = position
-    } else {
+  let result = position;
+  if (position < 2) {
+    result = position;
+  } else {
+    result = fibo(position - 1) + fibo(position - 2);
+  }
+  cache[position] = result;
 
-        result = fib(position - 1) + fib(position - 2)
-    } cache[position] = result
-
-    return result
+  return result;
 }
 
-let d2 = new Date()
-console.log("fibo : " + fibo(50))
-console.log(new Date() - d2)
+let d2 = new Date();
+console.log("fibo : " + fibo(10));
+console.log(new Date() - d2);
