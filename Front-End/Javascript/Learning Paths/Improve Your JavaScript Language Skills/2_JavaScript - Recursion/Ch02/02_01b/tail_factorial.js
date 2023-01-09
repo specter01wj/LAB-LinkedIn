@@ -7,3 +7,4 @@ function tailFactorial(n, a = 1) {
 }
 
 // you can also test time perfomance with code in the execution_time_test.js
+console.log( tailFactorial(10, 2) );
