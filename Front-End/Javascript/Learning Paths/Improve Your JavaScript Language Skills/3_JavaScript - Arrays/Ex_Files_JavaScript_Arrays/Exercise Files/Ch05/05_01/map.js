@@ -8,13 +8,6 @@ const friends = [
 
 let fullName = friends.map((name) => {
   return `${name.firstname} ${name.lastname}`;
-
-
-
-
-
-
-  
 });
 
 console.log(fullName);
