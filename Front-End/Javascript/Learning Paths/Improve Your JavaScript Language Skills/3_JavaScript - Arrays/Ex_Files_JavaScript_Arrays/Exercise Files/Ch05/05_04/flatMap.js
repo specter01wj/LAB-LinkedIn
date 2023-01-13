@@ -8,3 +8,8 @@ const wordJumble = ['shampoo', 'conditioner', 'soap'];
 let splitWords = wordJumble.flatMap(word => word);
 console.log(splitWords);
 
+let splitWords_2 = wordJumble.flatMap((word) => {
+  return word.split('');
+});
+console.log(splitWords_2);
+
