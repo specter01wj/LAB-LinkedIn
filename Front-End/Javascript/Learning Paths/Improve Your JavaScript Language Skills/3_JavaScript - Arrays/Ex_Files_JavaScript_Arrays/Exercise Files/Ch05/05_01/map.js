@@ -11,6 +11,7 @@ let fullName = friends.map((name) => {
 
 
 
+
   
 });
 
