@@ -5,3 +5,6 @@ const wordJumble = ['shampoo', 'conditioner', 'soap'];
 //a new array, that is flattened to a single level.
 
 //Hint: You will need to use the string method .split()
+let splitWords = wordJumble.flatMap(word => word);
+console.log(splitWords);
+
