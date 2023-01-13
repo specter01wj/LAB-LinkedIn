@@ -29,6 +29,8 @@ const movies = [
 
 //Challenge Question #1
 //Create a new array that just contains the movie titles.
+let movieTitles = movies.map((movie) => movie.title);
+console.log(movieTitles);
 
 //Challenge Question #2
 //Create a new array that contains only those movies that are PG-13.
