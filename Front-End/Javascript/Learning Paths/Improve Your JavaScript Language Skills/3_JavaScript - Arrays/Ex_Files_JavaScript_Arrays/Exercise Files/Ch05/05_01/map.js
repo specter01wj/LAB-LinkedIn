@@ -10,6 +10,7 @@ let fullName = friends.map((name) => {
   return `${name.firstname} ${name.lastname}`;
 
 
+
   
 });
 
