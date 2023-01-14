@@ -15,6 +15,7 @@ console.log(saturday.keys().next());
 //What is the second value in your saturday Map object?
 console.log(saturday.values());
 
+
 console.log(saturday.values().next());
 
 let saturdayValue = saturday.values();
