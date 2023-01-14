@@ -17,6 +17,7 @@ console.log(saturday.values());
 
 
 
+
 console.log(saturday.values().next());
 
 let saturdayValue = saturday.values();
