@@ -11,10 +11,6 @@ saturday.set(3, 'watch a movie');
 
 //What is the first key in your saturday Map object?
 console.log(saturday.keys());
-
-
-
-
 console.log(saturday.keys().next());
 //What is the second value in your saturday Map object?
 console.log(saturday.values());
