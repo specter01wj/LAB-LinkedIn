@@ -47,10 +47,22 @@ movieValues.next();
 console.log(movieValues.next());
 
 //7. What is the first set of entries in this movies Map?
+let movieEntries = movies.entries();
+console.log(movieEntries.next());
 
 //8. Loop over the map, and if the movie won Best Picture before 2017,
 //log it in the console. Include the year and the movie.
+movies.forEach((value, key) => {
+  if (key < 2017) {
+    console.log(`${key}: ${value}`);
+  }
+});
 
 //9. Delete the Best Picture from 2013 from your movies Map.
+movies.delete(2013);
+console.log(movies);
 
 //10. Clear your movies Map.
+movies.clear();
+console.log(movies);
+console.log(movies.size);
