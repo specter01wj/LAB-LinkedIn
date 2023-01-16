@@ -22,5 +22,6 @@ const dallas = { city: "Dallas" };
 console.log(cities.get(dallas));
 
 //Does this WeakMap have the key: newYork?
+console.log(cities.has(newYork));
 
 //Delete the following key from your WeakMap: chicago
