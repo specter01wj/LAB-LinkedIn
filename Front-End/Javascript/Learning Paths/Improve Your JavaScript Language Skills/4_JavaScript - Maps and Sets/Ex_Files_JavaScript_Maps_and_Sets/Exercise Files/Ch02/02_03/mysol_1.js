@@ -25,3 +25,7 @@ console.log(cities.get(dallas));
 console.log(cities.has(newYork));
 
 //Delete the following key from your WeakMap: chicago
+console.log(cities.get(chicago));
+cities.delete(chicago);
+console.log(cities);
+console.log(cities.get(chicago));
