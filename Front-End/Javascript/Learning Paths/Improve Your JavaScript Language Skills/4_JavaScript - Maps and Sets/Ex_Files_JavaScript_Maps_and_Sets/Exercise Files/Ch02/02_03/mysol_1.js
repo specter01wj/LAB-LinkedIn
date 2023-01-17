@@ -29,6 +29,7 @@ console.log(cities.get(chicago));
 
 
 
+
 cities.delete(chicago);
 console.log(cities);
 console.log(cities.get(chicago));
