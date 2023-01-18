@@ -18,3 +18,4 @@ iceCream.add('chocolate')
 //Mint Chocolate Chip?
 //Coffee?
 console.log(iceCream.has('Mint Chocolate Chip'));
+console.log(iceCream.has('coffee'));
