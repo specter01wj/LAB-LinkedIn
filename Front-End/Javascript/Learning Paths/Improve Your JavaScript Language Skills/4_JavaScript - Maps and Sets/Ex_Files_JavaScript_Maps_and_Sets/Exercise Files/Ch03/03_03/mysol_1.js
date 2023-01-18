@@ -17,3 +17,4 @@ iceCream.add('chocolate')
 //Does our Set contain the following flavors:
 //Mint Chocolate Chip?
 //Coffee?
+console.log(iceCream.has('Mint Chocolate Chip'));
