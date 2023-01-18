@@ -17,3 +17,8 @@ saturday.forEach((val, key) => {
   }
 });
 
+for(let item of saturday.keys()) {
+  if (item === 12) {
+    console.log(`${saturday.get(item)}`);
+  }
+}
