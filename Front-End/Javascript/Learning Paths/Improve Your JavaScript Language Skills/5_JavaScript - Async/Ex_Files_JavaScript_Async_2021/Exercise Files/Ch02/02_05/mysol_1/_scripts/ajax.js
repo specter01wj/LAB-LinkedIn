@@ -42,13 +42,13 @@ function successHandler(data) {
         </p>
     `;
   weatherDiv.innerHTML = weatherFragment;
-  weatherDiv.classList.remove('hidden');
+  // weatherDiv.classList.remove('hidden');
 }
 
 function failHandler(status) {
   console.log(status);
-  const weatherDiv = document.querySelector('#weather');
-  weatherDiv.classList.remove('hidden');
+  // const weatherDiv = document.querySelector('#weather');
+  // weatherDiv.classList.remove('hidden');
 }
 
 function tempToF(kelvin) {
@@ -56,7 +56,7 @@ function tempToF(kelvin) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const apiKey = ''; // ADD YOUR API KEY BETWEEN THE QUOTES
+  const apiKey = '5c12903e7cafe84855f79cc0fee3becf'; // ADD YOUR API KEY BETWEEN THE QUOTES
   //const apiKey = '';
 
   const url =
@@ -70,5 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(function(status) {
       failHandler(status);
+    })
+    .finally(function() {
+      const weatherDiv = document.querySelector('#weather');
+      weatherDiv.classList.remove('hidden');
     });
 });
