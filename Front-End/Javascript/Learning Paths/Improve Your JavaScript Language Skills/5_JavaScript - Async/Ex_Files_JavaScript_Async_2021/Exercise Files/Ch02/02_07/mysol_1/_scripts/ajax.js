@@ -53,23 +53,38 @@ function tempToF(kelvin) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const apiKey = ''; // ADD YOUR API KEY BETWEEN THE QUOTES
+  const apiKey = '5c12903e7cafe84855f79cc0fee3becf'; // ADD YOUR API KEY BETWEEN THE QUOTES
   //const apiKey = '';
+  const weatherDiv = document.querySelector('#weather');
 
-  const url =
-    'https://api.openweathermap.org/data/2.5/weather?q=los+angeles&APPID=' +
-    apiKey;
+  const locations = [
+    'los+angeles,us',
+    'san+francisco,us',
+    'lone+pine,us',
+    'mariposa,us'
+  ];
+  const urls = locations.map(function(location) {
+    return `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${apiKey}`;
+  });
+
+  // const url =
+  //   'https://api.openweathermap.org/data/2.5/weather?q=los+angeles&APPID=' +
+  //   apiKey;
   // get(url, successHandler, failHandler);
   // console.log(get(url));
-  get(url)
-    .then(function(response) {
-      successHandler(response);
+  Promise.all([get(urls[0]), get(urls[1]), get(urls[2]), get(urls[3])])
+    .then(function(responses) {
+      return responses.map(function(response) {
+        return successHandler(response);
+      });
+    })
+    .then(function(literals) {
+      weatherDiv.innerHTML = `<h1>Weather</h1>${literals.join('')}`;
     })
     .catch(function(status) {
       failHandler(status);
     })
     .finally(function() {
-      const weatherDiv = document.querySelector('#weather');
       weatherDiv.classList.remove('hidden');
     });
 });
