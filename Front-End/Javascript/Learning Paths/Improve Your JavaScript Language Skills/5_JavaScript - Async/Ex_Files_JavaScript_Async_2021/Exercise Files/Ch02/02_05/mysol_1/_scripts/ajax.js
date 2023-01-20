@@ -67,14 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
   get(url)
     .then(function(response) {
       successHandler(response);
-
-
-
-
-
-
-
-      
     })
     .catch(function(status) {
       failHandler(status);
