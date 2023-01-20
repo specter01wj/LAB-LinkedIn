@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(function(response) {
       successHandler(response);
 
+
       
     })
     .catch(function(status) {
