@@ -53,7 +53,7 @@ function tempToF(kelvin) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const apiKey = ''; // ADD YOUR API KEY BETWEEN THE QUOTES
+  const apiKey = '5c12903e7cafe84855f79cc0fee3becf'; // ADD YOUR API KEY BETWEEN THE QUOTES
   //const apiKey = '';
   const weatherDiv = document.querySelector('#weather');
 
