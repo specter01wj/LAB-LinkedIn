@@ -25,9 +25,8 @@ function get(url) {
 
 function successHandler(data) {
   const dataObj = JSON.parse(data);
-  const weatherDiv = document.querySelector('#weather');
-  const weatherFragment = `
-        <h1>Weather</h1>
+  // const weatherDiv = document.querySelector('#weather');
+  const div = `
         <h2 class="top">
         <img
             src="http://openweathermap.org/img/w/${dataObj.weather[0].icon}.png"
@@ -41,7 +40,8 @@ function successHandler(data) {
           ${dataObj.weather[0].description}
         </p>
     `;
-  weatherDiv.innerHTML = weatherFragment;
+    return div;
+  // weatherDiv.innerHTML = weatherFragment;
 }
 
 function failHandler(status) {
@@ -53,7 +53,7 @@ function tempToF(kelvin) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const apiKey = ''; // ADD YOUR API KEY BETWEEN THE QUOTES
+  const apiKey = '5c12903e7cafe84855f79cc0fee3becf'; // ADD YOUR API KEY BETWEEN THE QUOTES
   //const apiKey = '';
 
   const url =
