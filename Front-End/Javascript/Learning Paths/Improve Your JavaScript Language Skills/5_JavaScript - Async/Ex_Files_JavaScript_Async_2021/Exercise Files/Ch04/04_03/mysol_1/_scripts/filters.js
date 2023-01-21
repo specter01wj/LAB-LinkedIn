@@ -102,8 +102,13 @@ document.addEventListener('DOMContentLoaded', function() {
     selectedFilter = 'grayscale';
     const imageDataObj = getImageData(image);
     const level = Number(range.value);
-    const results = applyFilter('grayscale', level, imageDataObj);
-    displayFilteredImage(ctx, results);
+    // const results = applyFilter('grayscale', level, imageDataObj);
+    worker.postMessage({
+      filter: selectedFilter,
+      level: level,
+      image: imageDataObj,
+    });
+    // displayFilteredImage(ctx, results);
     slider.classList.add('hidden');    
   });
 
@@ -113,8 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
     range.max = 100;
     range.value = 50;
     const level = Number(range.value);
-    const results = applyFilter('brightness', level, imageDataObj);
-    displayFilteredImage(ctx, results);
+    // const results = applyFilter('brightness', level, imageDataObj);
+    worker.postMessage({
+      filter: selectedFilter,
+      level: level,
+      image: imageDataObj,
+    });
+    // displayFilteredImage(ctx, results);
     slider.classList.remove('hidden');
   });
 
@@ -124,8 +134,13 @@ document.addEventListener('DOMContentLoaded', function() {
     range.max = 255;
     range.value = 127;
     const level = Number(range.value);
-    const results = applyFilter('threshold', level, imageDataObj);
-    displayFilteredImage(ctx, results);
+    // const results = applyFilter('threshold', level, imageDataObj);
+    worker.postMessage({
+      filter: selectedFilter,
+      level: level,
+      image: imageDataObj,
+    });
+    // displayFilteredImage(ctx, results);
     slider.classList.remove('hidden');
   });
 
