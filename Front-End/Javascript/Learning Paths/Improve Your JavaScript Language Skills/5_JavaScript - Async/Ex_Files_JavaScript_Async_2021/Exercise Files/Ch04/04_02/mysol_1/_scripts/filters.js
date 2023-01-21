@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var v = 0.2126 * r + 0.7152 * g + 0.0722 * b;
       d[i] = d[i + 1] = d[i + 2] = v
     }
+    delay(1000);
     return pixels;
   };
 
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
       d[i+1] += adjustment;
       d[i+2] += adjustment;
     }
+    delay(1000);
     return pixels;
   };
 
@@ -65,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var v = (0.2126 * r + 0.7152 * g + 0.0722 * b >= thresholdLevel) ? 255 : 0;
       d[i] = d[i + 1] = d[i + 2] = v
     }
+    delay(1000);
     return pixelData;
   };
 
