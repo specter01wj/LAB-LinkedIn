@@ -85,15 +85,20 @@ document.addEventListener('DOMContentLoaded', function() {
   //   });
 
   (async function() {
-    let responses = [];
-    responses.push(await get(urls[0]));
-    responses.push(await get(urls[1]));
-    responses.push(await get(urls[2]));
-    responses.push(await get(urls[3]));
-    let literals = responses.map(function(response) {
-      return successHandler(response);
-    });
-    weatherDiv.innerHTML = `<h1>Weather</h1>${literals.join('')}`;
-    weatherDiv.classList.remove('hidden');
+    try {
+      let responses = [];
+      responses.push(await get(urls[0]));
+      responses.push(await get(urls[1]));
+      responses.push(await get(urls[2]));
+      responses.push(await get(urls[3]));
+      let literals = responses.map(function(response) {
+        return successHandler(response);
+      });
+      weatherDiv.innerHTML = `<h1>Weather</h1>${literals.join('')}`;
+    } catch (status) {
+      failHandler(status);
+    } finally {
+      weatherDiv.classList.remove('hidden');
+    }
   })();
 });
