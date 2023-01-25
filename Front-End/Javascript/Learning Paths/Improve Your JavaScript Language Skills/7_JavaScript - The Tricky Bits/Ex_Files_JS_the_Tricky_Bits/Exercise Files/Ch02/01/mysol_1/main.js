@@ -24,6 +24,15 @@
   console.log(kitty);
 
 
+  var knuckle = Object.assign({}, kitty);
+  // knuckle = {...kitty};
+  knuckle.name = "Knuckle";
+  knuckle.bestFriend.name = "Bones";
+  knuckle.meow = function () {
+      return "Yeeeeeeow, says " + this.name;
+  };
+  console.log(knuckle);
+  console.log(kitty);
 
 
 })();
