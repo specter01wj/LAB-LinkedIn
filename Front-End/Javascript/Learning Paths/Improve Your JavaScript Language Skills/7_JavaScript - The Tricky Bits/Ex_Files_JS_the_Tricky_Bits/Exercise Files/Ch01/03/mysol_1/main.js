@@ -75,6 +75,17 @@
         return (totalYears += currentYear - drummer.since);
     }, 0);
     console.log("These drummers have been active for", totalYears, "years.");
+
+    var avgYears = drummers.reduce(function (totalYears, drummer, index) {
+        totalYears += currentYear - drummer.since;
+
+        if (index === drummers.length - 1) {
+            return totalYears / drummers.length;
+        } else {
+            return totalYears;
+        }
+    }, 0);
+    console.log("These drummers have been active for an average of ", avgYears, "years.");
     /* var totalYears = 0;
     for (var d = 0; d < drummers.length; d++) {
         totalYears += currentYear - drummers[d].since;
