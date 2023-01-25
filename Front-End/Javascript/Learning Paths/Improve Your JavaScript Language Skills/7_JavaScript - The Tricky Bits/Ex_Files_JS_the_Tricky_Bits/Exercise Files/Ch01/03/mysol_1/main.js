@@ -58,25 +58,22 @@
     } */
 
     var drummers = musicians
-        .filter(function (person) {
+        .filter((person) => {
             return person.instruments.indexOf("drums") !== -1;
         })
-        .map(function (drummer) {
-            // shout their names with a rebel yell
-            drummer.name = drummer.name.toUpperCase();
-            console.log(drummer.name, "plays DRUMS! YEAH!");
-
+        .map((drummer) => {
+            console.log(drummer.name.toUpperCase(), "plays DRUMS! YEAH!");
             return drummer;
         });
 
     // get the total years of experience for the drummers
     var currentYear = new Date().getFullYear();
-    var totalYears = drummers.reduce(function (totalYears, drummer) {
+    var totalYears = drummers.reduce((totalYears, drummer) => {
         return (totalYears += currentYear - drummer.since);
     }, 0);
     console.log("These drummers have been active for", totalYears, "years.");
 
-    var avgYears = drummers.reduce(function (totalYears, drummer, index) {
+    var avgYears = drummers.reduce((totalYears, drummer, index) => {
         totalYears += currentYear - drummer.since;
 
         if (index === drummers.length - 1) {
