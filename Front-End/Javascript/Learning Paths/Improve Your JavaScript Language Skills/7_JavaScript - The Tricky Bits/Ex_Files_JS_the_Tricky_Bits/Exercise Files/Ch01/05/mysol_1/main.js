@@ -61,10 +61,11 @@
         // STEP 1: Use Array.reduce to produce this array from places
         // var states = ["North Krisoto", "Old York", "Zagrat"];
         var states = places.reduce((acc, curr) => {
-          if (states.indexOf(place.state) === -1) {
-            states.push(place.state);
+          if (acc.indexOf(curr.state) === -1) {
+            acc.push(curr.state);
           }
-        });
+          return acc;
+        }, []);
 
         // STEP 2: Create select box options for every one of those states
         states.forEach((state) => {
@@ -101,7 +102,7 @@
             // STEP 4: Use reduce on towns to get the total population
             // var totalPopulation = 1000;
             var totalPopulation = towns.reduce((acc, curr) => {
-              return acc += parseInt(place.population, 10);
+              return acc += parseInt(curr.population, 10);
             }, 0);
 
             // Calculate mean population the easy way
