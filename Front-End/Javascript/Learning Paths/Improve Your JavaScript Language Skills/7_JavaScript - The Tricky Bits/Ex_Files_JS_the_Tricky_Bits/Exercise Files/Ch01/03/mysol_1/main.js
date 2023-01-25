@@ -60,14 +60,6 @@
     var drummers = musicians
         .filter(function (person) {
             return person.instruments.indexOf("drums") !== -1;
-
-
-
-
-
-
-
-            
         })
         .map(function (drummer) {
             // shout their names with a rebel yell
