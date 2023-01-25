@@ -71,9 +71,13 @@
 
     // get the total years of experience for the drummers
     var currentYear = new Date().getFullYear();
-    var totalYears = 0;
+    var totalYears = drummers.reduce(function (totalYears, drummer) {
+        return (totalYears += currentYear - drummer.since);
+    }, 0);
+    console.log("These drummers have been active for", totalYears, "years.");
+    /* var totalYears = 0;
     for (var d = 0; d < drummers.length; d++) {
         totalYears += currentYear - drummers[d].since;
     }
-    console.log("These drummers have been active for", totalYears, "years.");
+    console.log("These drummers have been active for", totalYears, "years."); */
 })();
