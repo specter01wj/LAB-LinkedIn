@@ -40,22 +40,34 @@
     ];
 
     // filter for just the drummers
-    var drummers = [];
+    /* var drummers = [];
     for (var i = 0; i < musicians.length; i++) {
         var person = musicians[i];
 
         if (person.instruments.indexOf("drums") !== -1) {
             drummers.push(person);
         }
-    }
+    } */
 
     // shout their names with a rebel yell
-    for (var d = 0; d < drummers.length; d++) {
+    /* for (var d = 0; d < drummers.length; d++) {
         var drummerName = drummers[d].name.toUpperCase();
         console.log(drummerName, "plays DRUMS! YEAH!");
 
         drummers[d].name = drummerName;
-    }
+    } */
+
+    var drummers = musicians
+        .filter(function (person) {
+            return person.instruments.indexOf("drums") !== -1;
+        })
+        .map(function (drummer) {
+            // shout their names with a rebel yell
+            drummer.name = drummer.name.toUpperCase();
+            console.log(drummer.name, "plays DRUMS! YEAH!");
+
+            return drummer;
+        });
 
     // get the total years of experience for the drummers
     var currentYear = new Date().getFullYear();
