@@ -59,13 +59,25 @@
         var results = document.querySelector("#results");
 
         // STEP 1: Use Array.reduce to produce this array from places
-        var states = ["North Krisoto", "Old York", "Zagrat"];
+        // var states = ["North Krisoto", "Old York", "Zagrat"];
+        var states = places.reduce((acc, curr) => {
+          if (states.indexOf(place.state) === -1) {
+            states.push(place.state);
+          }
+        });
 
         // STEP 2: Create select box options for every one of those states
-        var option = document.createElement("option");
+        states.forEach((state) => {
+          var option = document.createElement("option");
+          option.setAttribute("value", state);
+          option.append(document.createTextNode(state));
+          selectState.appendChild(option);
+        });
+
+        /* var option = document.createElement("option");
         option.setAttribute("value", "North Krisoto");
         option.append(document.createTextNode("North Krisoto"));
-        selectState.appendChild(option);
+        selectState.appendChild(option); */
 
         selectState.addEventListener("change", function (evt) {
             evt.preventDefault();
@@ -81,10 +93,16 @@
             }
 
             // STEP 3: Use filter to get all the towns in the selected state
-            var towns = ["Springboard"];
+            // var towns = ["Springboard"];
+            var towns = places.filter((place) => {
+              return place.state === state;
+            });
 
             // STEP 4: Use reduce on towns to get the total population
-            var totalPopulation = 1000;
+            // var totalPopulation = 1000;
+            var totalPopulation = towns.reduce((acc, curr) => {
+              return acc += parseInt(place.population, 10);
+            }, 0);
 
             // Calculate mean population the easy way
             var meanPopulation = totalPopulation / towns.length;
