@@ -14,6 +14,11 @@ Drupal = { behaviors: {} };
             var btn = document.querySelector("#go");
 
             // Add an event listener to run this.getData() on click
+            btn.addEventListener("click", function clickGo(evt) {
+                evt.preventDefault();
+
+                Drupal.behaviors.myModule.getData();
+            });
         },
     };
 
