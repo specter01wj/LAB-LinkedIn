@@ -13,13 +13,19 @@ Drupal = { behaviors: {} };
         attach: function () {
             var btn = document.querySelector("#go");
 
-            var clickGo = function (evt) {
+            var clickGo = (evt) => {
                 evt.preventDefault();
 
                 this.getData();
-            }.bind(this);
+            };
 
-            btn.addEventListener("click", clickGo);
+            btn.addEventListener("click", clickGo.bind(this));
+
+            /* btn.addEventListener("click", (evt) => {
+                evt.preventDefault();
+
+                this.getData();
+            }); */
         },
     };
 
