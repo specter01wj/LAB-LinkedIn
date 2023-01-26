@@ -19,7 +19,8 @@ Drupal = { behaviors: {} };
                 this.getData();
             };
 
-            btn.addEventListener("click", clickGo.bind(this));
+            btn.addEventListener("click", clickGo);
+            // btn.addEventListener("click", clickGo.bind(this));
 
             /* btn.addEventListener("click", (evt) => {
                 evt.preventDefault();
