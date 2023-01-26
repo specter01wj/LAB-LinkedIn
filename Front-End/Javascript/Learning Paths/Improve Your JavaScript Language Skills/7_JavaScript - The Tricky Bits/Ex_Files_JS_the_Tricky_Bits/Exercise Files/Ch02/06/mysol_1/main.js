@@ -34,7 +34,7 @@
         robots: [],
     
         createBtn: document.querySelector("#create"),
-        botSlot = document.querySelector("#bot-slot"),
+        botSlot: document.querySelector("#bot-slot"),
     
         createClick: function() {
             var robot = Object.assign({}, this.template_v2);
@@ -89,7 +89,7 @@
             var height = this.botSlot.clientHeight;
     
             this.robots.every(function (robot) {
-                placeBot(robot, width, height);
+                this.placeBot(robot, width, height);
                 return true;
             }.bind(this));
         },
@@ -108,6 +108,6 @@
         },
 
     };
-    
+
     ROBOT_APP.init();
 })();
