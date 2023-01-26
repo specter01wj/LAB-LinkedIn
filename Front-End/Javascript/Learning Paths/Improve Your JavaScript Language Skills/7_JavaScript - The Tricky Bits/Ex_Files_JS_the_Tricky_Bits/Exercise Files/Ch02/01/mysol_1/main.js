@@ -1,4 +1,4 @@
-(function () {
+(function (_) {
   "use strict";
 
   var kitty = {
@@ -30,9 +30,17 @@
   knuckle.bestFriend.name = "Bones";
   knuckle.meow = function () {
       return "Yeeeeeeow, says " + this.name;
+      
   };
   console.log(knuckle);
   console.log(kitty);
 
 
-})();
+  var comma = _.cloneDeep(kitty);
+  comma.name = "Comma";
+  comma.bestFriend.name = "Dash";
+  console.log(comma);
+  console.log(kitty);
+
+
+})(_);
