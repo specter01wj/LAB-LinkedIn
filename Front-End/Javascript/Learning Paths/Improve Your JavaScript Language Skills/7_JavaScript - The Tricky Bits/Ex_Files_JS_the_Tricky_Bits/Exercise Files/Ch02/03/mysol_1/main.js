@@ -16,7 +16,7 @@ Drupal = { behaviors: {} };
             // Add an event listener to run this.getData() on click
             btn.addEventListener("click", function clickGo(evt) {
                 evt.preventDefault();
-
+                // this.getData();
                 Drupal.behaviors.myModule.getData();
             });
         },
