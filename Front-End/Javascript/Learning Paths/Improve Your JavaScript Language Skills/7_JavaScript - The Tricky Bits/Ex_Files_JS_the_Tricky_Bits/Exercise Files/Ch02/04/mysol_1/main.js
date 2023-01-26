@@ -16,8 +16,17 @@ Drupal = { behaviors: {} };
             btn.addEventListener("click", function clickGo(evt) {
                 evt.preventDefault();
 
-                Drupal.behaviors.myModule.getData();
-            });
+                // Drupal.behaviors.myModule.getData();
+                this.getData();
+            }.bind(this));
+
+            /* var clickGo = function (evt) {
+                evt.preventDefault();
+
+                this.getData();
+            }.bind(this);
+
+            btn.addEventListener("click", clickGo); */
         },
     };
 
