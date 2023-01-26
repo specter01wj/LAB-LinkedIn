@@ -30,8 +30,6 @@
   knuckle.bestFriend.name = "Bones";
   knuckle.meow = function () {
       return "Yeeeeeeow, says " + this.name;
-
-      
   };
   console.log(knuckle);
   console.log(kitty);
