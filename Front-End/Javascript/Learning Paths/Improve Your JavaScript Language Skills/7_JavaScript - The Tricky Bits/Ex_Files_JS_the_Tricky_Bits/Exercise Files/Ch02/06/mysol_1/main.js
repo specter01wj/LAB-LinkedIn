@@ -73,7 +73,8 @@
                 topOffset +
                 "px);";
             var botInner = document.createElement("div");
-            botInner.innerHTML = `${robot.name}<br>${robot.serial}`;
+            // botInner.innerHTML = `${robot.name}<br>${robot.serial}`;
+            botInner.innerHTML = `${robot.name}<br>${robot.cameOnline()}`;
             botInner.className = "robot--inner";
             bot.appendChild(botInner);
             this.botSlot.appendChild(bot);
