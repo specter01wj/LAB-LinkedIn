@@ -33,7 +33,7 @@
         slot1: document.querySelector("#slot-1"),
         slot2: document.querySelector("#slot-2"),
 
-        handleClick: function (evt) {
+        handleClick: function (slotNumber, evt) {
             evt.preventDefault();
 
             var item = this.dataSet.shift();
@@ -42,7 +42,7 @@
                 return false;
             }
 
-            this.addItemToSlot(item, 1);
+            this.addItemToSlot(item, slotNumber);
         },
 
         addItemToSlot: function (item, slotIndex) {
@@ -59,11 +59,11 @@
             var btn1 = document.querySelector("#one");
             var btn2 = document.querySelector("#two");
 
-            btn1.addEventListener("click", this.handleClick.bind(this));
-            btn2.addEventListener("click", this.handleClick.bind(this));
+            btn1.addEventListener("click", this.handleClick.bind(this, 1));
+            btn2.addEventListener("click", this.handleClick.bind(this, 2));
         },
     };
 
     myApp.init();
-    
+
 })();
