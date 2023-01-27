@@ -81,6 +81,8 @@
             bot.appendChild(botInner);
 
             this.botSlot.appendChild(bot);
+            
+            return true;
         },
         /**
          * Re-render the robots in new places within the botSlot
