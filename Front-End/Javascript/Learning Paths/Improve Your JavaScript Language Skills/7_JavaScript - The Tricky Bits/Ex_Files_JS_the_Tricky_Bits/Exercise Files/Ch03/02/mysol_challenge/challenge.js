@@ -93,6 +93,7 @@
             var width = this.botSlot.clientWidth;
 
 
+
             
             var height = this.botSlot.clientHeight;
 
