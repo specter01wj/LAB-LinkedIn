@@ -91,22 +91,6 @@
             this.botSlot.innerHTML = "";
 
             var width = this.botSlot.clientWidth;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
             var height = this.botSlot.clientHeight;
 
             /* this.robots.every(
