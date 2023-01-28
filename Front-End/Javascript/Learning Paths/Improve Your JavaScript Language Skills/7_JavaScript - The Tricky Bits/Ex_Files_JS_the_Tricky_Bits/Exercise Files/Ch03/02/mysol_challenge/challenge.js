@@ -95,6 +95,7 @@
 
 
 
+
             
             var height = this.botSlot.clientHeight;
 
