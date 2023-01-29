@@ -79,6 +79,7 @@
             botInner.innerHTML = `${robot.name}<br>${robot.cameOnline()}`;
             botInner.className = "robot--inner";
 
+
             
             bot.appendChild(botInner);
 
