@@ -80,6 +80,7 @@
             botInner.className = "robot--inner";
 
 
+
             
             bot.appendChild(botInner);
 
