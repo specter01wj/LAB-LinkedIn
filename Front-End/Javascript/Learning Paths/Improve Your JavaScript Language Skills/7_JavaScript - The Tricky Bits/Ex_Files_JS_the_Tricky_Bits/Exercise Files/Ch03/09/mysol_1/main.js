@@ -27,10 +27,10 @@
             storyText: "",
         },
 
-        handleChange: function (evt) {
-            var value = evt.currentTarget.value;
+        handleChange: function (id) {
+          var value = document.getElementById(id).value;
 
-            this.state[evt.currentTarget.id] = value;
+          this.state[id] = value;
         },
 
         setupInputCapture: function () {
@@ -57,7 +57,14 @@
             this.output.innerHTML = this.state.storyText;
         },
 
-        generateStory: function (noun, adj, adverb, p_noun, name) {
+        generateStory: function ({
+            noun,
+            adjective: adj,
+            adverb,
+            plural_noun: p_noun,
+            proper_name: name,
+            food,
+        }) {
             return `<h2 class="font-bold text-xl mb-4">The Tale of ${name}</h2>
             <p class="mb-2">Once upon a time there was a little
             <span class="font-bold">${noun}</span> named
@@ -67,7 +74,7 @@
             Unfortunately, the cafeteria was out of their usual
             <span class="font-bold">(${p_noun})</span>, so
             they walked <span class="font-bold">${adverb}</span> to the last table
-            to get their backup plan, oatmeal.</p>
+            to get their backup plan, <span class="font-bold">${food}</span>.</p>
             <p>THE END.</p>`;
         },
 
@@ -80,15 +87,16 @@
                 "adverb",
                 "plural_noun",
                 "proper_name",
+                "food",
             ];
             // initialize the state object's slots for words
-            inputIds.forEach(function (id) {
+            inputIds.forEach((id) => {
                 this.state[id] = "";
             });
             // initialize event listeners
-            this.setupInputCapture(inputIds);
+            this.setupInputCapture.apply(this, inputIds);
 
-            this.form.addEventListener("submit", this.handleSubmit);
+            this.form.addEventListener("submit", this.handleSubmit.bind(this));
         },
     };
 
