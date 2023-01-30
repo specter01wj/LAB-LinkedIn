@@ -44,9 +44,14 @@
          * @param {int} width
          * @param {int} height
          */
-        placeBot: function (width, height, robot) {
-            var topOffset = this.randomInt(20, height / 3);
-            var leftOffset = this.randomInt(20, width / 2);
+        placeBot: function ({
+              height = 300,
+              width = 300,
+              topPadding: tp = 20,
+              leftPadding: lp = 20,
+          }, robot) {
+            var topOffset = this.randomInt(tp, height / 3);
+            var leftOffset = this.randomInt(lp, width / 2);
 
             // maybe flip the sign on the offsets
             if (Math.floor(Math.random() * 100) % 2 === 0) {
@@ -82,7 +87,14 @@
             var width = this.botSlot.clientWidth;
             var height = this.botSlot.clientHeight;
 
-            this.robots.every(this.placeBot.bind(this, width, height));
+            var params = {
+                width,
+                height,
+                topPadding: 20,
+                leftPadding: 20,
+            };
+
+            this.robots.every(this.placeBot.bind(this, params));
         },
 
         /**
