@@ -44,34 +44,41 @@
          * @param {int} width
          * @param {int} height
          */
-        placeBot: function (width, height, robot) {
-            var topOffset = this.randomInt(20, height / 3);
-            var leftOffset = this.randomInt(20, width / 2);
+        placeBot: function (width, height, topPadding, leftPadding, robot) {
+          if (typeof topPadding === "undefined") {
+              topPadding = 20;
+          }
+          if (typeof leftPadding === "undefined") {
+              leftPadding = 20;
+          }  
+          
+          var topOffset = this.randomInt(topPadding, height / 3);
+          var leftOffset = this.randomInt(leftPadding, width / 2);
 
-            // maybe flip the sign on the offsets
-            if (Math.floor(Math.random() * 100) % 2 === 0) {
-                topOffset = 0 - topOffset;
-            }
-            if (Math.floor(Math.random() * 100) % 2 === 0) {
-                leftOffset = 0 - leftOffset;
-            }
+          // maybe flip the sign on the offsets
+          if (Math.floor(Math.random() * 100) % 2 === 0) {
+              topOffset = 0 - topOffset;
+          }
+          if (Math.floor(Math.random() * 100) % 2 === 0) {
+              leftOffset = 0 - leftOffset;
+          }
 
-            var bot = document.createElement("div");
-            bot.className = "robot";
-            bot.style =
-                "transform: translateX(" +
-                leftOffset +
-                "px) translateY(" +
-                topOffset +
-                "px);";
-            var botInner = document.createElement("div");
-            botInner.innerHTML = `${robot.name}<br>${robot.cameOnline()}`;
-            botInner.className = "robot--inner";
-            bot.appendChild(botInner);
+          var bot = document.createElement("div");
+          bot.className = "robot";
+          bot.style =
+              "transform: translateX(" +
+              leftOffset +
+              "px) translateY(" +
+              topOffset +
+              "px);";
+          var botInner = document.createElement("div");
+          botInner.innerHTML = `${robot.name}<br>${robot.cameOnline()}`;
+          botInner.className = "robot--inner";
+          bot.appendChild(botInner);
 
-            this.botSlot.appendChild(bot);
+          this.botSlot.appendChild(bot);
 
-            return true;
+          return true;
         },
         /**
          * Re-render the robots in new places within the botSlot
@@ -82,7 +89,7 @@
             var width = this.botSlot.clientWidth;
             var height = this.botSlot.clientHeight;
 
-            this.robots.every(this.placeBot.bind(this, width, height));
+            this.robots.every(this.placeBot.bind(this, width, height, 20, 20));
         },
 
         /**
