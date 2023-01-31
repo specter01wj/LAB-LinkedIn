@@ -56,4 +56,5 @@ main.innerHTML = markup(backpack);
 
 
 
+
 document.body.appendChild(main);
