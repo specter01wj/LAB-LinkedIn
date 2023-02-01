@@ -1,5 +1,5 @@
 warrior = 'Ninja';
-warrior3 = 'Viking';
+// warrior3 = 'Viking';
 
 const screamWarrior = () => {
     let warrior2 = 'Samurai';
@@ -18,4 +18,4 @@ console.log(warrior, warrior3);
 
 var warrior;
 
-var warrior3;
+var warrior3 = "King";
