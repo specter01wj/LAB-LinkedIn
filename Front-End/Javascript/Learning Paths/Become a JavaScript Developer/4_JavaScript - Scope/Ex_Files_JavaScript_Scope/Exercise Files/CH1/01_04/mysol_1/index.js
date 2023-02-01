@@ -5,6 +5,7 @@ const screamWarrior = () => {
     return {
         shootWarrior: () => {
             return console.log(warrior, warrior2);
+            
         }
     }
 }
