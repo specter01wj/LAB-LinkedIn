@@ -6,6 +6,7 @@
  */
 
 import Backpack from "./Backpack.js";
+import Book from "./Book.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -21,3 +22,63 @@ const everydayPack = new Backpack(
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
+
+
+const surveillanceCapitalism = new Book(
+  "The Age of Surveillance Capitalism",
+  "Shoshana Zuboff",
+  9781610395694,
+  "2019",
+  691,
+  691,
+  "Finished"
+);
+
+const consciousCreative = new Book(
+  "The Conscious Creative",
+  "Kelly Small",
+  9781487008024,
+  "2020",
+  216,
+  216,
+  "Finished"
+);
+
+const techVirtues = new Book(
+  "Technology and the Virtues",
+  "Shannon Vallor",
+  9780190905286,
+  "2016",
+  309,
+  138,
+  "Reading"
+)
+
+const poohPhil = new Book(
+  "Pooh and the Philosophers",
+  "John Tyerman Williams",
+  9780749320706,
+  "1995",
+  192,
+  108,
+  "Reading"
+)
+
+const zen = new Book(
+  "Zen and the Art of Motorcycle Maintenance",
+  "Robert M. Pirsig",
+  9780060958329,
+  "1974",
+  449,
+  449,
+  "Finished"
+)
+
+
+console.log(surveillanceCapitalism);
+console.log(consciousCreative);
+console.log(techVirtues);
+console.log(poohPhil);
+console.log(zen);
+
+
