@@ -1,22 +1,37 @@
-let warrior1 = 'Ninja';
-const warrior2 = 'Viking';
-console.log(warrior1, warrior2);
+const warriors = [
+  {
+      name: 'Jujin Take',
+      type: 'Ninja',
+      weapon: 'Shuriken',
+      agility: 79
+  },
+  {
+      name: 'Viggo Rusen',
+      type: 'Viking',
+      weapon: 'Swing blade',
+      agility: 60
+  },
+  {
+      name: 'Ro Rake',
+      type: 'Samurai',
+      weapon: 'Boken',
+      agility: 82
+  }
+];
 
-// this will return an error
-warrior1 = 'Samurai';
-console.log(warrior1);
 
-
-const screamWarrior = () => {
-    let warrior4 = 'Canon shooter';
-    if (warrior2 === 'Viking') {
-        let warrior3 = 'Infantry Soldier';
-        console.log(`Our army consists of ${warrior1}, ${warrior2} and ${warrior3}!`)
-    }
-    console.log(warrior4);
-    
+const screamWarriors = () => {
+  console.log(warriors);
+  
+  warriors.map((warrior) => {
+      if (warrior.agility === 60) {
+          let agility = warrior.agility;
+          console.log(`${warrior.name}, who is a ${warrior.type} has an agility of ${agility}`);
+      }
+  })
+  
 }
 
-screamWarrior();
+screamWarriors();
 
-console.log(warrior4);
+
