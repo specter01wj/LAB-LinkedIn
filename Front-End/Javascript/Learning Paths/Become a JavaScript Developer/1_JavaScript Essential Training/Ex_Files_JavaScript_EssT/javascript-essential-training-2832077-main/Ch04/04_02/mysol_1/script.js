@@ -22,5 +22,6 @@ document.body.innerHTML = content;
 
 console.log("The everydayPack object:", everydayPack);
 
+
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
