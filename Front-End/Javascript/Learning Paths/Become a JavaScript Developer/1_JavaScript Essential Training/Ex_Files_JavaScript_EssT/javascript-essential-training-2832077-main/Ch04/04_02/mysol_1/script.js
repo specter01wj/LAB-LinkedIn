@@ -21,8 +21,5 @@ const content = "<h1>" + everydayPack.name + "</h1>";
 document.body.innerHTML = content;
 
 console.log("The everydayPack object:", everydayPack);
-
-
-
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
