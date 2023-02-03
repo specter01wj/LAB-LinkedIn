@@ -1,21 +1,24 @@
-// global variable
-var numberOfPlatoon = 45;
+let warrior1 = 'Ninja';
+const warrior2 = 'Viking';
+console.log(warrior1, warrior2);
 
-const platoon = () => {
-    // local variable
-    const warriorsPerPlatoon = 60;
-    warriorsPerPlatoon = 70;
+warrior1 = 'Samurai';
+console.log(warrior1);
 
-    // local as well
-    let totalWarriors = numberOfPlatoon * warriorsPerPlatoon;
-
-    return `Our army is ${totalWarriors} strong!`;
+const screamWarrior = () => {
+  let warrior4 = 'Canon shooter';
+  if (warrior2 === 'Viking') {
+      let warrior3 = 'Infantry Soldier';
+      console.log(`Our army consists of ${warrior1}, ${warrior2} and ${warrior3}!`)
+  }
+  console.log(warrior4);
+  
 }
 
-console.log(platoon());
+screamWarrior();
 
-// warriorsPerPlatoon & totalWarriors aren't available globally
-// console.log(warriorsPerPlatoon, totalWarriors);
-console.log(numberOfPlatoon);
+// console.log(warrior4);
+
+
 
 
