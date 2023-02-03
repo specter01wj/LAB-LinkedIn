@@ -1,21 +1,15 @@
-const screamWarrior = () => {
-    var warrior1 = 'Ninja';
-    let warrior2 = 'Samurai';
+var numberOfPlatoon = 45;
 
-    return `Our warriors are ${warrior1} and ${warrior2}`;
+const platoon = () => {
+  let warriorsPerPlatoon = 60;
+  let totalWarriors = numberOfPlatoon * warriorsPerPlatoon;
+
+  return `Our army is ${totalWarriors} strong!`;
 }
 
-const screamWarrior2 = () => {
-    var warrior1 = 'Viking';
-    let warrior2 = 'Soldier';
+console.log(platoon());
 
-    return `Our warriors are ${warrior1} and ${warrior2}`;
-}
- 
-console.log(screamWarrior2(), screamWarrior());
-
-// warrior1 & warrior2 aren't available globally
-// console.log(warrior1, warrior2);
+console.log(numberOfPlatoon);
 
 
 
