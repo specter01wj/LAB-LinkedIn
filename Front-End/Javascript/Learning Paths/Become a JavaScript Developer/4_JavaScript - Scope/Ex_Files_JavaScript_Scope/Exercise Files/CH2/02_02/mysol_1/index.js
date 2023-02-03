@@ -1,28 +1,27 @@
-'use strict';
+const warriors = [
+  {
+      name: 'Jujin Take',
+      type: 'Ninja',
+      weapon: 'Shuriken',
+      agility: 79
+  },
+  {
+      name: 'Viggo Rusen',
+      type: 'Viking',
+      weapon: 'Swing blade',
+      agility: 60
+  },
+  {
+      name: 'Ro Rake',
+      type: 'Samurai',
+      weapon: 'Boken',
+      agility: 82
+  }
+];
 
-const warrior = {
-    name: 'Jujin Take',
-    type: 'Ninja',
-    weapon: 'Shuriken',
-    agility: 79
-} // this is globally scoped
-
-// globally scoped 
-const screamWarrior = () => {
-    let warrior2 = 'Samurai';
-    
-    warrior3 = 'Viking';
-    return {
-        shootWarrior: () => {
-            return console.log(warrior, warrior2);
-            
-        }
-    }
+const screamWarriors = () => {
+  return console.log(warriors);
 }
 
-const newWarrior = screamWarrior();
-
-newWarrior.shootWarrior();
-
-console.log(warrior, warrior3);
+screamWarriors();
 
