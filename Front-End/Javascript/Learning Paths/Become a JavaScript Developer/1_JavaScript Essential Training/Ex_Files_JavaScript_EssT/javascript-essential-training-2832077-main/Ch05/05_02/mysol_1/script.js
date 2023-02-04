@@ -12,6 +12,7 @@ const everydayPack = new Backpack(
   "grey",
 
 
+
   
   15,
   26,
