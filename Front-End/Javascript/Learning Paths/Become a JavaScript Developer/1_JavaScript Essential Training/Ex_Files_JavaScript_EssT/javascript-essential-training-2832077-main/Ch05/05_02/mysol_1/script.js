@@ -15,7 +15,7 @@ const everydayPack = new Backpack(
   26,
   false,
   "December 5, 2018 15:00:00 PST",
-  "../assets/images/everyday.svg"
+  "../../../assets/images/everyday.svg"
 );
 
 const main = document.querySelector(".maincontent");
