@@ -8,4 +8,15 @@
  * - Remove the item you found using the find method from the array.
  */
 
+const deskArray = [
+  "pen",
+  "camera",
+  "phone",
+  "notebook",
+  "headphones",
+  "lightbulb",
+  "usb drive",
+];
+
+console.log("Original array:", deskArray);
 
