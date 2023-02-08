@@ -643,55 +643,58 @@
     }
   };
   function Arrangement(name, vase, quantity = 1) {
-    this.type = 'floral';
-    this.storage = 'cool';
     this.name = name;
     this.vase = vase;
     this.quantity = quantity;
-    this.logItem = function() {
-      console.log('%c' + this.name,'font-weight: bold');
-      for (let prop in this) {
-        console.log(' ', prop, ': ', this[prop])
-      }
-    };
   }
+  Arrangement.prototype.type = 'floral';
+  Arrangement.prototype.storage = 'cool';
+  Arrangement.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+
   function Live(name, pot, quantity = 1) {
-    this.type = 'floral';
-    this.storage = 'warm';
     this.name = name;
     this.pot = pot;
     this.quantity = quantity;
-    this.logItem = function() {
-      console.log('%c' + this.name,'font-weight: bold');
-      for (let prop in this) {
-        console.log(' ', prop, ': ', this[prop])
-      }
-    };
   }
+  Live.prototype.type = 'floral';
+  Live.prototype.storage = 'warm';
+  Live.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+
   function Bouquet(name, vase) {
-    this.type = 'floral';
-    this.storage = 'cool';
     this.name = name;
     this.vase = vase;
-    this.logItem = function() {
-      console.log('%c' + this.name,'font-weight: bold');
-      for (let prop in this) {
-        console.log(' ', prop, ': ', this[prop])
-      }
-    };
-    this.flowers = {
-      addStem: function(name, quantity = 1, color = 'Default') {
-        this[name] = new Flower(quantity, color)
-      }
-    }
   }
+  Bouquet.prototype.type = 'floral';
+  Bouquet.prototype.storage = 'cool';
+  Bouquet.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
+  Bouquet.prototype.flowers = {
+    addStem: function(name, quantity = 1, color = 'Default') {
+      this[name] = new Flower(quantity, color)
+    }
+  };
+
   function Flower(quantity, color) {
     this[color] = quantity;
-    this.logItem = function() {
-      console.log('%c' + this.name,'font-weight: bold');
-      for (let prop in this) {
-        console.log(' ', prop, ': ', this[prop])
-      }
-    };
   }
+  Flower.prototype.logItem = function() {
+    console.log('%c' + this.name,'font-weight: bold');
+    for (let prop in this) {
+      console.log(' ', prop, ': ', this[prop])
+    }
+  };
 })();
