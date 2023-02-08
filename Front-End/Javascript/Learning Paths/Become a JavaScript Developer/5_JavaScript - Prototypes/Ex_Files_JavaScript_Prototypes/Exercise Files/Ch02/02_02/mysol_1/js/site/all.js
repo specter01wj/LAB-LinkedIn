@@ -13,6 +13,7 @@
 
 
 
+
     
     slider.init();
     product.gallery();
