@@ -644,7 +644,7 @@
   };
 
   function Item() {};
-  Item.prototype.type = 'floral';
+  Item.prototype.type = 'goods';
   Item.prototype.logItem = function() {
     console.log('%c' + this.name,'font-weight: bold');
     for (let prop in this) {
