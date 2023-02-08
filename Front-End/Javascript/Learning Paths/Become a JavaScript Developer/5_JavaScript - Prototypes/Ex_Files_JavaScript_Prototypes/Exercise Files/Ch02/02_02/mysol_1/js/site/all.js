@@ -11,6 +11,7 @@
     
     placeholder.init();
 
+
     
     slider.init();
     product.gallery();
