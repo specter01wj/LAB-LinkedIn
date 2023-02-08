@@ -14,6 +14,7 @@
 
 
 
+
     
     slider.init();
     product.gallery();
