@@ -10,6 +10,7 @@
       $('label').attr('onclick', '');
     
     placeholder.init();
+
     
     slider.init();
     product.gallery();
