@@ -17,6 +17,7 @@ const doMoreMath = function (a = 3, b = 2) {
 
 console.log("Do some math:", doSomeMath(5, 6));
 
+
 console.log("Do more math:", doMoreMath(5, 6));
 
 // Immediately Invoked Function Expression (IIFE)
