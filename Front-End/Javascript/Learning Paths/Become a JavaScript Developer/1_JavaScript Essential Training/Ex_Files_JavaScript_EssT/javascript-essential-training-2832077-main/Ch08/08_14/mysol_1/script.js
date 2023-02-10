@@ -66,21 +66,21 @@ let stuffList = document.createElement("ul");
  * foreach array method
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
  */
-stuff.forEach((item) => {
+/* stuff.forEach((item) => {
   let listItem = document.createElement("li");
   listItem.innerHTML = item;
   stuffList.append(listItem);
-});
+}); */
 
 /**
  * for...in loop and objects
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
  */
-// for (const singleObject in nestedObjects) {
-//   let listItem = document.createElement("li");
-//   listItem.innerHTML = `Name: ${nestedObjects[singleObject].name}`;
-//   stuffList.append(listItem);
-// }
+for (const singleObject in nestedObjects) {
+  let listItem = document.createElement("li");
+  listItem.innerHTML = `Name: ${nestedObjects[singleObject].name}`;
+  stuffList.append(listItem);
+}
 
 
 article.append(stuffList);
