@@ -14,6 +14,7 @@ const formatter = (locale = "en-US", currency = "USD", value) => {
     currency: currency,
 
 
+
     
   }).format(value);
 
