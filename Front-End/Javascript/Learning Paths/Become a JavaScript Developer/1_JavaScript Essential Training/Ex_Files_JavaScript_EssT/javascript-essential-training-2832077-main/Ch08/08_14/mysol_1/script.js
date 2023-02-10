@@ -46,21 +46,21 @@ let stuffList = document.createElement("ul");
  * for loop
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
  */
-for (let i = 0; i < stuff.length; i++) {
+/* for (let i = 0; i < stuff.length; i++) {
   let listItem = document.createElement("li");
   listItem.innerHTML = stuff[i];
   stuffList.append(listItem);
-}
+} */
 
 /**
  * for...of loop and arrays
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
  */
-// for (const item of stuff) {
-//   let listItem = document.createElement("li");
-//   listItem.innerHTML = item;
-//   stuffList.append(listItem);
-// }
+for (const item of stuff) {
+  let listItem = document.createElement("li");
+  listItem.innerHTML = item;
+  stuffList.append(listItem);
+}
 
 /**
  * foreach array method
