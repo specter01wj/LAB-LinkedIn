@@ -13,7 +13,7 @@ const everydayPack = new Backpack(
   15,
   26,
   26,
-  false,
+  true,
   "December 5, 2018 15:00:00 PST",
   "../../../assets/images/everyday.svg"
 );
