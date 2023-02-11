@@ -12,7 +12,7 @@ const everydayPack = new Backpack(
   26,
   false,
   "December 5, 2018 15:00:00 PST",
-  "../assets/images/everyday.svg"
+  "../../../assets/images/everyday.svg"
 );
 
 // Create new Backpack object
@@ -26,7 +26,7 @@ const frogPack = new Backpack(
   10,
   false,
   "October 16, 2019 15:00:00 PST",
-  "../assets/images/frog.svg"
+  "../../../assets/images/frog.svg"
 );
 
 // Add Backpack objects into an array
