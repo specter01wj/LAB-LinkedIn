@@ -8,6 +8,7 @@ const button = document.querySelector(".cta-button");
 
 
 
+
 const posX = document.querySelector(".posX span");
 const posY = document.querySelector(".posY span");
 
