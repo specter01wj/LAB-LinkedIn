@@ -7,6 +7,7 @@ const container = document.querySelector(".container");
 const button = document.querySelector(".cta-button");
 const posX = document.querySelector(".posX span");
 
+
 const posY = document.querySelector(".posY span");
 
 // Log when the button is clicked in the console.
