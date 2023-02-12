@@ -9,6 +9,7 @@ const posX = document.querySelector(".posX span");
 
 
 
+
 const posY = document.querySelector(".posY span");
 
 // Log when the button is clicked in the console.
