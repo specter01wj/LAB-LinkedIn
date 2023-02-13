@@ -113,6 +113,12 @@ const backpackList = backpackObjectArray.map((backpack) => {
     <button class="lid-toggle">Open lid</button>
   `;
 
+  // Find the two list items with the .backpack__strap class
+  let strapLengths = backpackArticle.querySelectorAll(".backpack__strap");
+
+  // Call the newStrapLength() function and pass on the strapLengths node list.
+  newStrapLength(strapLengths);
+
   let button = backpackArticle.querySelector(".lid-toggle");
   let newArg = "The argument I want to pass to the callback function!";
 
