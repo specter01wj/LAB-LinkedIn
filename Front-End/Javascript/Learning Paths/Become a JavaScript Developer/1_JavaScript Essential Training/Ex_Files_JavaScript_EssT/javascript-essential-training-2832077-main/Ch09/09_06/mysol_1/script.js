@@ -72,7 +72,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
 
   // Add event listener
   button.addEventListener("click", (event) => {
-    lidToggle(event, button, newArg)
+    lidToggle(event, button, newArg);
   })
 
   return backpackArticle;
