@@ -40,6 +40,45 @@ const lidToggle = function (event, button, newArg) {
     : (status.innerText = "closed");
 };
 
+/**
+ * Strap length functionality
+ */
+const newStrapLength = (strapArray) => {
+  // Loop through each element on the list
+  strapArray.forEach((listElement) => {
+    // Get what side we are working with
+    let side = listElement.getAttribute("data-side");
+
+    // Create a new form element
+    const lengthForm = document.createElement("form");
+    lengthForm.classList.add(`${side}length`);
+
+    // Populate form with an input and a button
+    lengthForm.innerHTML = `
+      <input type="number" name="${side}Length" placeholder="New ${side} length">
+      <button>Update</button>
+    `;
+
+    // Add event listener to the form submit action
+    lengthForm.addEventListener("submit", (e) => {
+      // Stop form from reloading the page
+      e.preventDefault();
+
+      // Get the value from the form input
+      let newValue = lengthForm.querySelector("input").value;
+
+      // Set the value of the field
+      listElement.querySelector("span").innerHTML = `${newValue} inches`;
+
+      // Clear the form input
+      lengthForm.querySelector("input").value = "";
+    });
+
+    // Add form to the end of the list element
+    listElement.append(lengthForm);
+  });
+};
+
 const backpackList = backpackObjectArray.map((backpack) => {
   let backpackArticle = document.createElement("article");
   backpackArticle.classList.add("backpack");
