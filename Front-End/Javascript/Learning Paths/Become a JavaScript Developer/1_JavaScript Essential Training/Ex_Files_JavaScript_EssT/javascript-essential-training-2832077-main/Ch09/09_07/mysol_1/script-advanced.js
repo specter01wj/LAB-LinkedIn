@@ -17,6 +17,7 @@ import backpackObjectArray from "./components/data.js";
 const lidToggle = function (event, button, newArg) {
   console.log(event);
 
+
   
   console.log(newArg);
 
