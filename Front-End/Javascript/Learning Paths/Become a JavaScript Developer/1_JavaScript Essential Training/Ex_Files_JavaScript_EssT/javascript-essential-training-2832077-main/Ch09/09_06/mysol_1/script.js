@@ -9,8 +9,8 @@ import backpackObjectArray from "./components/data.js";
  * Add event listener to the lid-toggle button.
  */
 const lidToggle = function (event, button, newArg) {
-  console.log(event)
-  console.log(newArg)
+  console.log(event);
+  console.log(newArg);
    
   // Find the current backpack object in backpackObjectArray
   let backpackObject = backpackObjectArray.find( ({ id }) => id === button.parentElement.id );
@@ -68,7 +68,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
   `;
   
   let button = backpackArticle.querySelector(".lid-toggle");
-  let newArg = "The argument I want to pass to the callback function!"
+  let newArg = "The argument I want to pass to the callback function!";
 
   // Add event listener
   button.addEventListener("click", (event) => {
