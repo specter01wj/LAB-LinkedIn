@@ -1,5 +1,13 @@
 'use strict';
 
+let clicks = {};
+
+function updateClicks(menu) {
+  let button = menu.id;
+  clicks[button] = clicks[button] + 1 || 1;
+  console.log(button, clicks);
+}
+
 const activities = {
   teamIn: ['basketball','hockey','volleyball'],
   teamOutWarm: ['softball/baseball','football/soccer','American football','rowing','tennis','volleyball','ultimate frisbee','rugby'],
