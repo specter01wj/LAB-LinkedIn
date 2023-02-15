@@ -1,16 +1,17 @@
 'use strict';
 
-let clicks = {};
-
-function updateClicks(menu) {
-  let button = menu.id;
-  clicks[button] = clicks[button] + 1 || 1;
-  function reportClicks() {
-    const report = [button, clicks];
-    console.log(...report);
+function updateClicks() {
+  let clicks = {};
+  let button;
+  function reportClicks(menu) {
+    button = menu.id;
+    clicks[button] = clicks[button] + 1 || 1;
+    console.log(button, clicks);
   }
-  reportClicks();
+  return reportClicks;
 }
+
+const report = updateClicks();
 
 const activities = {
   teamIn: ['basketball','hockey','volleyball'],
@@ -23,7 +24,7 @@ const activities = {
 let state = {};
 let category = 'all';
 let url = 'http://api.openweathermap.org/data/2.5/weather?q=';
-let apiKey = "APIKEY"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+let apiKey = "5c12903e7cafe84855f79cc0fee3becf"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 function updateActivityList(event) {
   if (event !== undefined && event.target.classList.contains('selected')) {
     return true;
@@ -106,6 +107,6 @@ document.querySelector('.forecast-button').addEventListener('click', function(e)
 document.querySelectorAll('.options div').forEach(function(el) {
   el.addEventListener('click', function(event) {
     updateActivityList(event);
-    updateClicks(event.target);
+    report(event.target);
   }, false);
 });
