@@ -19,7 +19,7 @@ const activities = {
 let state = {};
 let category = 'all';
 let url = 'http://api.openweathermap.org/data/2.5/weather?q=';
-let apiKey = "APIKEY"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+let apiKey = "5c12903e7cafe84855f79cc0fee3becf"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 function updateActivityList(event) {
   if (event !== undefined && event.target.classList.contains('selected')) {
     return true;
