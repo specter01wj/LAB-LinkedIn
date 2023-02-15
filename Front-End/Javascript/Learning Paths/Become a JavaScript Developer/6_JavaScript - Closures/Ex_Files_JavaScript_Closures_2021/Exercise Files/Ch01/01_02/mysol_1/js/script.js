@@ -5,7 +5,11 @@ let clicks = {};
 function updateClicks(menu) {
   let button = menu.id;
   clicks[button] = clicks[button] + 1 || 1;
-  console.log(clicks);
+  function reportClicks() {
+    const report = [button, clicks];
+    console.log(...report);
+  }
+  reportClicks();
 }
 
 const activities = {
