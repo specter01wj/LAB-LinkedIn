@@ -80,6 +80,9 @@ function transmogrifyCopy(calvin) {
   };
 }
 
+var a1 = transmogrifier(calvin);
+console.log(calvin);
+
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions
 // https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Statements/function
