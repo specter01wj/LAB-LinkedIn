@@ -18,6 +18,7 @@ function fuddify(speech) {
 
 var utterance = fuddify("You screwy rabbit");
 utterance;
+console.log(utterance);
 
 function isEven(num) {
   if (num % 2 === 0) {
