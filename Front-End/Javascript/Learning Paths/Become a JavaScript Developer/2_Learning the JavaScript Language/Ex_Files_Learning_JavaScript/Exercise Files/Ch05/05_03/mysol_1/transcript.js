@@ -21,11 +21,6 @@ while (myItem !== false) {
       " items now. This loop will go until we pop a false."
   );
   myItem = myArray.pop();
-
-
-
-
-  
 }
 
 var counter = 1;
