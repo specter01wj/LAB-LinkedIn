@@ -65,6 +65,15 @@ const listWidget = (function() {
       document.querySelector('.activities').innerHTML = activitiesContainer;
       document.querySelector('.results').classList.add('open');
     },
+    updateUIWorking: function() {
+      for (var i = 0; i <= 9; i++) {
+        (function(j) {
+          setTimeout(function() {
+            document.querySelector('.conditions').innerHTML = `<p class="animation">00:00.${j}</p>`;
+          }, 100 * j);
+        })(i)
+      }
+    },
     updateUISuccess: function(response) {
       const degC = response.main.temp - 273.15;
       const degF = degC * 1.8 + 32;
@@ -94,15 +103,16 @@ const listWidget = (function() {
 // get weather data when user clicks Forecast button, then add temp & conditions to view
 document.querySelector('.forecast-button').addEventListener('click', function(e) {
   e.preventDefault();
+  listWidget.updateUIWorking();
   const location = document.querySelector('#location').value;
   document.querySelector('#location').value = '';
-  fetch(listWidget.url + location + '&appid=' + listWidget.apiKey).then(function(response) {
-    return(response.json());
-  }).then(function(response) {
-    listWidget.updateUISuccess(response);
-  }).catch(function(response) {
-    listWidget.updateUIFailure();
-  });
+  // fetch(listWidget.url + location + '&appid=' + listWidget.apiKey).then(function(response) {
+  //   return(response.json());
+  // }).then(function(response) {
+  //   listWidget.updateUISuccess(response);
+  // }).catch(function(response) {
+  //   listWidget.updateUIFailure();
+  // });
 }, false);
 
 // update list of sports when user selects a different category (solo/team/all)
