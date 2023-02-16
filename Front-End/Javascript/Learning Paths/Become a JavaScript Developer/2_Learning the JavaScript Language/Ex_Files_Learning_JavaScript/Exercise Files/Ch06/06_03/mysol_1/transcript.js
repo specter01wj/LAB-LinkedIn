@@ -36,8 +36,11 @@ function addingMachine() {
   return total;
 }
 
-addingMachine(1, 2, 3);
-addingMachine(1, 2, 3, 4, 5, 6, 7, 8, 9, 1204910249014);
+var a1 = addingMachine(1, 2, 3);
+var b1 = addingMachine(1, 2, 3, 4, 5, 6, 7, 8, 9, 1204910249014);
+
+console.log(a1);
+console.log(b1);
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions
