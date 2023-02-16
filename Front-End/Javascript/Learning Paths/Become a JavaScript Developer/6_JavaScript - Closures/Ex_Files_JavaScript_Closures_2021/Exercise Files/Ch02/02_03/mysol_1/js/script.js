@@ -58,7 +58,7 @@ const listWidget = (function() {
 
       let activitiesContainer = `<ul>`;
       state.activities.forEach(function(activity,index) {
-        activitiesContainer += `<li key="${index}">${activity}</li>`
+        activitiesContainer += `<li key="${index}">${activity}</li>`;
       });
       activitiesContainer += `</ul>`;
       
@@ -66,15 +66,28 @@ const listWidget = (function() {
       document.querySelector('.results').classList.add('open');
     },
     updateUIWorking: function() {
-      for (var i = 0; i <= 9; i++) {
+/*       for (var i = 0; i <= 9; i++) {
         (function(j) {
           setTimeout(function() {
             document.querySelector('.conditions').innerHTML = `
-              <p class="animation">00:00.${j}
-            `
-          }, 100 * j)
-        })(i); 
-      }
+              <p class="animation">00:00.${j}</p>
+            `;
+          }, 100 * j);
+        })(i)
+      } */
+
+/*       var count = [0,1,2,3,4,5,6,7,8,9];
+      count.forEach(function(el) {
+        setTimeout(function() {
+          document.querySelector('.conditions').innerHTML = `<p class="animation">00:00.${el}</p>`;
+        }, 100 * el);
+      }); */
+
+      for (let i = 0; i <= 9; i++) {
+        setTimeout(function() {
+          document.querySelector('.conditions').innerHTML = `<p class="animation">00:00.${i}</p>`;
+        }, 100 * i);
+      } 
     },
     updateUISuccess: function(response) {
       const degC = response.main.temp - 273.15;
