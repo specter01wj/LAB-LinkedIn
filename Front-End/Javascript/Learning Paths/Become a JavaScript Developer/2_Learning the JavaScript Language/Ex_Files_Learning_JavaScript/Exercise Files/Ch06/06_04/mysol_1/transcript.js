@@ -80,8 +80,11 @@ function transmogrifyCopy(calvin) {
   };
 }
 
-var a1 = transmogrifier(calvin);
+transmogrifier(calvin);
 console.log(calvin);
+
+var a1 = transmogrifyCopy(calvin)
+console.log(a1);
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions
