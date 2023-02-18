@@ -32,6 +32,7 @@ axios.get("https://httpbin.org/get").then(function(response) {
 // Multiple promises in sequence, no nesting
 axios
   .get("https://httpbin.org/get")
+  
   .then(function(response) {
     // now I have some data
 
