@@ -3,11 +3,6 @@ class Car {
         this.doors = doors;
         this.engine = engine;
         this.color = color;
-
-
-
-
-        
     }
 
     carStats() {
