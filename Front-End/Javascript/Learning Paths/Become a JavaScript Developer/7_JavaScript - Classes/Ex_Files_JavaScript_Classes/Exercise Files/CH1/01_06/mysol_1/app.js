@@ -24,6 +24,7 @@ console.log(cx5);
 console.log(cx5.carStats());
 console.log(civic);
 console.log(civic.carStats());
+// console.log(civic.totalDoors(cx5, civic));
 console.log(Car.totalDoors(cx5, civic));
 
 function sayHi() {
