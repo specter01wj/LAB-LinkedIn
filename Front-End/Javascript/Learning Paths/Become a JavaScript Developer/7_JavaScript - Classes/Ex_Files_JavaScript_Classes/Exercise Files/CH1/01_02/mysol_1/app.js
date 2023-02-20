@@ -18,4 +18,5 @@ console.log(cx5);
 
 
 
+
 console.log(cx5.carStats());
