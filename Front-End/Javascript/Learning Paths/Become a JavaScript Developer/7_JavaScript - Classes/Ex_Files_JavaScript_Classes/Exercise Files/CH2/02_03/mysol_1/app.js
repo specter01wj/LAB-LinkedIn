@@ -18,24 +18,25 @@ class Car {
 }
 
 class SUV extends Car {
+    #_brand;
 
     constructor(doors, engine, color, carStats) {
         super(doors, engine, color, carStats);
-        this._brand = 'No brand yet';
+        this.#_brand = 'No brand yet';
         this.wheels = 4;
         this.ac = true;
     }
 
     get getBrand() {
-        return this._brand;
+        return this.#_brand;
     }
 
     set setBrand(newBrand) {
-        this._brand = newBrand;
+        this.#_brand = newBrand;
     }
 
     myBrand() {
-        return console.log(`This SUV is a ${this.brand}`); 
+        return console.log(`This SUV is a ${this.#_brand}`); 
     }
 }
 
@@ -45,6 +46,8 @@ const cx5 = new SUV(4, 'V6', 'Grey');
 console.log(cx5.getBrand);
 cx5.setBrand = 'mazda';
 console.log(cx5.getBrand);
+console.log(cx5.myBrand());
+// console.log(cx5.#_brand);
 
 // console.log(civic);
 // console.log(civic.carStats());
