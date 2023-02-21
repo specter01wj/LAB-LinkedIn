@@ -18,6 +18,7 @@ class Car {
 }
 
 class SUV extends Car {
+
     constructor(doors, engine, color, carStats) {
         super(doors, engine, color, carStats);
         this._brand = 'No brand yet';
