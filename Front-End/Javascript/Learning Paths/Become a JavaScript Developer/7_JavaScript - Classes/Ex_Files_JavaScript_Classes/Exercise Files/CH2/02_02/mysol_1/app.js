@@ -26,7 +26,7 @@ class SUV extends Car {
     }
 
     myBrand() {
-        return console.log(`This SUV is a ${this.brand}`); 
+        return console.log(`This SUV is a ${this.brand} with ${this.doors} doors!`); 
     }
 }
 
