@@ -110,9 +110,11 @@
 			}
 		}
 
-		const $into = $('.activities')[0];
+//		const $into = $('.activities')[0];
+		const into = document.querySelector('.activities');
 
-		ReactDOM.render(<Activities {...state} />, $into);
+//		ReactDOM.render(<Activities {...state} />, $into);
+		ReactDOM.render(<Activities {...state} />, into);
 
 		function Activities(props) {
 			const activitiesList = props.activities.map(function(activity, index) {
