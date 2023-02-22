@@ -17,8 +17,10 @@
 	// get weather data when user clicks Forecast button, then add temp & conditions to view
 	$('.forecast-button').click(function(e) {
 		e.preventDefault();
-		const location = $('#location').val();
-		$('#location').val('');
+//		const location = $('#location').val();
+		const location = document.querySelector('#location').value;
+//		$('#location').val('');
+		document.querySelector('#location').value = '';
 /*
 		$.get(url + location + '&appid=' + apiKey).done(function(response) {
 			updateUISuccess(response);
