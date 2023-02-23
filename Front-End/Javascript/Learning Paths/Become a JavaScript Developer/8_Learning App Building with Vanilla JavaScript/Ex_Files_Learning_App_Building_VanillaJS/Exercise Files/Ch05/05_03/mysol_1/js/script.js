@@ -91,6 +91,7 @@
 
 			document.querySelectorAll('.options div').forEach(function(el) {
 				el.classList.remove('selected');
+
         
 			});
 
