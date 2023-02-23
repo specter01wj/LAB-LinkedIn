@@ -2,7 +2,7 @@
 
 (function() {
 	const url = "http://api.openweathermap.org/data/2.5/weather?q=";
-	const apiKey = "APIKEY"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+	const apiKey = "5c12903e7cafe84855f79cc0fee3becf"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 	const activities = {
 		teamIn: ['basketball','hockey','volleyball'],
 		teamOutWarm: ['softball/baseball','football/soccer','American football','rowing','tennis','volleyball','ultimate frisbee','rugby'],
@@ -15,7 +15,8 @@
 	let category = 'all';
 
 	// get weather data when user clicks Forecast button, then add temp & conditions to view
-	$('.forecast-button').click(function(e) {
+//	$('.forecast-button').click(function(e) {
+	document.querySelector('.forecast-button').addEventListener('click', function(e) {
 		e.preventDefault();
 //		const location = $('#location').val();
 		const location = document.querySelector('#location').value;
@@ -36,10 +37,13 @@
 		}).catch(function() {
 			updateUIFailure();
 		});
-	});
+	}, false);
 
 	// update list of sports when user selects a different category (solo/team/all)
-	$('.options div').on('click', updateActivityList);
+	//$('.options div').on('click', updateActivityList);
+	document.querySelectorAll('.options div').forEach(function(el) {
+		el.addEventListener('click', updateActivityList, false);
+	});
 
 	// handle ajax success
 	function updateUISuccess(response) {
