@@ -34,6 +34,7 @@
 			return(response.json());
 		}).then(function(response) {
 			updateUISuccess(response);
+
       
 		}).catch(function() {
 			updateUIFailure();
