@@ -35,6 +35,7 @@
 		}).then(function(response) {
 			updateUISuccess(response);
 
+
       
 		}).catch(function() {
 			updateUIFailure();
