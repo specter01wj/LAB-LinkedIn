@@ -27,6 +27,7 @@
 			updateUISuccess(response);
 		}).fail(function() {
 			updateUIFailure();
+
       
 		});
 */
