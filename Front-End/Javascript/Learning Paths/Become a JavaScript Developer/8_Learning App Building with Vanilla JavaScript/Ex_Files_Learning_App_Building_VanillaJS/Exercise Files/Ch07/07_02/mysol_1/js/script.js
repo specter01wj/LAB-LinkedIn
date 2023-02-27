@@ -63,8 +63,9 @@
 		const into = document.querySelector('.conditions');
 
 //		ReactDOM.render(<Forecast {...state} />, $into);
-		ReactDOM.render(<Forecast {...state} />, into);
+//		ReactDOM.render(<Forecast {...state} />, into);
 
+/*
 		function Forecast(props) {
 			return (
 				<div>
@@ -73,6 +74,12 @@
 				</div>
 			)
 		}
+*/
+
+		let container = document.createElement('div');
+		let cityPara = document.createElement('p');
+		let conditionsPara = document.createElement('p');
+		let iconImage = document.createElement('img');
 
 		updateActivityList();
 	}
