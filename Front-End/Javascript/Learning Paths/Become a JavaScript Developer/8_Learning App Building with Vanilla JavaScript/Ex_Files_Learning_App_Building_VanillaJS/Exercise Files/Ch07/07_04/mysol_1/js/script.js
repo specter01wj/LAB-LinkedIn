@@ -169,7 +169,14 @@
 			let listItem = document.createElement('li');
 			listItem.setAttribute('key', index);
 			listItem.textContent = activity;
+			list.appendChild(listItem);
 		});
+		activitiesContainer.appendChild(list);
+		if (document.querySelector('.activities div')) {
+			into.replaceChild(activitiesContainer, document.querySelector('.activities div'));
+		} else {
+			into.appendChild(activitiesContainer);
+		}
 
 		$('.results').slideDown(300);
 	}
