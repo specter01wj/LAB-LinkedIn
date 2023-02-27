@@ -37,6 +37,7 @@
 		}).catch(function() {
 			updateUIFailure();
 
+
       
 		});
 	}, false);
