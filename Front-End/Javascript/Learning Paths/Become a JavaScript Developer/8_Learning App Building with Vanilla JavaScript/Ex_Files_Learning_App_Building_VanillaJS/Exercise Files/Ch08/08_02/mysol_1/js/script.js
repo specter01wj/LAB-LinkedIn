@@ -2,7 +2,7 @@
 
 (function() {
 	const url = "http://api.openweathermap.org/data/2.5/weather?q=";
-	const apiKey = "APIKEY"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+	const apiKey = "5c12903e7cafe84855f79cc0fee3becf"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 	const activities = {
 		teamIn: ['basketball','hockey','volleyball'],
 		teamOutWarm: ['softball/baseball','football/soccer','American football','rowing','tennis','volleyball','ultimate frisbee','rugby'],
