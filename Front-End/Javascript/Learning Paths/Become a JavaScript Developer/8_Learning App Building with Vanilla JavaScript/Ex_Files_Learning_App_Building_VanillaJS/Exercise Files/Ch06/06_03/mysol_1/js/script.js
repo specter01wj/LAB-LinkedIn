@@ -36,17 +36,6 @@
 			updateUISuccess(response);
 		}).catch(function() {
 			updateUIFailure();
-
-
-
-
-
-
-
-
-
-
-      
 		});
 	}, false);
 
