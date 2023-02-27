@@ -157,7 +157,7 @@
 
 		let activitiesContainer = document.createElement('div');
 		let list = document.createElement('ul');
-		state.activities.forEach(function(activity,index) {
+		state.activities.forEach(function(activity, index) {
 			let listItem = document.createElement('li');
 			listItem.textContent = activity;
 			listItem.setAttribute('key', index);
