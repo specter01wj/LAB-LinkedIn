@@ -85,6 +85,14 @@
 		let iconImage = document.createElement('img');
 		iconImage.setAttribute('src', state.icon);
 		iconImage.setAttribute('alt', state.condition);
+		conditionsPara.appendChild(iconImage);
+		container.appendChild(cityPara);
+		container.appendChild(conditionsPara);
+		if (document.querySelector('.conditions div')) {
+			into.replaceChild(container, document.querySelector('.conditions div'));
+		} else {
+			into.appendChild(container);
+		}
 
 		updateActivityList();
 	}
