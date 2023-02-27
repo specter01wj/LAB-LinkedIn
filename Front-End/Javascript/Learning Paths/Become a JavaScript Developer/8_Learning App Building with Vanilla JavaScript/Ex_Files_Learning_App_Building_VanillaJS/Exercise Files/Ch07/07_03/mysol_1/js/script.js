@@ -157,8 +157,10 @@
 
 		let activitiesContainer = document.createElement('div');
 		let list = document.createElement('ul');
-		state.activities.forEach(function() {
+		state.activities.forEach(function(activity,index) {
 			let listItem = document.createElement('li');
+			listItem.textContent = activity;
+			listItem.setAttribute('key', index);
 		});
 
 		$('.results').slideDown(300);
@@ -166,6 +168,7 @@
 
 	// handle ajax failure
 	function updateUIFailure() {
-		$(".conditions").text("Weather information unavailable");
+//		$(".conditions").text("Weather information unavailable");
+		document.querySelector(".conditions").textContent = "Weather information unavailable";
 	}
 })();
